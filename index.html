@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BanglaKnight · BLP-2027 Task 1: Adversarial Prompt Classification</title>
+  <meta name="description" content="BanglaKnight, Shared Task 1 at the BLP Workshop (NAACL 2027, San Francisco): classify Bangla prompts into four risk levels across Bangla script, romanized Bangla, and code-mixed text.">
+  <meta name="theme-color" content="#E0474F">
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500;600;700;800&family=Hind+Siliguri:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="nav" id="top">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top" aria-label="BanglaKnight home">
+      <img src="assets/img/logo.svg" alt="" width="38" height="38">
+      <span class="brand-text"><span class="brand-name">Bangla<span>Knight</span></span><span class="brand-sub">BLP-2027 Task 1</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="nav-links" class="nav-links">
+      <a href="#task">Task</a>
+      <a href="#forms">Written forms</a>
+      <a href="#data">Data</a>
+      <a href="#evaluation">Evaluation</a>
+      <a href="#dates">Dates</a>
+      <a href="#participate">Participate</a>
+      <a href="#organizers">Organizers</a>
+      <a class="nav-cta" href="https://blp-workshop.github.io/" target="_blank" rel="noopener">BLP 2027 ↗</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- Hero: Golden Gate Bridge in the background -->
+  <section class="hero">
+    <div class="hero-photo" role="img" aria-label="The Golden Gate Bridge in San Francisco"></div>
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="dot"></span>Shared Task 1 · BLP Workshop at NAACL 2027, San Francisco</p>
+        <h1>Bangla<span>Knight</span></h1>
+        <p class="hero-sub">Adversarial prompt classification for Bangla</p>
+        <p class="lead">A harmful request can get past an LLM's safety filter when it is written in a different script. Build a classifier that gives a Bangla prompt the same risk level whether it is written in Bangla script, in romanized Bangla, or code-mixed with another language.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#task">See the task <span aria-hidden="true">→</span></a>
+          <a class="btn btn-ghost" href="#participate">How to take part</a>
+        </div>
+      </div>
+
+      <div class="demo" aria-label="Example: one request in three written forms">
+        <div class="demo-head">
+          <span class="demo-title">One request, three ways to write it</span>
+          <div class="demo-tabs" role="tablist">
+            <button role="tab" class="tab active" data-form="0" aria-selected="true">বাংলা</button>
+            <button role="tab" class="tab" data-form="1" aria-selected="false">Romanized</button>
+            <button role="tab" class="tab" data-form="2" aria-selected="false">Code-mixed</button>
+          </div>
+        </div>
+        <div class="bubble-row">
+          <div class="avatar" aria-hidden="true">U</div>
+          <p class="bubble" id="demo-text" lang="bn">আজ ঢাকায় আবহাওয়া কেমন থাকবে?</p>
+        </div>
+        <div class="verdict">
+          <div class="verdict-label">
+            <img src="assets/img/logo.svg" alt="" width="28" height="28">
+            <span>Predicted level</span>
+            <strong class="chip chip-safe">Safe</strong>
+          </div>
+          <div class="meter" aria-hidden="true">
+            <span class="seg seg-safe on">Safe</span>
+            <span class="seg">Offensive</span>
+            <span class="seg">Harmful</span>
+            <span class="seg">Severe</span>
+          </div>
+        </div>
+        <p class="demo-foot">Same request, same label, in every script.</p>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <ul class="stats">
+        <li><strong>4</strong><span>risk levels</span></li>
+        <li><strong>3</strong><span>written forms per prompt</span></li>
+        <li><strong>3</strong><span>data splits: train, dev, test</span></li>
+        <li><strong>Macro-F1</strong><span>planned main metric</span></li>
+      </ul>
+      <aside class="notice" role="note">
+        <span class="notice-icon" aria-hidden="true">i</span>
+        <p><strong>Early preview.</strong> This page gives an early idea of the task. The data, labels, splits, evaluation, and timeline are still being decided and may change.</p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Task -->
+  <section class="section" id="task">
+    <div class="wrap">
+      <p class="kicker">The task</p>
+      <h2>Sort each prompt into one of four risk levels</h2>
+      <p class="section-lead">Before an LLM answers a request, a safety classifier (a "guard" model) often checks whether the request is safe to answer. These classifiers are trained mostly on English. Online, Bangla is often typed in Latin script or mixed with English, Hindi, or Urdu, and the same harmful request can pass a filter when only its spelling changes.</p>
+      <p class="section-lead">Given a Bangla prompt, your system assigns one of four labels:</p>
+
+      <div class="levels">
+        <article class="level level-safe">
+          <span class="level-id">0</span>
+          <h3>Safe</h3>
+          <p>No harmful request.</p>
+          <p class="level-cat">Neutral, positive, or harmless requests</p>
+        </article>
+        <article class="level level-off">
+          <span class="level-id">1</span>
+          <h3>Offensive</h3>
+          <p>Insulting, provocative, or discriminatory expression without a request for harmful assistance.</p>
+          <p class="level-cat">Offensive language, hate speech, anger</p>
+        </article>
+        <article class="level level-harm">
+          <span class="level-id">2</span>
+          <h3>Harmful</h3>
+          <p>A request for lower- or medium-risk harmful assistance.</p>
+          <p class="level-cat">Misinformation, adversarial and malicious requests</p>
+        </article>
+        <article class="level level-sev">
+          <span class="level-id">3</span>
+          <h3>Severe</h3>
+          <p>A request for high-risk assistance that could cause serious harm.</p>
+          <p class="level-cat">Suicide, jailbreak attempts</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Written forms -->
+  <section class="section section-tint" id="forms">
+    <div class="wrap">
+      <p class="kicker">Written forms</p>
+      <h2>Every prompt comes in three matching forms</h2>
+      <p class="section-lead">All three forms of a prompt share one label. A <strong>Safe</strong> request, in each form:</p>
+      <div class="forms">
+        <div class="form-card">
+          <span class="form-tag">Bangla script</span>
+          <p lang="bn">আজ ঢাকায় আবহাওয়া কেমন থাকবে?</p>
+        </div>
+        <div class="form-card">
+          <span class="form-tag">Romanized Bangla</span>
+          <p>Aaj Dhakay abhawa kemon thakbe?</p>
+        </div>
+        <div class="form-card">
+          <span class="form-tag">Code-mixed</span>
+          <p lang="bn">আজ Dhaka-তে weather কেমন থাকবে?</p>
+        </div>
+      </div>
+      <p class="note-small">Code-mixed prompts mix Bangla with English, Hindi, or Urdu.</p>
+    </div>
+  </section>
+
+  <!-- Data -->
+  <section class="section" id="data">
+    <div class="wrap">
+      <p class="kicker">Data</p>
+      <h2>What participants will get</h2>
+      <div class="data-grid">
+        <div class="data-card">
+          <h3>Labeled prompts</h3>
+          <p>Each prompt carries one of the four risk levels and comes in all three written forms.</p>
+        </div>
+        <div class="data-card">
+          <h3>Train, dev, test</h3>
+          <p>All three forms of a prompt stay in the same split, so a model never sees one form in training and another in testing.</p>
+        </div>
+        <div class="data-card">
+          <h3>Release</h3>
+          <p>Data details, release dates, and download links will be posted here.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Evaluation -->
+  <section class="section section-tint" id="evaluation">
+    <div class="wrap">
+      <p class="kicker">Evaluation</p>
+      <h2>How systems will be scored</h2>
+      <div class="eval-grid">
+        <div class="eval-card">
+          <h3>Macro-F1</h3>
+          <p>The planned main metric is macro-F1 over the four labels, so each risk level counts equally, including the rarer ones.</p>
+        </div>
+        <div class="eval-card">
+          <h3>Per form</h3>
+          <p>We may also report scores for each written form separately, to show how much a system's accuracy changes from one form to another.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dates -->
+  <section class="section" id="dates">
+    <div class="wrap">
+      <p class="kicker">Dates</p>
+      <h2>Timeline</h2>
+      <p class="section-lead">Dates will be announced soon. The task will run in these stages:</p>
+      <ol class="timeline">
+        <li><span class="t-step">1</span><div><h3>Registration opens</h3><p>TBA</p></div></li>
+        <li><span class="t-step">2</span><div><h3>Training and dev data released</h3><p>TBA</p></div></li>
+        <li><span class="t-step">3</span><div><h3>Test phase</h3><p>TBA</p></div></li>
+        <li><span class="t-step">4</span><div><h3>Results announced</h3><p>TBA</p></div></li>
+        <li><span class="t-step">5</span><div><h3>System description papers due</h3><p>TBA</p></div></li>
+        <li><span class="t-step">6</span><div><h3>Workshop at NAACL 2027</h3><p>June 2027, San Francisco</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- San Francisco band -->
+  <section class="sf-band" aria-label="The Painted Ladies and downtown San Francisco">
+    <div class="wrap">
+      <p class="sf-kicker">BLP 2027 · NAACL 2027</p>
+      <h2>See you in San Francisco</h2>
+      <p>Teams present their systems at the Third Workshop on Bangla Language Processing, co-located with NAACL 2027 in June.</p>
+    </div>
+  </section>
+
+  <!-- Participate -->
+  <section class="section section-tint" id="participate">
+    <div class="wrap">
+      <p class="kicker">Participate</p>
+      <h2>How to take part</h2>
+      <p class="section-lead">Registration, the task repository, and the submission platform will be announced soon. Check back on this page for updates.</p>
+      <div class="steps">
+        <div class="step"><span class="step-n">1</span><h3>Register</h3><p>Sign up your team on the submission platform.</p><span class="soon">Details soon</span></div>
+        <div class="step"><span class="step-n">2</span><h3>Build</h3><p>Train your classifier on the training data and tune it on the dev set.</p><span class="soon">Details soon</span></div>
+        <div class="step"><span class="step-n">3</span><h3>Submit</h3><p>Send predictions on the blind test set during the test phase.</p><span class="soon">Details soon</span></div>
+        <div class="step"><span class="step-n">4</span><h3>Write it up</h3><p>Describe your system in a paper of up to 4 pages for the BLP workshop.</p><a class="soon soon-link" href="https://blp-workshop.github.io/cfp" target="_blank" rel="noopener">See the CFP ↗</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Organizers -->
+  <section class="section" id="organizers">
+    <div class="wrap">
+      <p class="kicker">Organizers</p>
+      <h2>Who runs the task</h2>
+      <div class="people">
+        <div class="person">
+          <span class="initials" aria-hidden="true">NR</span>
+          <div>
+            <h3><a href="https://md-nishat.com/" target="_blank" rel="noopener">Nishat Raihan</a></h3>
+            <p>University of Notre Dame, USA</p>
+          </div>
+        </div>
+        <div class="person person-tba">
+          <span class="initials" aria-hidden="true">+</span>
+          <div>
+            <h3>More organizers</h3>
+            <p>To be announced</p>
+          </div>
+        </div>
+      </div>
+      <div class="contact">
+        <h3>Questions?</h3>
+        <p>Email <a href="mailto:mraihan@nd.edu">mraihan@nd.edu</a>, or see the <a href="https://blp-workshop.github.io/contact" target="_blank" rel="noopener">BLP workshop contact page</a>.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="assets/img/logo.svg" alt="" width="40" height="40">
+        <p><strong>BanglaKnight</strong> is Shared Task 1 of the <a href="https://blp-workshop.github.io/" target="_blank" rel="noopener">Third Workshop on Bangla Language Processing (BLP 2027)</a>, co-located with NAACL 2027 in San Francisco.</p>
+      </div>
+      <p class="footer-also">Also at BLP 2027: <a href="https://multilingual-qa.github.io/" target="_blank" rel="noopener">Task 2: Multilingual Cultural Question Answering ↗</a></p>
+    </div>
+    <p class="credits">Photos from Wikimedia Commons:
+      <a href="https://commons.wikimedia.org/wiki/File:Golden_Gate_Bridge_as_seen_from_Battery_East.jpg" target="_blank" rel="noopener">Golden Gate Bridge</a> by Frank Schulenburg (CC BY-SA 4.0);
+      <a href="https://commons.wikimedia.org/wiki/File:Painted_Ladies_San_Francisco_January_2013_panorama_2.jpg" target="_blank" rel="noopener">Painted Ladies</a> by King of Hearts (CC BY-SA 3.0);
+      <a href="https://commons.wikimedia.org/wiki/File:San_Francisco_skyline_from_Coit_Tower.jpg" target="_blank" rel="noopener">San Francisco skyline</a> by Supercarwaar (CC BY-SA 4.0). Resized and tinted.</p>
+  </div>
+</footer>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
