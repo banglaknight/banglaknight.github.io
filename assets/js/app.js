@@ -1,4 +1,4 @@
-// BanglaKnight site: mobile menu, date status and countdown, Data-page example.
+// BanglaKnight site: mobile menu, home-page date card and countdown, Data-page example.
 
 (function () {
   // Mobile menu.
@@ -49,14 +49,6 @@
       : "<strong>" + days + " days</strong> until " + what;
     countdown.hidden = false;
   }
-
-  // Dates page table.
-  markDates(".dates-table tbody tr", function (tr) {
-    tr.querySelector(".dt-status").innerHTML = '<span class="next-badge">Next</span>';
-  });
-  document.querySelectorAll(".dates-table tr.is-past .dt-status").forEach(function (td) {
-    td.innerHTML = '<span class="done-badge">Done</span>';
-  });
 
   // Data page: the same request in three written forms.
   var bubble = document.getElementById("demo-text");

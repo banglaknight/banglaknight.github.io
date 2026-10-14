@@ -5,7 +5,7 @@ header, menu and footer, fills in the dates, and writes the finished pages:
 src/home.html -> index.html, src/data.html -> data/index.html, and so on.
 
 Run after any edit:  python3 build.py
-Change a date:       edit DATES below, then run the script.
+Change a date:       edit DATES below, then run the script (it fills the home-page card).
 """
 
 from html import escape
@@ -26,19 +26,35 @@ DATES = [
     ("2027-04-16", "Apr 16, 2027", "Camera-ready paper due"),
     ("2027-06-01", "Jun 1–5, 2027", "Workshop at NAACL 2027, San Francisco"),
 ]
-DEADLINE_NOTE = "All deadlines are 11:59 PM Anywhere on Earth (AoE). Dates may change."
 
-# slug, menu label, page title, one-line description, header photo
+# slug, menu label, page title, one-line description, header photo, icon
 PAGES = [
-    ("home", "Home", "BanglaKnight", "Shared Task 1 at BLP 2027: classify Bangla prompts into four risk levels.", "sf-golden-gate.jpg"),
-    ("task", "Task", "Task", "What your system has to do.", "sf-golden-gate.jpg"),
-    ("data", "Data", "Data", "What you get, the three written forms, and the starter kit.", "sf-skyline.jpg"),
-    ("leaderboard", "Leaderboard", "Leaderboard", "Metrics and official results.", "sf-painted-ladies.jpg"),
-    ("dates", "Dates", "Important Dates", "Every deadline in one place.", "sf-golden-gate.jpg"),
-    ("participate", "Participate", "Participate", "From registration on CodaBench to your final submission.", "sf-skyline.jpg"),
-    ("paper", "Paper Submission", "Paper Submission", "How to write and submit your system description paper.", "sf-painted-ladies.jpg"),
-    ("organizers", "Organizers", "Organizers", "Who runs the task and how to reach us.", "sf-skyline.jpg"),
+    ("home", "Home", "BanglaKnight", "Shared Task 1 at BLP 2027: classify Bangla prompts into four risk levels.", "sf-golden-gate.jpg", None),
+    ("data", "Data", "Data", "What you get, the three written forms, and the starter kit.", "sf-skyline.jpg", "data"),
+    ("leaderboard", "Leaderboard", "Leaderboard", "Metrics and official results.", "sf-painted-ladies.jpg", "trophy"),
+    ("participate", "Participate", "Participate", "From registration on CodaBench to your final submission.", "sf-golden-gate.jpg", "flag"),
+    ("paper", "Paper Submission", "Paper Submission", "How to write and submit your system description paper.", "sf-painted-ladies.jpg", "paper"),
+    ("organizers", "Organizers", "Organizers", "Who runs the task and how to reach us.", "sf-skyline.jpg", None),
 ]
+
+# Old addresses that now point elsewhere: path -> target
+REDIRECTS = {"task": "/#task", "dates": "/"}
+
+# Line icons (24x24, drawn with the current text color)
+ICONS = {
+    "data": '<ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/>',
+    "trophy": '<path d="M8 21h8"/><path d="M12 16v5"/><path d="M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3v2a3 3 0 0 1-3 3"/><path d="M7 5H4v2a3 3 0 0 0 3 3"/>',
+    "flag": '<path d="M5 21V4"/><path d="M5 4h13l-2.5 4.5L18 13H5"/>',
+    "paper": '<path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6"/><path d="M9 17h6"/>',
+}
+
+
+def icon(name, cls="ico"):
+    if not name:
+        return ""
+    return (f'<svg class="{cls}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" '
+            f'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{ICONS[name]}</svg>')
+
 
 
 def url(slug):
@@ -61,25 +77,11 @@ def dates_card():
 </aside>"""
 
 
-def dates_table():
-    rows = "\n".join(
-        f'    <tr data-date="{iso}"><td>{escape(title)}</td><td class="dt-date">{label}</td><td class="dt-status"></td></tr>'
-        for iso, label, title in DATES
-    )
-    return f"""<table class="dates-table">
-  <thead><tr><th>Milestone</th><th>Date</th><th><span class="sr-only">Status</span></th></tr></thead>
-  <tbody>
-{rows}
-  </tbody>
-</table>
-<p class="note-small">{DEADLINE_NOTE}</p>"""
-
-
 def nav(active):
     current = ' class="active" aria-current="page"'
     links = "\n".join(
-        f'      <a href="{url(s)}"{current if s == active else ""}>{label}</a>'
-        for s, label, *_ in PAGES if s != "home"
+        f'      <a href="{url(s)}"{current if s == active else ""}>{icon(ico)}{label}</a>'
+        for s, label, _t, _d, _p, ico in PAGES if s != "home"
     )
     return f"""<header class="nav">
   <div class="wrap nav-inner">
@@ -98,11 +100,11 @@ def nav(active):
 </header>"""
 
 
-def page_header(slug, title, desc, photo):
+def page_header(slug, title, desc, photo, ico):
     return f"""<section class="page-head" style="--photo: url('/assets/img/{photo}')">
   <div class="wrap">
     <p class="crumbs"><a href="/">BanglaKnight</a> <span aria-hidden="true">/</span> {escape(title)}</p>
-    <h1>{escape(title)}</h1>
+    <h1>{icon(ico, "ico ico-h1")}{escape(title)}</h1>
     <p class="page-desc">{escape(desc)}</p>
   </div>
 </section>"""
@@ -138,11 +140,11 @@ FOOTER = """<footer class="footer">
 
 
 def render(i):
-    slug, label, title, desc, photo = PAGES[i]
+    slug, label, title, desc, photo, ico = PAGES[i]
     body = (ROOT / "src" / f"{slug}.html").read_text(encoding="utf-8")
-    body = body.replace("{{DATES_CARD}}", dates_card()).replace("{{DATES_TABLE}}", dates_table())
+    body = body.replace("{{DATES_CARD}}", dates_card())
     full_title = "BanglaKnight · BLP-2027 Task 1: Adversarial Prompt Classification" if slug == "home" else f"{title} · BanglaKnight (BLP-2027 Task 1)"
-    head_html = "" if slug == "home" else page_header(slug, title, desc, photo)
+    head_html = "" if slug == "home" else page_header(slug, title, desc, photo, ico)
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -181,6 +183,15 @@ def main():
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(render(i), encoding="utf-8")
         print("wrote", out.relative_to(ROOT))
+    for path, target in REDIRECTS.items():
+        out = ROOT / path / "index.html"
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(
+            f'<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">'
+            f'<meta http-equiv="refresh" content="0; url={target}"><link rel="canonical" href="{target}">'
+            f'<title>Moved</title></head><body><p>This page moved: <a href="{target}">{target}</a></p></body></html>\n',
+            encoding="utf-8")
+        print("redirect", path, "->", target)
 
 
 if __name__ == "__main__":

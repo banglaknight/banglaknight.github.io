@@ -12,7 +12,7 @@
         <li>Submissions on CodaBench</li>
       </ul>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="/task/">Read the task <span aria-hidden="true">→</span></a>
+        <a class="btn btn-primary" href="#task">Read the task <span aria-hidden="true">↓</span></a>
         <a class="btn btn-ghost" href="/participate/">How to participate</a>
       </div>
     </div>
@@ -20,15 +20,63 @@
   </div>
 </section>
 
+<section class="section" id="task">
+  <div class="wrap narrow">
+    <p class="kicker">The task</p>
+    <h2>Label each Bangla prompt with one of four risk levels</h2>
+
+    <div class="io">
+      <div class="io-box"><span class="io-tag">Input</span><p>One Bangla prompt, written in Bangla script, romanized Bangla, or code-mixed text.</p></div>
+      <span class="io-arrow" aria-hidden="true">→</span>
+      <div class="io-box"><span class="io-tag">Output</span><p>One label: 0 Safe, 1 Offensive, 2 Harmful, or 3 Severe.</p></div>
+    </div>
+
+    <h3 class="sub-h">Background</h3>
+    <p>Before an LLM answers a request, a safety classifier often checks whether the request is safe to answer. Most of these classifiers are trained on English. Bangla is often typed in Latin letters or mixed with English, Hindi, or Urdu, and a harmful request can get past a filter when it is spelled differently.</p>
+  </div>
+</section>
+
+<section class="section section-tint" id="labels">
+  <div class="wrap">
+    <h2>The four labels</h2>
+    <div class="levels">
+      <article class="level level-safe">
+        <span class="level-id">0</span>
+        <h3>Safe</h3>
+        <p>No harmful request.</p>
+        <p class="level-cat">Neutral, positive, or harmless requests</p>
+      </article>
+      <article class="level level-off">
+        <span class="level-id">1</span>
+        <h3>Offensive</h3>
+        <p>Insulting, provocative, or discriminatory language, but no request for harmful help.</p>
+        <p class="level-cat">Offensive language, hate speech, anger</p>
+      </article>
+      <article class="level level-harm">
+        <span class="level-id">2</span>
+        <h3>Harmful</h3>
+        <p>Asks for help with something of lower or medium risk.</p>
+        <p class="level-cat">Misinformation, adversarial and malicious requests</p>
+      </article>
+      <article class="level level-sev">
+        <span class="level-id">3</span>
+        <h3>Severe</h3>
+        <p>Asks for help with something high-risk that could cause serious harm.</p>
+        <p class="level-cat">Suicide, jailbreak attempts</p>
+      </article>
+    </div>
+    <p class="note-small">Every prompt comes in three written forms with the same label. See <a href="/data/">Data</a> for an example.</p>
+  </div>
+</section>
+
 <section class="section">
   <div class="wrap">
-    <p class="kicker">Start here</p>
-    <h2>Four steps</h2>
-    <div class="steps">
-      <a class="step step-link" href="/task/"><span class="step-n">1</span><h3>Read the task</h3><p>Four risk levels, three ways of writing Bangla.</p><span class="go">Task →</span></a>
-      <a class="step step-link" href="/data/"><span class="step-n">2</span><h3>Get the data</h3><p>Training and dev sets plus a starter kit, released Oct 20, 2026.</p><span class="go">Data →</span></a>
-      <a class="step step-link" href="/participate/"><span class="step-n">3</span><h3>Submit on CodaBench</h3><p>Register, build your system, and submit test predictions by Jan 31, 2027.</p><span class="go">Participate →</span></a>
-      <a class="step step-link" href="/paper/"><span class="step-n">4</span><h3>Write your paper</h3><p>Describe your system in up to 4 pages, due Feb 15, 2027.</p><span class="go">Paper Submission →</span></a>
+    <p class="kicker">Next steps</p>
+    <h2>How to take part</h2>
+    <div class="steps steps-3">
+      <a class="step step-link" href="/data/"><span class="step-n">1</span><h3>Get the data</h3><p>Training and dev sets plus a starter kit, released Oct 20, 2026.</p><span class="go">Data →</span></a>
+      <a class="step step-link" href="/participate/"><span class="step-n">2</span><h3>Submit on CodaBench</h3><p>Register, build your system, and submit test predictions by Jan 31, 2027.</p><span class="go">Participate →</span></a>
+      <a class="step step-link" href="/paper/"><span class="step-n">3</span><h3>Write your paper</h3><p>Describe your system in up to 4 pages, due Feb 15, 2027.</p><span class="go">Paper Submission →</span></a>
     </div>
   </div>
 </section>
