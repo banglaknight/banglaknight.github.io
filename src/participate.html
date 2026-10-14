@@ -2,9 +2,12 @@
   <div class="wrap narrow">
     <div class="callout">
       <img src="/assets/img/logo.svg" alt="" width="40" height="40">
-      <p>The task runs on <strong>CodaBench</strong>. Registration opens on <strong>October 20, 2026</strong>; the competition link will be posted here that day.</p>
+      <p>The task runs on <strong>CodaBench</strong> in two phases. Registration opens on <strong>October 20, 2026</strong>; the competition link will be posted here that day.</p>
     </div>
 
+    {{PHASES}}
+
+    <p class="phase-group">Development phase · Oct 20, 2026 – Jan 15, 2027</p>
     <ol class="howto">
       <li>
         <span class="h-n">1</span>
@@ -26,38 +29,46 @@
         <span class="h-n">3</span>
         <div>
           <h3>Build your system</h3>
-          <p>Start from the starter notebook, train on the train set, and check your scores on the dev set.</p>
-          <p class="when">Oct 20, 2026 – Jan 14, 2027</p>
+          <p>Start from the starter notebook and train on the train set.</p>
         </div>
       </li>
       <li>
         <span class="h-n">4</span>
         <div>
-          <h3>Predict the test set</h3>
-          <p>Download the test set (no labels) and run your system on it.</p>
-          <p class="when">Test data released Jan 15, 2027</p>
+          <h3>Practice on CodaBench</h3>
+          <p>Predict the dev set, turn the predictions into a submission file with the prepare_submission_file notebook, and submit it. You see your dev score and know your file format works.</p>
+          <p class="when">Until Jan 15, 2027</p>
         </div>
       </li>
+    </ol>
+
+    <p class="phase-group">Evaluation phase · Jan 15 – Jan 31, 2027</p>
+    <ol class="howto" start="5">
       <li>
         <span class="h-n">5</span>
         <div>
-          <h3>Make your submission file</h3>
-          <p>Run the prepare_submission_file notebook on your predictions. It writes the file in the format CodaBench expects.</p>
+          <h3>Get the test set</h3>
+          <p>New prompts you have not seen, without labels. Run your final system on them.</p>
+          <p class="when">Released Jan 15, 2027</p>
         </div>
       </li>
       <li>
         <span class="h-n">6</span>
         <div>
-          <h3>Submit on CodaBench</h3>
-          <p>Upload the file on the CodaBench competition page.</p>
+          <h3>Submit your final predictions</h3>
+          <p>Make the submission file with the prepare_submission_file notebook and upload it on CodaBench. This is the submission that is ranked.</p>
           <p class="when">Deadline Jan 31, 2027, 11:59 PM AoE</p>
         </div>
       </li>
+    </ol>
+
+    <p class="phase-group">After the competition</p>
+    <ol class="howto" start="7">
       <li>
         <span class="h-n">7</span>
         <div>
-          <h3>Write your paper</h3>
-          <p>Results come out on Feb 3, 2027. Then describe your system in a paper. <a href="/paper/">Paper Submission</a></p>
+          <h3>See the results and write your paper</h3>
+          <p>The official ranking comes out on Feb 3, 2027. Then describe your system in a paper. <a href="/paper/">Paper Submission</a></p>
           <p class="when">Paper due Feb 15, 2027</p>
         </div>
       </li>

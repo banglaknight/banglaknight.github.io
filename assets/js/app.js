@@ -37,14 +37,18 @@
 
   // Home page card.
   var nextTitles = [];
-  var cardNext = markDates(".dc-list li", function (li) {
+  var cardNext = markDates(".dc-list li[data-date]", function (li) {
     nextTitles.push(li.querySelector(".dc-title").textContent);
   });
   var countdown = document.querySelector(".dc-countdown");
   if (countdown && cardNext) {
-    var days = Math.ceil((endOfDayAoE(cardNext) - now) / 86400000);
-    var what = nextTitles.map(function (t) { return t.charAt(0).toLowerCase() + t.slice(1); }).join(" and ");
-    countdown.innerHTML = days <= 1
+    // Count to the start of that day (AoE).
+    var days = Math.ceil((endOfDayAoE(cardNext) - 86399000 - now) / 86400000);
+    // Lowercase the first letter ("Training..." -> "training...") but keep names such as CodaBench.
+    var what = nextTitles.map(function (t) {
+      return /^[A-Z][a-z]+[A-Z]/.test(t) ? t : t.charAt(0).toLowerCase() + t.slice(1);
+    }).join(" and ");
+    countdown.innerHTML = days <= 0
       ? "<strong>Today</strong> " + what
       : "<strong>" + days + " days</strong> until " + what;
     countdown.hidden = false;

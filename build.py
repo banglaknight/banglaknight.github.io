@@ -13,26 +13,58 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 
-# (ISO date used for the countdown, label shown, milestone)
+# (ISO date used for the countdown, label shown, milestone, phase)
 DATES = [
-    ("2026-10-20", "Oct 20, 2026", "Training and development data release"),
-    ("2026-10-20", "Oct 20, 2026", "CodaBench registration opens"),
-    ("2027-01-15", "Jan 15, 2027", "Test data release / evaluation begins"),
-    ("2027-01-24", "Jan 24, 2027", "Registration deadline"),
-    ("2027-01-31", "Jan 31, 2027", "System submission deadline"),
-    ("2027-02-03", "Feb 3, 2027", "Official results released"),
-    ("2027-02-15", "Feb 15, 2027", "Shared-task paper submission deadline"),
-    ("2027-03-26", "Mar 26, 2027", "Notification of acceptance"),
-    ("2027-04-16", "Apr 16, 2027", "Camera-ready paper due"),
-    ("2027-06-01", "Jun 1–5, 2027", "Workshop at NAACL 2027, San Francisco"),
+    ("2026-10-20", "Oct 20, 2026", "Training and development data release", "dev"),
+    ("2026-10-20", "Oct 20, 2026", "CodaBench registration opens", "dev"),
+    ("2027-01-15", "Jan 15, 2027", "Test data release / evaluation begins", "eval"),
+    ("2027-01-24", "Jan 24, 2027", "Registration deadline", "eval"),
+    ("2027-01-31", "Jan 31, 2027", "System submission deadline", "eval"),
+    ("2027-02-03", "Feb 3, 2027", "Official results released", "after"),
+    ("2027-02-15", "Feb 15, 2027", "Shared-task paper submission deadline", "after"),
+    ("2027-03-26", "Mar 26, 2027", "Notification of acceptance", "after"),
+    ("2027-04-16", "Apr 16, 2027", "Camera-ready paper due", "after"),
+    ("2027-06-01", "Jun 1–5, 2027", "Workshop at NAACL 2027, San Francisco", "after"),
 ]
+
+# Group headings in the dates card
+PHASE_NAMES = {
+    "dev": "Development phase · Oct 20 – Jan 15",
+    "eval": "Evaluation phase · Jan 15 – Jan 31",
+    "after": "Results and papers",
+}
+
+# The two competition phases, shown on Home, Participate and Leaderboard ({{PHASES}})
+PHASES_BLOCK = """<div class="phases">
+  <article class="phase phase-dev">
+    <p class="phase-tag">Phase 1</p>
+    <h3>Development phase</h3>
+    <p class="phase-when">Oct 20, 2026 – Jan 15, 2027</p>
+    <dl>
+      <dt>Data</dt><dd>Training and dev sets, plus the starter kit</dd>
+      <dt>You</dt><dd>Build and tune your system</dd>
+      <dt>CodaBench</dt><dd>Submit predictions on the dev set to see your score and check your file format. Practice only: it does not count toward the final ranking.</dd>
+    </dl>
+  </article>
+  <article class="phase phase-eval">
+    <p class="phase-tag">Phase 2 · Final</p>
+    <h3>Evaluation phase</h3>
+    <p class="phase-when">Jan 15 – Jan 31, 2027</p>
+    <dl>
+      <dt>Data</dt><dd>A new test set, released Jan 15, without labels</dd>
+      <dt>You</dt><dd>Run your final system on it</dd>
+      <dt>CodaBench</dt><dd>Submit your test predictions by Jan 31. These decide the official ranking, published Feb 3.</dd>
+    </dl>
+  </article>
+</div>"""
+
 
 # slug, menu label, page title, one-line description, header photo, icon
 PAGES = [
     ("home", "Home", "BanglaKnight", "Shared Task 1 at BLP 2027: classify Bangla prompts into four risk levels.", "sf-golden-gate.jpg", None),
     ("data", "Data", "Data", "What you get, the three written forms, and the starter kit.", "sf-skyline.jpg", "data"),
-    ("leaderboard", "Leaderboard", "Leaderboard", "Metrics and official results.", "sf-painted-ladies.jpg", "trophy"),
-    ("participate", "Participate", "Participate", "From registration on CodaBench to your final submission.", "sf-golden-gate.jpg", "flag"),
+    ("leaderboard", "Leaderboard", "Leaderboard", "Metrics, development-phase scores, and official results.", "sf-painted-ladies.jpg", "trophy"),
+    ("participate", "Participate", "Participate", "Two phases on CodaBench: practice on the dev set, then submit on the test set.", "sf-golden-gate.jpg", "flag"),
     ("paper", "Paper Submission", "Paper Submission", "How to write and submit your system description paper.", "sf-painted-ladies.jpg", "paper"),
     ("organizers", "Organizers", "Organizers", "Who runs the task and how to reach us.", "sf-skyline.jpg", None),
 ]
@@ -62,11 +94,14 @@ def url(slug):
 
 
 def dates_card():
-    items = "\n".join(
-        f'      <li data-date="{iso}"><span class="dc-date">{label}</span>'
-        f'<span class="dc-title">{escape(title)}</span></li>'
-        for iso, label, title in DATES
-    )
+    rows, last_phase = [], None
+    for iso, label, title, phase in DATES:
+        if phase != last_phase:
+            rows.append(f'      <li class="dc-phase dc-phase-{phase}">{escape(PHASE_NAMES[phase])}</li>')
+            last_phase = phase
+        rows.append(f'      <li data-date="{iso}"><span class="dc-date">{label}</span>'
+                    f'<span class="dc-title">{escape(title)}</span></li>')
+    items = "\n".join(rows)
     return f"""<aside class="dates-card" aria-label="Important dates">
   <div class="dc-head"><h2>Important Dates</h2><span class="dc-tag">AoE</span></div>
   <ol class="dc-list">
@@ -142,7 +177,7 @@ FOOTER = """<footer class="footer">
 def render(i):
     slug, label, title, desc, photo, ico = PAGES[i]
     body = (ROOT / "src" / f"{slug}.html").read_text(encoding="utf-8")
-    body = body.replace("{{DATES_CARD}}", dates_card())
+    body = body.replace("{{DATES_CARD}}", dates_card()).replace("{{PHASES}}", PHASES_BLOCK)
     full_title = "BanglaKnight · BLP-2027 Task 1: Adversarial Prompt Classification" if slug == "home" else f"{title} · BanglaKnight (BLP-2027 Task 1)"
     head_html = "" if slug == "home" else page_header(slug, title, desc, photo, ico)
     return f"""<!DOCTYPE html>

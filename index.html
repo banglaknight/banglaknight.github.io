@@ -57,11 +57,14 @@
     <aside class="dates-card" aria-label="Important dates">
   <div class="dc-head"><h2>Important Dates</h2><span class="dc-tag">AoE</span></div>
   <ol class="dc-list">
+      <li class="dc-phase dc-phase-dev">Development phase · Oct 20 – Jan 15</li>
       <li data-date="2026-10-20"><span class="dc-date">Oct 20, 2026</span><span class="dc-title">Training and development data release</span></li>
       <li data-date="2026-10-20"><span class="dc-date">Oct 20, 2026</span><span class="dc-title">CodaBench registration opens</span></li>
+      <li class="dc-phase dc-phase-eval">Evaluation phase · Jan 15 – Jan 31</li>
       <li data-date="2027-01-15"><span class="dc-date">Jan 15, 2027</span><span class="dc-title">Test data release / evaluation begins</span></li>
       <li data-date="2027-01-24"><span class="dc-date">Jan 24, 2027</span><span class="dc-title">Registration deadline</span></li>
       <li data-date="2027-01-31"><span class="dc-date">Jan 31, 2027</span><span class="dc-title">System submission deadline</span></li>
+      <li class="dc-phase dc-phase-after">Results and papers</li>
       <li data-date="2027-02-03"><span class="dc-date">Feb 3, 2027</span><span class="dc-title">Official results released</span></li>
       <li data-date="2027-02-15"><span class="dc-date">Feb 15, 2027</span><span class="dc-title">Shared-task paper submission deadline</span></li>
       <li data-date="2027-03-26"><span class="dc-date">Mar 26, 2027</span><span class="dc-title">Notification of acceptance</span></li>
@@ -123,13 +126,42 @@
   </div>
 </section>
 
-<section class="section">
+<section class="section" id="phases">
+  <div class="wrap">
+    <p class="kicker">Two phases, both on CodaBench</p>
+    <h2>Development, then evaluation</h2>
+    <div class="phases">
+  <article class="phase phase-dev">
+    <p class="phase-tag">Phase 1</p>
+    <h3>Development phase</h3>
+    <p class="phase-when">Oct 20, 2026 – Jan 15, 2027</p>
+    <dl>
+      <dt>Data</dt><dd>Training and dev sets, plus the starter kit</dd>
+      <dt>You</dt><dd>Build and tune your system</dd>
+      <dt>CodaBench</dt><dd>Submit predictions on the dev set to see your score and check your file format. Practice only: it does not count toward the final ranking.</dd>
+    </dl>
+  </article>
+  <article class="phase phase-eval">
+    <p class="phase-tag">Phase 2 · Final</p>
+    <h3>Evaluation phase</h3>
+    <p class="phase-when">Jan 15 – Jan 31, 2027</p>
+    <dl>
+      <dt>Data</dt><dd>A new test set, released Jan 15, without labels</dd>
+      <dt>You</dt><dd>Run your final system on it</dd>
+      <dt>CodaBench</dt><dd>Submit your test predictions by Jan 31. These decide the official ranking, published Feb 3.</dd>
+    </dl>
+  </article>
+</div>
+  </div>
+</section>
+
+<section class="section section-tint">
   <div class="wrap">
     <p class="kicker">Next steps</p>
     <h2>How to take part</h2>
     <div class="steps steps-3">
       <a class="step step-link" href="/data/"><span class="step-n">1</span><h3>Get the data</h3><p>Training and dev sets plus a starter kit, released Oct 20, 2026.</p><span class="go">Data →</span></a>
-      <a class="step step-link" href="/participate/"><span class="step-n">2</span><h3>Submit on CodaBench</h3><p>Register, build your system, and submit test predictions by Jan 31, 2027.</p><span class="go">Participate →</span></a>
+      <a class="step step-link" href="/participate/"><span class="step-n">2</span><h3>Submit on CodaBench</h3><p>Practice on the dev set until Jan 15, then submit test predictions by Jan 31, 2027.</p><span class="go">Participate →</span></a>
       <a class="step step-link" href="/paper/"><span class="step-n">3</span><h3>Write your paper</h3><p>Describe your system in up to 4 pages, due Feb 15, 2027.</p><span class="go">Paper Submission →</span></a>
     </div>
   </div>
