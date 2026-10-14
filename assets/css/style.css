@@ -440,14 +440,18 @@ p { margin: 0 0 1rem; }
 @media (max-width: 980px) { .steps-3 { grid-template-columns: 1fr; } }
 .narrow .kicker + h2 { margin-top: 0; }
 
-/* Phase headings inside the dates card */
-.dc-list li.dc-phase {
-  padding: 10px 0 2px; margin-left: -22px; font-size: .7rem; font-weight: 700; letter-spacing: .06em;
-  text-transform: uppercase; color: var(--primary-deep); background: rgba(255, 255, 255, .96); position: relative; z-index: 1;
-}
-.dc-list li.dc-phase:first-child { padding-top: 0; }
-.dc-list li.dc-phase::before { display: none; }
-.dc-list li.dc-phase-after { color: var(--muted); }
+/* Phase blocks inside the dates card */
+.dc-group { border-radius: 12px; padding: 9px 10px 4px 10px; margin-bottom: 8px; border: 1px solid transparent; }
+.dc-group-dev { background: #FFF0F0; border-color: #F6C3C6; }
+.dc-group-eval { background: #FFE2E3; border-color: #EC9BA0; }
+.dc-group-after { background: transparent; border: 1px dashed var(--line); }
+.dc-phase-head { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin: 0 0 6px; font-family: var(--font-body); }
+.dc-pill { font-size: .74rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: #fff; background: var(--primary); border-radius: 999px; padding: 3px 11px; }
+.dc-group-eval .dc-pill { background: var(--primary-deep); }
+.dc-group-after .dc-pill { background: var(--bg-tint); color: var(--muted); }
+.dc-span { font-size: .85rem; font-weight: 700; color: var(--primary-deep); white-space: nowrap; }
+.dc-group .dc-list::before { background: rgba(224, 71, 79, .25); }
+.dc-group-after .dc-list::before { background: var(--line); }
 
 /* Development vs evaluation phase cards */
 .phases { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 8px; }

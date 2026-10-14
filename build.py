@@ -29,9 +29,9 @@ DATES = [
 
 # Group headings in the dates card
 PHASE_NAMES = {
-    "dev": "Development phase · Oct 20 – Jan 15",
-    "eval": "Evaluation phase · Jan 15 – Jan 31",
-    "after": "Results and papers",
+    "dev": ("Development phase", "Oct 20 – Jan 15"),
+    "eval": ("Evaluation phase", "Jan 15 – Jan 31"),
+    "after": ("Results and papers", ""),
 }
 
 # The two competition phases, shown on Home, Participate and Leaderboard ({{PHASES}})
@@ -94,19 +94,25 @@ def url(slug):
 
 
 def dates_card():
-    rows, last_phase = [], None
-    for iso, label, title, phase in DATES:
-        if phase != last_phase:
-            rows.append(f'      <li class="dc-phase dc-phase-{phase}">{escape(PHASE_NAMES[phase])}</li>')
-            last_phase = phase
-        rows.append(f'      <li data-date="{iso}"><span class="dc-date">{label}</span>'
-                    f'<span class="dc-title">{escape(title)}</span></li>')
-    items = "\n".join(rows)
+    groups = []
+    for phase in dict.fromkeys(p for *_, p in DATES):
+        name, span = PHASE_NAMES[phase]
+        items = "\n".join(
+            f'        <li data-date="{iso}"><span class="dc-date">{label}</span>'
+            f'<span class="dc-title">{escape(title)}</span></li>'
+            for iso, label, title, p in DATES if p == phase
+        )
+        span_html = f'<span class="dc-span">{span}</span>' if span else ""
+        groups.append(f"""    <section class="dc-group dc-group-{phase}">
+      <h3 class="dc-phase-head"><span class="dc-pill">{name}</span>{span_html}</h3>
+      <ol class="dc-list">
+{items}
+      </ol>
+    </section>""")
+    body = "\n".join(groups)
     return f"""<aside class="dates-card" aria-label="Important dates">
   <div class="dc-head"><h2>Important Dates</h2><span class="dc-tag">AoE</span></div>
-  <ol class="dc-list">
-{items}
-  </ol>
+{body}
   <p class="dc-countdown" hidden></p>
   <p class="dc-note">Dates may change. Deadlines are 11:59 PM AoE.</p>
 </aside>"""

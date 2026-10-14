@@ -37,7 +37,7 @@
 
   // Home page card.
   var nextTitles = [];
-  var cardNext = markDates(".dc-list li[data-date]", function (li) {
+  var cardNext = markDates(".dates-card li[data-date]", function (li) {
     nextTitles.push(li.querySelector(".dc-title").textContent);
   });
   var countdown = document.querySelector(".dc-countdown");
