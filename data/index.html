@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Data · BanglaKnight (BLP-2027 Task 1)</title>
+  <meta name="description" content="What you get, the three written forms, and the starter kit.">
+  <meta name="theme-color" content="#E0474F">
+  <link rel="icon" type="image/svg+xml" href="/assets/img/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500;600;700;800&family=Hind+Siliguri:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body class="page-data">
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="/" aria-label="BanglaKnight home">
+      <img src="/assets/img/logo.svg" alt="" width="38" height="38">
+      <span class="brand-text"><span class="brand-name">Bangla<span>Knight</span></span><span class="brand-sub">BLP-2027 Task 1</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="nav-links" class="nav-links">
+      <a href="/task/">Task</a>
+      <a href="/data/" class="active" aria-current="page">Data</a>
+      <a href="/leaderboard/">Leaderboard</a>
+      <a href="/dates/">Dates</a>
+      <a href="/participate/">Participate</a>
+      <a href="/paper/">Paper Submission</a>
+      <a href="/organizers/">Organizers</a>
+      <a class="nav-cta" href="https://blp-workshop.github.io/" target="_blank" rel="noopener">BLP 2027 ↗</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="page-head" style="--photo: url('/assets/img/sf-skyline.jpg')">
+  <div class="wrap">
+    <p class="crumbs"><a href="/">BanglaKnight</a> <span aria-hidden="true">/</span> Data</p>
+    <h1>Data</h1>
+    <p class="page-desc">What you get, the three written forms, and the starter kit.</p>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap">
+    <h2>What you get</h2>
+    <p class="section-lead">Each example is one Bangla prompt and its label (0–3). All three written forms of a prompt are in the same split, so a model never sees one form in training and another in testing.</p>
+    <table class="splits">
+      <thead><tr><th>Split</th><th>Labels included?</th><th>Released</th><th>Use it to</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Train</strong></td><td>Yes</td><td>Oct 20, 2026</td><td>Train your system</td></tr>
+        <tr><td><strong>Dev</strong></td><td>Yes</td><td>Oct 20, 2026</td><td>Tune and check your system</td></tr>
+        <tr><td><strong>Test</strong></td><td>No</td><td>Jan 15, 2027</td><td>Make the predictions you submit on CodaBench</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="section section-tint">
+  <div class="wrap forms-grid">
+    <div>
+      <h2>Three written forms</h2>
+      <p>Every prompt appears three times, once in each form, always with the same label:</p>
+      <ul class="plain">
+        <li><strong>Bangla script:</strong> written in Bangla letters.</li>
+        <li><strong>Romanized:</strong> Bangla typed in Latin letters.</li>
+        <li><strong>Code-mixed:</strong> Bangla mixed with English, Hindi, or Urdu.</li>
+      </ul>
+      <p>A good system gives the same label to all three. Click the tabs in the example to switch forms.</p>
+    </div>
+
+    <div class="demo" aria-label="Example: one request in three written forms">
+      <div class="demo-head">
+        <span class="demo-title">One request, three ways to write it</span>
+        <div class="demo-tabs" role="tablist">
+          <button role="tab" class="tab active" data-form="0" aria-selected="true">বাংলা</button>
+          <button role="tab" class="tab" data-form="1" aria-selected="false">Romanized</button>
+          <button role="tab" class="tab" data-form="2" aria-selected="false">Code-mixed</button>
+        </div>
+      </div>
+      <div class="bubble-row">
+        <div class="avatar" aria-hidden="true">U</div>
+        <p class="bubble" id="demo-text" lang="bn">আজ ঢাকায় আবহাওয়া কেমন থাকবে?</p>
+      </div>
+      <p class="demo-gloss">"What will the weather be like in Dhaka today?"</p>
+      <div class="verdict">
+        <div class="verdict-label">
+          <img src="/assets/img/logo.svg" alt="" width="28" height="28">
+          <span>Label</span>
+          <strong class="chip chip-safe">0 · Safe</strong>
+        </div>
+        <div class="meter" aria-hidden="true">
+          <span class="seg seg-safe on">Safe</span>
+          <span class="seg">Offensive</span>
+          <span class="seg">Harmful</span>
+          <span class="seg">Severe</span>
+        </div>
+      </div>
+      <p class="demo-foot">Same request, same label, in every form.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2>Starter kit <span class="badge">Released Oct 20, 2026</span></h2>
+    <p class="section-lead">Download it with the data. It gets you from zero to a valid CodaBench submission.</p>
+    <div class="kit">
+      <div class="kit-item">
+        <span class="kit-icon" aria-hidden="true">DATA</span>
+        <h3>Train and dev sets</h3>
+        <p>The labeled data for building and tuning your system.</p>
+      </div>
+      <div class="kit-item">
+        <span class="kit-icon" aria-hidden="true">.ipynb</span>
+        <h3>Starter notebook</h3>
+        <p>A Jupyter notebook (.ipynb) with a simple baseline that solves the task end to end. Start here and improve it.</p>
+      </div>
+      <div class="kit-item">
+        <span class="kit-icon" aria-hidden="true">.ipynb</span>
+        <h3>prepare_submission_file notebook</h3>
+        <p>Turns your predictions into the exact file format CodaBench accepts.</p>
+      </div>
+    </div>
+    <p class="note-small">Download links will appear here on October 20, 2026.</p>
+  </div>
+</section>
+
+<nav class="pager wrap" aria-label="Page navigation"><a class="pg-prev" href="/task/"><span>Previous</span>Task</a><a class="pg-next" href="/leaderboard/"><span>Next</span>Leaderboard</a></nav>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="/assets/img/logo.svg" alt="" width="40" height="40">
+        <p><strong>BanglaKnight</strong> is Shared Task 1 of the <a href="https://blp-workshop.github.io/" target="_blank" rel="noopener">Third Workshop on Bangla Language Processing (BLP 2027)</a>, co-located with NAACL 2027 in San Francisco.</p>
+      </div>
+      <p class="footer-also">Also at BLP 2027: <a href="https://multilingual-qa.github.io/" target="_blank" rel="noopener">Task 2: Multilingual Cultural Question Answering ↗</a></p>
+    </div>
+    <p class="credits">Photos from Wikimedia Commons:
+      <a href="https://commons.wikimedia.org/wiki/File:Golden_Gate_Bridge_as_seen_from_Battery_East.jpg" target="_blank" rel="noopener">Golden Gate Bridge</a> by Frank Schulenburg (CC BY-SA 4.0);
+      <a href="https://commons.wikimedia.org/wiki/File:Painted_Ladies_San_Francisco_January_2013_panorama_2.jpg" target="_blank" rel="noopener">Painted Ladies</a> by King of Hearts (CC BY-SA 3.0);
+      <a href="https://commons.wikimedia.org/wiki/File:San_Francisco_skyline_from_Coit_Tower.jpg" target="_blank" rel="noopener">San Francisco skyline</a> by Supercarwaar (CC BY-SA 4.0). Resized and tinted.</p>
+  </div>
+</footer>
+
+<script src="/assets/js/app.js"></script>
+</body>
+</html>

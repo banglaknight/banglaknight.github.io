@@ -1,0 +1,84 @@
+<section class="section">
+  <div class="wrap">
+    <h2>What you get</h2>
+    <p class="section-lead">Each example is one Bangla prompt and its label (0–3). All three written forms of a prompt are in the same split, so a model never sees one form in training and another in testing.</p>
+    <table class="splits">
+      <thead><tr><th>Split</th><th>Labels included?</th><th>Released</th><th>Use it to</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Train</strong></td><td>Yes</td><td>Oct 20, 2026</td><td>Train your system</td></tr>
+        <tr><td><strong>Dev</strong></td><td>Yes</td><td>Oct 20, 2026</td><td>Tune and check your system</td></tr>
+        <tr><td><strong>Test</strong></td><td>No</td><td>Jan 15, 2027</td><td>Make the predictions you submit on CodaBench</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="section section-tint">
+  <div class="wrap forms-grid">
+    <div>
+      <h2>Three written forms</h2>
+      <p>Every prompt appears three times, once in each form, always with the same label:</p>
+      <ul class="plain">
+        <li><strong>Bangla script:</strong> written in Bangla letters.</li>
+        <li><strong>Romanized:</strong> Bangla typed in Latin letters.</li>
+        <li><strong>Code-mixed:</strong> Bangla mixed with English, Hindi, or Urdu.</li>
+      </ul>
+      <p>A good system gives the same label to all three. Click the tabs in the example to switch forms.</p>
+    </div>
+
+    <div class="demo" aria-label="Example: one request in three written forms">
+      <div class="demo-head">
+        <span class="demo-title">One request, three ways to write it</span>
+        <div class="demo-tabs" role="tablist">
+          <button role="tab" class="tab active" data-form="0" aria-selected="true">বাংলা</button>
+          <button role="tab" class="tab" data-form="1" aria-selected="false">Romanized</button>
+          <button role="tab" class="tab" data-form="2" aria-selected="false">Code-mixed</button>
+        </div>
+      </div>
+      <div class="bubble-row">
+        <div class="avatar" aria-hidden="true">U</div>
+        <p class="bubble" id="demo-text" lang="bn">আজ ঢাকায় আবহাওয়া কেমন থাকবে?</p>
+      </div>
+      <p class="demo-gloss">"What will the weather be like in Dhaka today?"</p>
+      <div class="verdict">
+        <div class="verdict-label">
+          <img src="/assets/img/logo.svg" alt="" width="28" height="28">
+          <span>Label</span>
+          <strong class="chip chip-safe">0 · Safe</strong>
+        </div>
+        <div class="meter" aria-hidden="true">
+          <span class="seg seg-safe on">Safe</span>
+          <span class="seg">Offensive</span>
+          <span class="seg">Harmful</span>
+          <span class="seg">Severe</span>
+        </div>
+      </div>
+      <p class="demo-foot">Same request, same label, in every form.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2>Starter kit <span class="badge">Released Oct 20, 2026</span></h2>
+    <p class="section-lead">Download it with the data. It gets you from zero to a valid CodaBench submission.</p>
+    <div class="kit">
+      <div class="kit-item">
+        <span class="kit-icon" aria-hidden="true">DATA</span>
+        <h3>Train and dev sets</h3>
+        <p>The labeled data for building and tuning your system.</p>
+      </div>
+      <div class="kit-item">
+        <span class="kit-icon" aria-hidden="true">.ipynb</span>
+        <h3>Starter notebook</h3>
+        <p>A Jupyter notebook (.ipynb) with a simple baseline that solves the task end to end. Start here and improve it.</p>
+      </div>
+      <div class="kit-item">
+        <span class="kit-icon" aria-hidden="true">.ipynb</span>
+        <h3>prepare_submission_file notebook</h3>
+        <p>Turns your predictions into the exact file format CodaBench accepts.</p>
+      </div>
+    </div>
+    <p class="note-small">Download links will appear here on October 20, 2026.</p>
+  </div>
+</section>

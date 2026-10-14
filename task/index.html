@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Task · BanglaKnight (BLP-2027 Task 1)</title>
+  <meta name="description" content="What your system has to do.">
+  <meta name="theme-color" content="#E0474F">
+  <link rel="icon" type="image/svg+xml" href="/assets/img/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500;600;700;800&family=Hind+Siliguri:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body class="page-task">
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="/" aria-label="BanglaKnight home">
+      <img src="/assets/img/logo.svg" alt="" width="38" height="38">
+      <span class="brand-text"><span class="brand-name">Bangla<span>Knight</span></span><span class="brand-sub">BLP-2027 Task 1</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="nav-links" class="nav-links">
+      <a href="/task/" class="active" aria-current="page">Task</a>
+      <a href="/data/">Data</a>
+      <a href="/leaderboard/">Leaderboard</a>
+      <a href="/dates/">Dates</a>
+      <a href="/participate/">Participate</a>
+      <a href="/paper/">Paper Submission</a>
+      <a href="/organizers/">Organizers</a>
+      <a class="nav-cta" href="https://blp-workshop.github.io/" target="_blank" rel="noopener">BLP 2027 ↗</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="page-head" style="--photo: url('/assets/img/sf-golden-gate.jpg')">
+  <div class="wrap">
+    <p class="crumbs"><a href="/">BanglaKnight</a> <span aria-hidden="true">/</span> Task</p>
+    <h1>Task</h1>
+    <p class="page-desc">What your system has to do.</p>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap narrow">
+    <h2>In one sentence</h2>
+    <p class="big">Read a Bangla prompt and label it with one of four risk levels.</p>
+
+    <div class="io">
+      <div class="io-box"><span class="io-tag">Input</span><p>One Bangla prompt, written in Bangla script, romanized Bangla, or code-mixed text.</p></div>
+      <span class="io-arrow" aria-hidden="true">→</span>
+      <div class="io-box"><span class="io-tag">Output</span><p>One label: 0 Safe, 1 Offensive, 2 Harmful, or 3 Severe.</p></div>
+    </div>
+
+    <h2>Background</h2>
+    <p>Before an LLM answers a request, a safety classifier often checks whether the request is safe to answer. Most of these classifiers are trained on English. Bangla is often typed in Latin letters or mixed with English, Hindi, or Urdu, and a harmful request can get past a filter when it is spelled differently.</p>
+  </div>
+</section>
+
+<section class="section section-tint">
+  <div class="wrap">
+    <h2>The four labels</h2>
+    <div class="levels">
+      <article class="level level-safe">
+        <span class="level-id">0</span>
+        <h3>Safe</h3>
+        <p>No harmful request.</p>
+        <p class="level-cat">Neutral, positive, or harmless requests</p>
+      </article>
+      <article class="level level-off">
+        <span class="level-id">1</span>
+        <h3>Offensive</h3>
+        <p>Insulting, provocative, or discriminatory language, but no request for harmful help.</p>
+        <p class="level-cat">Offensive language, hate speech, anger</p>
+      </article>
+      <article class="level level-harm">
+        <span class="level-id">2</span>
+        <h3>Harmful</h3>
+        <p>Asks for help with something of lower or medium risk.</p>
+        <p class="level-cat">Misinformation, adversarial and malicious requests</p>
+      </article>
+      <article class="level level-sev">
+        <span class="level-id">3</span>
+        <h3>Severe</h3>
+        <p>Asks for help with something high-risk that could cause serious harm.</p>
+        <p class="level-cat">Suicide, jailbreak attempts</p>
+      </article>
+    </div>
+    <p class="note-small">Every prompt comes in three written forms with the same label. See <a href="/data/">Data</a> for an example.</p>
+  </div>
+</section>
+
+<nav class="pager wrap" aria-label="Page navigation"><span></span><a class="pg-next" href="/data/"><span>Next</span>Data</a></nav>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="/assets/img/logo.svg" alt="" width="40" height="40">
+        <p><strong>BanglaKnight</strong> is Shared Task 1 of the <a href="https://blp-workshop.github.io/" target="_blank" rel="noopener">Third Workshop on Bangla Language Processing (BLP 2027)</a>, co-located with NAACL 2027 in San Francisco.</p>
+      </div>
+      <p class="footer-also">Also at BLP 2027: <a href="https://multilingual-qa.github.io/" target="_blank" rel="noopener">Task 2: Multilingual Cultural Question Answering ↗</a></p>
+    </div>
+    <p class="credits">Photos from Wikimedia Commons:
+      <a href="https://commons.wikimedia.org/wiki/File:Golden_Gate_Bridge_as_seen_from_Battery_East.jpg" target="_blank" rel="noopener">Golden Gate Bridge</a> by Frank Schulenburg (CC BY-SA 4.0);
+      <a href="https://commons.wikimedia.org/wiki/File:Painted_Ladies_San_Francisco_January_2013_panorama_2.jpg" target="_blank" rel="noopener">Painted Ladies</a> by King of Hearts (CC BY-SA 3.0);
+      <a href="https://commons.wikimedia.org/wiki/File:San_Francisco_skyline_from_Coit_Tower.jpg" target="_blank" rel="noopener">San Francisco skyline</a> by Supercarwaar (CC BY-SA 4.0). Resized and tinted.</p>
+  </div>
+</footer>
+
+<script src="/assets/js/app.js"></script>
+</body>
+</html>
