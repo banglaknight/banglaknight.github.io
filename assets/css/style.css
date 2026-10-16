@@ -1,31 +1,31 @@
-/* BanglaKnight: BLP-2027 Shared Task 1. Dark theme: iron and steel with gold trim.
+/* BanglaKnight: BLP-2027 Shared Task 1. Black and white theme: white background, black accents.
    Colors are tokens on :root; components never hard-code a hue. */
 
 :root {
-  color-scheme: dark;
-  --bg: #1B2028;         --bg-rgb: 27, 32, 40;
-  --bg-tint: #222831;    --tint-rgb: 34, 40, 49;
-  --surface: #2A313C;    --surface-rgb: 42, 49, 60;
-  --ink: #F1ECE0;
-  --ink-soft: #C9C4B7;
-  --muted: #9A9DA5;
-  --line: #3B4452;
-  --primary: #D4A94E;    --primary-rgb: 212, 169, 78;
-  --primary-deep: #E8C677;
-  --primary-ink: #15120A;
-  --primary-soft: #3A3220; --soft-rgb: 36, 33, 26;
+  color-scheme: light;
+  --bg: #FFFFFF;         --bg-rgb: 255, 255, 255;
+  --bg-tint: #F5F5F5;    --tint-rgb: 245, 245, 245;
+  --surface: #FFFFFF;    --surface-rgb: 255, 255, 255;
+  --ink: #111111;
+  --ink-soft: #3F3F46;
+  --muted: #71717A;
+  --line: #E4E4E7;
+  --primary: #111111;    --primary-rgb: 17, 17, 17;
+  --primary-deep: #000000;
+  --primary-ink: #FFFFFF;
+  --primary-soft: #F0F0F0; --soft-rgb: 240, 240, 240;
   --shade-rgb: 0, 0, 0;      /* shadows */
-  --band-rgb: 14, 17, 22;      /* photo band overlay */
-  --grad-a: #E8C677; --grad-b: #9C7426;
-  --dot-line: #5A6372; --dash: #5A6372;
-  --dev-bg: #2A313C; --dev-line: #4A5466; --dev-c: #9AA6B8;
-  --eval-bg: #302C22; --eval-line: #7A6434;
-  --warn: #E0A23A; --warn-line: #6E5424;
+  --band-rgb: 10, 10, 10;    /* photo band overlay */
+  --grad-a: #52525B; --grad-b: #000000;
+  --dot-line: #A1A1AA; --dash: #A1A1AA;
+  --dev-bg: #FFFFFF; --dev-line: #D4D4D8; --dev-c: #71717A;
+  --eval-bg: #FAFAFA; --eval-line: #A1A1AA;
+  --warn: #B45309; --warn-line: #F3C98B;
 
-  --safe: #4CC38A;   --safe-soft: #1D3A2D;
-  --off: #E3B341;    --off-soft: #3D3319;
-  --harm: #F0883E;   --harm-soft: #412818;
-  --sev: #F2667F;    --sev-soft: #451C24;
+  --safe: #1F8F5A;   --safe-soft: #DDF3E7;
+  --off: #B07A00;    --off-soft: #FFF1C9;
+  --harm: #D2601A;   --harm-soft: #FFE4D2;
+  --sev: #9F1239;    --sev-soft: #FBD9E2;
 
   --radius: 20px;
   --shadow: 0 12px 32px -14px rgba(var(--shade-rgb), .35);
@@ -220,7 +220,7 @@ p { margin: 0 0 1rem; }
 
 /* San Francisco band */
 .sf-band {
-  position: relative; padding: 120px 0 56px; color: var(--ink);
+  position: relative; padding: 120px 0 56px; color: #FFFFFF;
   background:
     linear-gradient(180deg, rgba(var(--band-rgb), .05) 0%, rgba(var(--band-rgb), .55) 55%, rgba(var(--band-rgb), .85) 100%),
     url("../img/sf-painted-ladies.jpg") center 60% / cover no-repeat;
@@ -531,7 +531,7 @@ p { margin: 0 0 1rem; }
 .chip { background: var(--surface) !important; border: 1.5px solid currentColor; }
 .initials { background: var(--surface); color: var(--primary-deep); border: 2px solid var(--primary); }
 .person-tba .initials { border: 2px dashed var(--line); color: var(--muted); }
-.code-demo, .t2 .code-demo { background: #12161C; color: #E5E7EB; border: 1px solid var(--line); }
+.code-demo, .t2 .code-demo { background: #111111; color: #E5E7EB; border: 1px solid var(--line); }
 
 /* ---------- Icons beside headings, steps, tags and facts ---------- */
 .section h2 > .ico { width: .8em; height: .8em; margin-right: 10px; vertical-align: -.06em; color: var(--primary); stroke-width: 2.2; }
@@ -559,5 +559,5 @@ p { margin: 0 0 1rem; }
 .dc-list li::before { left: -20px; top: 7px; width: 10px; height: 10px; }
 .dc-list li.is-next::before { box-shadow: 0 0 0 3px var(--primary-soft); }
 
-/* Dark theme: gold buttons keep dark text on hover. */
+/* Filled black buttons keep white text on hover. */
 .btn-primary:hover, .nav-links .nav-cta:hover { color: var(--primary-ink); }
