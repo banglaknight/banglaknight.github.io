@@ -6,8 +6,9 @@
       <thead><tr><th>Split</th><th>Phase</th><th>Released</th><th>Use it to</th></tr></thead>
       <tbody>
         <tr><td><strong>Train</strong></td><td>Development</td><td>Oct 20, 2026</td><td>Train your system</td></tr>
-        <tr><td><strong>Dev</strong></td><td>Development</td><td>Oct 20, 2026</td><td>Tune your system and practice submitting on CodaBench</td></tr>
-        <tr><td><strong>Test</strong></td><td>Evaluation</td><td>Jan 15, 2027</td><td>Make your final predictions. New prompts, no labels.</td></tr>
+        <tr><td><strong>Dev</strong></td><td>Development</td><td>Oct 20, 2026</td><td>Tune your system</td></tr>
+        <tr><td><strong>Dev-test</strong></td><td>Development</td><td>Oct 20, 2026</td><td>Practice submitting on CodaBench. Blind: no labels.</td></tr>
+        <tr><td><strong>Test</strong></td><td>Test</td><td>Jan 15, 2027</td><td>Make your final predictions. New prompts, no labels.</td></tr>
       </tbody>
     </table>
   </div>
@@ -60,13 +61,14 @@
 
 <section class="section">
   <div class="wrap">
-    <h2>{{i:package}}Starter kit <span class="badge">Released Oct 20, 2026</span></h2>
+    <h2>{{i:package}}Starter kit</h2>
     <p class="section-lead">Download it with the data. It gets you from zero to a valid CodaBench submission.</p>
     <div class="kit">
       <div class="kit-item">
         <span class="kit-icon" aria-hidden="true">{{i:data}}DATA</span>
         <h3>Train and dev sets</h3>
         <p>The labeled data for building and tuning your system.</p>
+        <p class="kit-links">{{i:download}}Train: <a href="/data/files/banglaknight_train.csv" download>CSV</a> · <a href="/data/files/banglaknight_train.jsonl" download>JSONL</a><br>{{i:download}}Dev: <a href="/data/files/banglaknight_dev.csv" download>CSV</a> · <a href="/data/files/banglaknight_dev.jsonl" download>JSONL</a></p>
       </div>
       <div class="kit-item">
         <span class="kit-icon" aria-hidden="true">{{i:file-code}}.ipynb</span>
@@ -79,6 +81,19 @@
         <p>Turns your predictions into the exact file format CodaBench accepts.</p>
       </div>
     </div>
-    <p class="note-small">Download links will appear here on October 20, 2026.</p>
+    <p class="note-small">Each prompt has three rows, one per written form, that share a <code>prompt_id</code> and a <code>label</code>. Columns: <code>id</code>, <code>prompt_id</code>, <code>form</code>, <code>text</code>, <code>label</code>. The two notebooks will be posted here on October 20, 2026.</p>
+  </div>
+</section>
+
+<section class="section section-tint">
+  <div class="wrap">
+    <h2>{{i:book}}Citation</h2>
+    <p class="section-lead">If you use the train or dev data, please cite:</p>
+    <pre class="bib"><code>@misc{kabir2026banglashield,
+  title  = {{BanglaShield}: A Script-Robust Safety Classifier and Benchmark for {Bangla} Native, Romanized, and Code-Mixed Prompts},
+  author = {Kabir, Mohsinul and Tariquzzaman, Md. and Rifat, Mohammad Rashidujjaman and Ranasinghe, Tharindu and Raihan, Nishat},
+  year   = {2026},
+  note   = {Preprint}
+}</code></pre>
   </div>
 </section>

@@ -17,7 +17,7 @@ ROOT = Path(__file__).resolve().parent
 DATES = [
     ("2026-10-20", "Oct 20, 2026", "Training and development data release", "dev"),
     ("2026-10-20", "Oct 20, 2026", "CodaBench registration opens", "dev"),
-    ("2027-01-15", "Jan 15, 2027", "Test data release / evaluation begins", "eval"),
+    ("2027-01-15", "Jan 15, 2027", "Test data release / test phase begins", "eval"),
     ("2027-01-24", "Jan 24, 2027", "Registration deadline", "eval"),
     ("2027-01-31", "Jan 31, 2027", "System submission deadline", "eval"),
     ("2027-02-03", "Feb 3, 2027", "Official results released", "after"),
@@ -30,13 +30,14 @@ DATES = [
 # Group headings in the dates card
 PHASE_NAMES = {
     "dev": ("Development phase", "Oct 20 – Jan 15"),
-    "eval": ("Evaluation phase", "Jan 15 – Jan 31"),
+    "eval": ("Test phase", "Jan 15 – Jan 31"),
     "after": ("Results and papers", ""),
 }
 
 # Extra items for the rolling updates bar, after the dates: (bold label, HTML text)
 NEWS = [
     ("BLP 2027", 'Co-located with NAACL 2027 · June 1–5, 2027 · San Francisco, California'),
+    ("New", 'Train and dev data are out. Download them from the <a href="/data/">Data</a> page'),
     ("New", 'The <a href="/participate/">Participate</a> page explains both CodaBench phases'),
     ("New", 'System papers: up to 4 pages. See <a href="/paper/">Paper Submission</a>'),
 ]
@@ -50,12 +51,12 @@ PHASES_BLOCK = """<div class="phases">
     <dl>
       <dt>{{i:data}}Data</dt><dd>Training and dev sets, plus the starter kit</dd>
       <dt>{{i:user}}You</dt><dd>Build and tune your system</dd>
-      <dt>{{i:upload}}CodaBench</dt><dd>Submit predictions on the dev set to see your score and check your file format. Practice only: it does not count toward the final ranking.</dd>
+      <dt>{{i:upload}}CodaBench</dt><dd>Submit predictions on a blind dev-test set to see your score and check your file format. Practice only: it does not count toward the final ranking.</dd>
     </dl>
   </article>
   <article class="phase phase-eval">
     <p class="phase-tag">Phase 2 · Final</p>
-    <h3>{{i:shield}}Evaluation phase</h3>
+    <h3>{{i:shield}}Test phase</h3>
     <p class="phase-when">Jan 15 – Jan 31, 2027</p>
     <dl>
       <dt>{{i:data}}Data</dt><dd>A new test set, released Jan 15, without labels</dd>
@@ -71,7 +72,7 @@ PAGES = [
     ("home", "Home", "BanglaKnight", "Shared Task 1 at BLP 2027: classify Bangla prompts into four risk levels.", "sf-golden-gate.jpg", None),
     ("data", "Data", "Data", "What you get, the three written forms, and the starter kit.", "sf-skyline.jpg", "data"),
     ("leaderboard", "Leaderboard", "Leaderboard", "Metrics, development-phase scores, and official results.", "sf-painted-ladies.jpg", "trophy"),
-    ("participate", "Participate", "Participate", "Two phases on CodaBench: practice on the dev set, then submit on the test set.", "sf-golden-gate.jpg", "swords"),
+    ("participate", "Participate", "Participate", "Two phases on CodaBench: practice on the dev-test set, then submit on the test set.", "sf-golden-gate.jpg", "swords"),
     ("paper", "Paper Submission", "Paper Submission", "How to write and submit your system description paper.", "sf-painted-ladies.jpg", "paper"),
     ("organizers", "Organizers", "Organizers", "Who runs the task and how to reach us.", "sf-skyline.jpg", "people"),
 ]
@@ -283,7 +284,7 @@ def render(i):
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500;600;700;800&family=Hind+Siliguri:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/style.css?v=9">
+  <link rel="stylesheet" href="/assets/css/style.css?v=11">
 </head>
 <body class="page-{slug}">
 

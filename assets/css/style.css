@@ -561,3 +561,9 @@ p { margin: 0 0 1rem; }
 
 /* Filled black buttons keep white text on hover. */
 .btn-primary:hover, .nav-links .nav-cta:hover { color: var(--primary-ink); }
+
+/* BibTeX block on the Data page */
+.bib { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; margin: 12px 0 0; overflow-x: auto; font: .88rem/1.6 var(--mono); color: var(--ink); white-space: pre; }
+.kit-item .kit-links { margin-top: 12px; color: var(--ink); font-weight: 600; line-height: 1.9; }
+.kit-links .ico { width: 15px; height: 15px; vertical-align: -2px; margin-right: 6px; }
+.note-small code { font-family: var(--mono); font-size: .85em; }
