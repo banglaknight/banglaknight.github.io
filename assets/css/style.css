@@ -3,29 +3,29 @@
 
 :root {
   color-scheme: dark;
-  --bg: #0D1015;         --bg-rgb: 13, 16, 21;
-  --bg-tint: #13171E;    --tint-rgb: 19, 23, 30;
-  --surface: #181D26;    --surface-rgb: 24, 29, 38;
-  --ink: #ECE7DA;
-  --ink-soft: #BDB8AB;
-  --muted: #8C8F96;
-  --line: #2B323E;
+  --bg: #1B2028;         --bg-rgb: 27, 32, 40;
+  --bg-tint: #222831;    --tint-rgb: 34, 40, 49;
+  --surface: #2A313C;    --surface-rgb: 42, 49, 60;
+  --ink: #F1ECE0;
+  --ink-soft: #C9C4B7;
+  --muted: #9A9DA5;
+  --line: #3B4452;
   --primary: #D4A94E;    --primary-rgb: 212, 169, 78;
   --primary-deep: #E8C677;
   --primary-ink: #15120A;
-  --primary-soft: #2A2417; --soft-rgb: 22, 20, 15;
+  --primary-soft: #3A3220; --soft-rgb: 36, 33, 26;
   --shade-rgb: 0, 0, 0;      /* shadows */
-  --band-rgb: 6, 8, 11;      /* photo band overlay */
+  --band-rgb: 14, 17, 22;      /* photo band overlay */
   --grad-a: #E8C677; --grad-b: #9C7426;
-  --dot-line: #4C5463; --dash: #4C5463;
-  --dev-bg: #181D26; --dev-line: #3A4352; --dev-c: #9AA6B8;
-  --eval-bg: #1C1A14; --eval-line: #6E5A2E;
+  --dot-line: #5A6372; --dash: #5A6372;
+  --dev-bg: #2A313C; --dev-line: #4A5466; --dev-c: #9AA6B8;
+  --eval-bg: #302C22; --eval-line: #7A6434;
   --warn: #E0A23A; --warn-line: #6E5424;
 
-  --safe: #4CC38A;   --safe-soft: #12291F;
-  --off: #E3B341;    --off-soft: #2B2412;
-  --harm: #F0883E;   --harm-soft: #2E1C10;
-  --sev: #F2667F;    --sev-soft: #301319;
+  --safe: #4CC38A;   --safe-soft: #1D3A2D;
+  --off: #E3B341;    --off-soft: #3D3319;
+  --harm: #F0883E;   --harm-soft: #412818;
+  --sev: #F2667F;    --sev-soft: #451C24;
 
   --radius: 20px;
   --shadow: 0 12px 32px -14px rgba(var(--shade-rgb), .35);
@@ -531,7 +531,7 @@ p { margin: 0 0 1rem; }
 .chip { background: var(--surface) !important; border: 1.5px solid currentColor; }
 .initials { background: var(--surface); color: var(--primary-deep); border: 2px solid var(--primary); }
 .person-tba .initials { border: 2px dashed var(--line); color: var(--muted); }
-.code-demo, .t2 .code-demo { background: #07090C; color: #E5E7EB; border: 1px solid var(--line); }
+.code-demo, .t2 .code-demo { background: #12161C; color: #E5E7EB; border: 1px solid var(--line); }
 
 /* ---------- Icons beside headings, steps, tags and facts ---------- */
 .section h2 > .ico { width: .8em; height: .8em; margin-right: 10px; vertical-align: -.06em; color: var(--primary); stroke-width: 2.2; }

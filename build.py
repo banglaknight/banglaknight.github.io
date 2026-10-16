@@ -49,7 +49,7 @@ PHASES_BLOCK = """<div class="phases">
     <p class="phase-when">Oct 20, 2026 – Jan 15, 2027</p>
     <dl>
       <dt>{{i:data}}Data</dt><dd>Training and dev sets, plus the starter kit</dd>
-      <dt>{{i:user}}You</dt><dd>Train your guard and sharpen it</dd>
+      <dt>{{i:user}}You</dt><dd>Build and tune your system</dd>
       <dt>{{i:upload}}CodaBench</dt><dd>Submit predictions on the dev set to see your score and check your file format. Practice only: it does not count toward the final ranking.</dd>
     </dl>
   </article>
@@ -59,7 +59,7 @@ PHASES_BLOCK = """<div class="phases">
     <p class="phase-when">Jan 15 – Jan 31, 2027</p>
     <dl>
       <dt>{{i:data}}Data</dt><dd>A new test set, released Jan 15, without labels</dd>
-      <dt>{{i:user}}You</dt><dd>Hold the line: run your final guard on unseen prompts</dd>
+      <dt>{{i:user}}You</dt><dd>Run your final system on it</dd>
       <dt>{{i:upload}}CodaBench</dt><dd>Submit your test predictions by Jan 31. These decide the official ranking, published Feb 3.</dd>
     </dl>
   </article>
@@ -68,10 +68,10 @@ PHASES_BLOCK = """<div class="phases">
 
 # slug, menu label, page title, one-line description, header photo, icon
 PAGES = [
-    ("home", "Home", "BanglaKnight", "Shared Task 1 at BLP 2027: build a guard that sorts Bangla prompts into four risk levels.", "sf-golden-gate.jpg", None),
+    ("home", "Home", "BanglaKnight", "Shared Task 1 at BLP 2027: classify Bangla prompts into four risk levels.", "sf-golden-gate.jpg", None),
     ("data", "Data", "Data", "What you get, the three written forms, and the starter kit.", "sf-skyline.jpg", "data"),
     ("leaderboard", "Leaderboard", "Leaderboard", "Metrics, development-phase scores, and official results.", "sf-painted-ladies.jpg", "trophy"),
-    ("participate", "Participate", "Participate", "Two phases on CodaBench: train on the dev set, then defend on the test set.", "sf-golden-gate.jpg", "swords"),
+    ("participate", "Participate", "Participate", "Two phases on CodaBench: practice on the dev set, then submit on the test set.", "sf-golden-gate.jpg", "swords"),
     ("paper", "Paper Submission", "Paper Submission", "How to write and submit your system description paper.", "sf-painted-ladies.jpg", "paper"),
     ("organizers", "Organizers", "Organizers", "Who runs the task and how to reach us.", "sf-skyline.jpg", "people"),
 ]
@@ -278,12 +278,12 @@ def render(i):
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{escape(full_title)}</title>
   <meta name="description" content="{escape(desc)}">
-  <meta name="theme-color" content="#0D1015">
+  <meta name="theme-color" content="#1B2028">
   <link rel="icon" type="image/svg+xml" href="/assets/img/logo.svg?v=2">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500;600;700;800&family=Hind+Siliguri:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/style.css?v=7">
+  <link rel="stylesheet" href="/assets/css/style.css?v=8">
 </head>
 <body class="page-{slug}">
 
