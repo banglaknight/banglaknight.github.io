@@ -70,7 +70,7 @@ PHASES_BLOCK = """<div class="phases">
 # slug, menu label, page title, one-line description, header photo, icon
 PAGES = [
     ("home", "Home", "BanglaKnight", "Shared Task 1 at BLP 2027: classify Bangla prompts into four risk levels.", "sf-golden-gate.jpg", None),
-    ("data", "Data", "Data", "What you get, the three written forms, and the starter kit.", "sf-skyline.jpg", "data"),
+    ("data", "Data", "Data", "The starter kit and the three written forms.", "sf-skyline.jpg", "data"),
     ("leaderboard", "Leaderboard", "Leaderboard", "Metrics, development-phase scores, and official results.", "sf-painted-ladies.jpg", "trophy"),
     ("participate", "Participate", "Participate", "Two phases on CodaBench: practice on the dev-test set, then submit on the test set.", "sf-golden-gate.jpg", "swords"),
     ("paper", "Paper Submission", "Paper Submission", "How to write and submit your system description paper.", "sf-painted-ladies.jpg", "paper"),

@@ -1,16 +1,26 @@
 <section class="section">
   <div class="wrap">
-    <h2>{{i:table}}What you get</h2>
-    <p class="section-lead">Each example is one Bangla prompt with a label from 0 to 3. All three written forms of a prompt are in the same split, so a model never sees one form in training and another in testing.</p>
-    <table class="splits">
-      <thead><tr><th>Split</th><th>Phase</th><th>Released</th><th>Use it to</th></tr></thead>
-      <tbody>
-        <tr><td><strong>Train</strong></td><td>Development</td><td>Oct 20, 2026</td><td>Train your system</td></tr>
-        <tr><td><strong>Dev</strong></td><td>Development</td><td>Oct 20, 2026</td><td>Tune your system</td></tr>
-        <tr><td><strong>Dev-test</strong></td><td>Development</td><td>Oct 20, 2026</td><td>Practice submitting on CodaBench. Blind: no labels.</td></tr>
-        <tr><td><strong>Test</strong></td><td>Test</td><td>Jan 15, 2027</td><td>Make your final predictions. New prompts, no labels.</td></tr>
-      </tbody>
-    </table>
+    <h2>{{i:package}}Starter kit</h2>
+    <p class="section-lead">Download it with the data. It gets you from zero to a valid CodaBench submission.</p>
+    <div class="kit">
+      <div class="kit-item">
+        <span class="kit-icon" aria-hidden="true">{{i:data}}DATA</span>
+        <h3>Train and dev sets</h3>
+        <p>The labeled data for building and tuning your system.</p>
+        <p class="kit-links">{{i:download}}Train: <a href="/data/files/banglaknight_train.csv" download>CSV</a> · <a href="/data/files/banglaknight_train.jsonl" download>JSONL</a><br>{{i:download}}Dev: <a href="/data/files/banglaknight_dev.csv" download>CSV</a> · <a href="/data/files/banglaknight_dev.jsonl" download>JSONL</a></p>
+      </div>
+      <div class="kit-item">
+        <span class="kit-icon" aria-hidden="true">{{i:file-code}}.ipynb</span>
+        <h3>Starter notebook</h3>
+        <p>A Jupyter notebook (.ipynb) with a simple baseline that solves the task end to end. Start here and improve it.</p>
+      </div>
+      <div class="kit-item">
+        <span class="kit-icon" aria-hidden="true">{{i:file-check}}.ipynb</span>
+        <h3>prepare_submission_file notebook</h3>
+        <p>Turns your predictions into the exact file format CodaBench accepts.</p>
+      </div>
+    </div>
+    <p class="note-small">Each prompt has three rows, one per written form, that share a <code>prompt_id</code> and a <code>label</code>. Columns: <code>id</code>, <code>prompt_id</code>, <code>form</code>, <code>text</code>, <code>label</code>. The two notebooks will be posted here on October 20, 2026.</p>
   </div>
 </section>
 
@@ -60,32 +70,6 @@
 </section>
 
 <section class="section">
-  <div class="wrap">
-    <h2>{{i:package}}Starter kit</h2>
-    <p class="section-lead">Download it with the data. It gets you from zero to a valid CodaBench submission.</p>
-    <div class="kit">
-      <div class="kit-item">
-        <span class="kit-icon" aria-hidden="true">{{i:data}}DATA</span>
-        <h3>Train and dev sets</h3>
-        <p>The labeled data for building and tuning your system.</p>
-        <p class="kit-links">{{i:download}}Train: <a href="/data/files/banglaknight_train.csv" download>CSV</a> · <a href="/data/files/banglaknight_train.jsonl" download>JSONL</a><br>{{i:download}}Dev: <a href="/data/files/banglaknight_dev.csv" download>CSV</a> · <a href="/data/files/banglaknight_dev.jsonl" download>JSONL</a></p>
-      </div>
-      <div class="kit-item">
-        <span class="kit-icon" aria-hidden="true">{{i:file-code}}.ipynb</span>
-        <h3>Starter notebook</h3>
-        <p>A Jupyter notebook (.ipynb) with a simple baseline that solves the task end to end. Start here and improve it.</p>
-      </div>
-      <div class="kit-item">
-        <span class="kit-icon" aria-hidden="true">{{i:file-check}}.ipynb</span>
-        <h3>prepare_submission_file notebook</h3>
-        <p>Turns your predictions into the exact file format CodaBench accepts.</p>
-      </div>
-    </div>
-    <p class="note-small">Each prompt has three rows, one per written form, that share a <code>prompt_id</code> and a <code>label</code>. Columns: <code>id</code>, <code>prompt_id</code>, <code>form</code>, <code>text</code>, <code>label</code>. The two notebooks will be posted here on October 20, 2026.</p>
-  </div>
-</section>
-
-<section class="section section-tint">
   <div class="wrap">
     <h2>{{i:book}}Citation</h2>
     <p class="section-lead">If you use the train or dev data, please cite:</p>
