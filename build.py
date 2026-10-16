@@ -45,21 +45,21 @@ NEWS = [
 PHASES_BLOCK = """<div class="phases">
   <article class="phase phase-dev">
     <p class="phase-tag">Phase 1</p>
-    <h3>{{i:tool}}Development phase</h3>
+    <h3>{{i:sword}}Development phase</h3>
     <p class="phase-when">Oct 20, 2026 – Jan 15, 2027</p>
     <dl>
       <dt>{{i:data}}Data</dt><dd>Training and dev sets, plus the starter kit</dd>
-      <dt>{{i:user}}You</dt><dd>Build and tune your system</dd>
+      <dt>{{i:user}}You</dt><dd>Train your guard and sharpen it</dd>
       <dt>{{i:upload}}CodaBench</dt><dd>Submit predictions on the dev set to see your score and check your file format. Practice only: it does not count toward the final ranking.</dd>
     </dl>
   </article>
   <article class="phase phase-eval">
     <p class="phase-tag">Phase 2 · Final</p>
-    <h3>{{i:target}}Evaluation phase</h3>
+    <h3>{{i:shield}}Evaluation phase</h3>
     <p class="phase-when">Jan 15 – Jan 31, 2027</p>
     <dl>
       <dt>{{i:data}}Data</dt><dd>A new test set, released Jan 15, without labels</dd>
-      <dt>{{i:user}}You</dt><dd>Run your final system on it</dd>
+      <dt>{{i:user}}You</dt><dd>Hold the line: run your final guard on unseen prompts</dd>
       <dt>{{i:upload}}CodaBench</dt><dd>Submit your test predictions by Jan 31. These decide the official ranking, published Feb 3.</dd>
     </dl>
   </article>
@@ -68,10 +68,10 @@ PHASES_BLOCK = """<div class="phases">
 
 # slug, menu label, page title, one-line description, header photo, icon
 PAGES = [
-    ("home", "Home", "BanglaKnight", "Shared Task 1 at BLP 2027: classify Bangla prompts into four risk levels.", "sf-golden-gate.jpg", None),
+    ("home", "Home", "BanglaKnight", "Shared Task 1 at BLP 2027: build a guard that sorts Bangla prompts into four risk levels.", "sf-golden-gate.jpg", None),
     ("data", "Data", "Data", "What you get, the three written forms, and the starter kit.", "sf-skyline.jpg", "data"),
     ("leaderboard", "Leaderboard", "Leaderboard", "Metrics, development-phase scores, and official results.", "sf-painted-ladies.jpg", "trophy"),
-    ("participate", "Participate", "Participate", "Two phases on CodaBench: practice on the dev set, then submit on the test set.", "sf-golden-gate.jpg", "flag"),
+    ("participate", "Participate", "Participate", "Two phases on CodaBench: train on the dev set, then defend on the test set.", "sf-golden-gate.jpg", "swords"),
     ("paper", "Paper Submission", "Paper Submission", "How to write and submit your system description paper.", "sf-painted-ladies.jpg", "paper"),
     ("organizers", "Organizers", "Organizers", "Who runs the task and how to reach us.", "sf-skyline.jpg", "people"),
 ]
@@ -96,6 +96,12 @@ ICONS = {
     "book": '<path d="M4 4.5A1.5 1.5 0 0 1 5.5 3H20v15H5.5A1.5 1.5 0 0 0 4 19.5z"/><path d="M4 19.5A1.5 1.5 0 0 0 5.5 21H20v-3"/>',
     "shield": '<path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.2 7.5 9.5 4.3-1.3 7.5-4.9 7.5-9.5V6z"/>',
     "shield-check": '<path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.2 7.5 9.5 4.3-1.3 7.5-4.9 7.5-9.5V6z"/><path d="m8.8 12 2.2 2.2 4.2-4.4"/>',
+    "shield-alert": '<path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.2 7.5 9.5 4.3-1.3 7.5-4.9 7.5-9.5V6z"/><path d="M12 8.5v4M12 15.6v.1"/>',
+    "shield-x": '<path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.2 7.5 9.5 4.3-1.3 7.5-4.9 7.5-9.5V6z"/><path d="m9.6 9.6 4.8 4.8M14.4 9.6l-4.8 4.8"/>',
+    "sword": '<path d="M14.5 17.5 3 6V3h3l11.5 11.5"/><path d="m13 19 6-6"/><path d="m16 16 4 4"/><path d="m19 21 2-2"/>',
+    "swords": '<path d="M14.5 17.5 3 6V3h3l11.5 11.5"/><path d="m13 19 6-6"/><path d="m16 16 4 4"/><path d="m19 21 2-2"/><path d="M14.5 6.5 18 3h3v3l-3.5 3.5"/><path d="m5 14 4 4"/><path d="m7 17-3 3"/><path d="m3 19 2 2"/>',
+    "castle": '<path d="M3 21h18"/><path d="M5 21V5h3v3h3V5h2v3h3V5h3v16"/><path d="M10 21v-4a2 2 0 0 1 4 0v4"/>',
+    "helmet": '<path d="M5 20v-8a7 7 0 0 1 14 0v8z"/><path d="M7.5 12.5h9"/><path d="M12 5v15"/>',
     "message": '<path d="M4 5h16v11H9l-5 4z"/><path d="M9 9l4 4M13 9l-4 4"/>',
     "alert": '<path d="M12 3.5 2.5 20h19z"/><path d="M12 10v4.5M12 17.3v.1"/>',
     "octagon": '<path d="M8.2 3h7.6L21 8.2v7.6L15.8 21H8.2L3 15.8V8.2z"/><path d="M12 8v4.5M12 15.8v.1"/>',
@@ -272,12 +278,12 @@ def render(i):
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{escape(full_title)}</title>
   <meta name="description" content="{escape(desc)}">
-  <meta name="theme-color" content="#2563EB">
+  <meta name="theme-color" content="#0D1015">
   <link rel="icon" type="image/svg+xml" href="/assets/img/logo.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500;600;700;800&family=Hind+Siliguri:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/style.css?v=6">
+  <link rel="stylesheet" href="/assets/css/style.css?v=7">
 </head>
 <body class="page-{slug}">
 

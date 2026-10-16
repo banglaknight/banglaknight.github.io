@@ -1,30 +1,31 @@
-/* BanglaKnight: BLP-2027 Shared Task 1. Light blue theme.
+/* BanglaKnight: BLP-2027 Shared Task 1. Dark theme: iron and steel with gold trim.
    Colors are tokens on :root; components never hard-code a hue. */
 
 :root {
-  color-scheme: light;
-  --bg: #FFFFFF;         --bg-rgb: 255, 255, 255;
-  --bg-tint: #F6F7F9;    --tint-rgb: 246, 247, 249;
-  --surface: #FFFFFF;
-  --ink: #0F1E3D;
-  --ink-soft: #3A4B6E;
-  --muted: #66758F;
-  --line: #D2DDF3;
-  --primary: #2563EB;    --primary-rgb: 37, 99, 235;
-  --primary-deep: #1D4ED8;
-  --primary-ink: #FFFFFF;
-  --primary-soft: #F1F3F6; --soft-rgb: 241, 243, 246;
-  --shade-rgb: 15, 23, 42;   /* shadows */
-  --band-rgb: 17, 24, 39;     /* photo band overlay */
-  --grad-a: #5B8DEF; --grad-b: #1D4ED8;
-  --dot-line: #B8CBEF; --dash: #B4C8EE;
-  --dev-bg: #FFFFFF; --dev-line: #C5D5F6; --dev-c: #7EA2F0;
-  --eval-bg: #FAFAFB; --eval-line: #9DB6EC;
+  color-scheme: dark;
+  --bg: #0D1015;         --bg-rgb: 13, 16, 21;
+  --bg-tint: #13171E;    --tint-rgb: 19, 23, 30;
+  --surface: #181D26;    --surface-rgb: 24, 29, 38;
+  --ink: #ECE7DA;
+  --ink-soft: #BDB8AB;
+  --muted: #8C8F96;
+  --line: #2B323E;
+  --primary: #D4A94E;    --primary-rgb: 212, 169, 78;
+  --primary-deep: #E8C677;
+  --primary-ink: #15120A;
+  --primary-soft: #2A2417; --soft-rgb: 22, 20, 15;
+  --shade-rgb: 0, 0, 0;      /* shadows */
+  --band-rgb: 6, 8, 11;      /* photo band overlay */
+  --grad-a: #E8C677; --grad-b: #9C7426;
+  --dot-line: #4C5463; --dash: #4C5463;
+  --dev-bg: #181D26; --dev-line: #3A4352; --dev-c: #9AA6B8;
+  --eval-bg: #1C1A14; --eval-line: #6E5A2E;
+  --warn: #E0A23A; --warn-line: #6E5424;
 
-  --safe: #1F8F5A;   --safe-soft: #DDF3E7;
-  --off: #B07A00;    --off-soft: #FFF1C9;
-  --harm: #D2601A;   --harm-soft: #FFE4D2;
-  --sev: #9F1239;    --sev-soft: #FBD9E2;
+  --safe: #4CC38A;   --safe-soft: #12291F;
+  --off: #E3B341;    --off-soft: #2B2412;
+  --harm: #F0883E;   --harm-soft: #2E1C10;
+  --sev: #F2667F;    --sev-soft: #301319;
 
   --radius: 20px;
   --shadow: 0 12px 32px -14px rgba(var(--shade-rgb), .35);
@@ -108,7 +109,7 @@ p { margin: 0 0 1rem; }
 
 /* Demo card */
 .demo {
-  background: rgba(255, 255, 255, .94); border: 1px solid var(--line); border-radius: 26px;
+  background: rgba(var(--surface-rgb), .94); border: 1px solid var(--line); border-radius: 26px;
   padding: 22px; box-shadow: var(--shadow); backdrop-filter: blur(6px);
 }
 .demo-head { display: flex; flex-direction: column; gap: 12px; margin-bottom: 18px; }
@@ -138,7 +139,7 @@ p { margin: 0 0 1rem; }
   text-align: center; font-size: .78rem; font-weight: 600; padding: 7px 4px; border-radius: 10px;
   background: var(--bg-tint); color: var(--muted);
 }
-.seg.on.seg-safe { background: var(--safe); color: #fff; }
+.seg.on.seg-safe { background: var(--safe); color: var(--primary-ink); }
 .demo-foot { margin: 14px 0 0; font-size: .9rem; color: var(--muted); }
 
 /* Stats + notice */
@@ -155,7 +156,7 @@ p { margin: 0 0 1rem; }
 }
 .notice p { margin: 0; }
 .notice-icon {
-  flex: none; width: 26px; height: 26px; border-radius: 50%; background: var(--primary); color: #fff;
+  flex: none; width: 26px; height: 26px; border-radius: 50%; background: var(--primary); color: var(--primary-ink);
   display: grid; place-items: center; font-weight: 700; font-family: Georgia, serif; font-style: italic;
 }
 
@@ -219,7 +220,7 @@ p { margin: 0 0 1rem; }
 
 /* San Francisco band */
 .sf-band {
-  position: relative; padding: 120px 0 56px; color: #fff;
+  position: relative; padding: 120px 0 56px; color: var(--ink);
   background:
     linear-gradient(180deg, rgba(var(--band-rgb), .05) 0%, rgba(var(--band-rgb), .55) 55%, rgba(var(--band-rgb), .85) 100%),
     url("../img/sf-painted-ladies.jpg") center 60% / cover no-repeat;
@@ -245,7 +246,7 @@ p { margin: 0 0 1rem; }
 .person { display: flex; gap: 16px; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px 20px; }
 .initials {
   flex: none; width: 56px; height: 56px; border-radius: 18px; display: grid; place-items: center;
-  background: linear-gradient(135deg, var(--grad-a), var(--grad-b)); color: #fff; font-family: var(--font-head); font-weight: 800; font-size: 1.3rem;
+  background: linear-gradient(135deg, var(--grad-a), var(--grad-b)); color: var(--primary-ink); font-family: var(--font-head); font-weight: 800; font-size: 1.3rem;
 }
 .person h3 { font-size: 1.15rem; }
 .person h3 a { color: var(--ink); text-decoration: none; }
@@ -323,7 +324,7 @@ p { margin: 0 0 1rem; }
 
 /* Important dates card (home) */
 .dates-card {
-  background: rgba(255, 255, 255, .96); border: 1px solid var(--line); border-top: 4px solid var(--primary);
+  background: rgba(var(--surface-rgb), .96); border: 1px solid var(--line); border-top: 4px solid var(--primary);
   border-radius: 18px; padding: 14px 18px 12px; box-shadow: var(--shadow);
 }
 .dc-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
@@ -387,7 +388,7 @@ p { margin: 0 0 1rem; }
 .dates-table tr.is-next { background: var(--primary-soft); }
 .dates-table tr.is-next td:first-child { font-weight: 700; }
 .next-badge, .done-badge { font-size: .75rem; font-weight: 700; border-radius: 999px; padding: 2px 10px; }
-.next-badge { background: var(--primary); color: #fff; }
+.next-badge { background: var(--primary); color: var(--primary-ink); }
 .done-badge { background: var(--bg-tint); color: var(--muted); }
 .lb-empty { text-align: center !important; color: var(--muted); padding: 28px 16px !important; }
 
@@ -397,7 +398,7 @@ p { margin: 0 0 1rem; }
 .plain { padding-left: 20px; color: var(--ink-soft); }
 .plain li { margin-bottom: 4px; }
 .demo-gloss { margin: 8px 0 0 46px; font-size: .88rem; color: var(--muted); font-style: italic; }
-.badge { display: inline-block; vertical-align: middle; font-family: var(--font-body); font-size: .8rem; font-weight: 700; background: var(--primary); color: #fff; border-radius: 999px; padding: 2px 12px; margin-left: 8px; letter-spacing: 0; }
+.badge { display: inline-block; vertical-align: middle; font-family: var(--font-body); font-size: .8rem; font-weight: 700; background: var(--primary); color: var(--primary-ink); border-radius: 999px; padding: 2px 12px; margin-left: 8px; letter-spacing: 0; }
 .kit { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 18px; }
 .kit-item { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; }
 .kit-icon { display: inline-block; font-family: var(--mono); font-size: .78rem; font-weight: 700; color: var(--primary-deep); background: var(--primary-soft); border-radius: 8px; padding: 4px 10px; margin-bottom: 12px; }
@@ -410,7 +411,7 @@ p { margin: 0 0 1rem; }
 .lb-table { margin-top: 16px; }
 .callout { display: flex; gap: 14px; align-items: center; background: var(--primary-soft); border-radius: var(--radius); padding: 16px 20px; margin-bottom: 28px; }
 .callout p { margin: 0; }
-.callout-warn { margin: 32px 0 0; background: #FFF4E5; border: 1px solid #F3C98B; }
+.callout-warn { margin: 32px 0 0; }
 
 /* Numbered how-to lists */
 .howto { list-style: none; padding: 0; margin: 0; position: relative; }
@@ -418,7 +419,7 @@ p { margin: 0 0 1rem; }
 .howto li { position: relative; display: flex; gap: 18px; padding: 0 0 22px; }
 .h-n {
   flex: none; position: relative; z-index: 1; width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center;
-  background: var(--primary); color: #fff; font-family: var(--font-head); font-weight: 800; font-size: 1.1rem;
+  background: var(--primary); color: var(--primary-ink); font-family: var(--font-head); font-weight: 800; font-size: 1.1rem;
 }
 .howto h3 { font-size: 1.2rem; margin: 6px 0 4px; }
 .howto p { margin: 0 0 4px; color: var(--ink-soft); }
@@ -454,7 +455,7 @@ p { margin: 0 0 1rem; }
 .dc-group-eval { background: var(--eval-bg); border-color: var(--eval-line); }
 .dc-group-after { background: transparent; border: 1px dashed var(--line); }
 .dc-phase-head { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin: 0 0 4px; font-family: var(--font-body); }
-.dc-pill { font-size: .7rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: #fff; background: var(--primary); border-radius: 999px; padding: 3px 11px; }
+.dc-pill { font-size: .7rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--primary-ink); background: var(--primary); border-radius: 999px; padding: 3px 11px; }
 .dc-group-eval .dc-pill { background: var(--primary-deep); }
 .dc-group-after .dc-pill { background: var(--bg-tint); color: var(--muted); }
 .dc-span { font-size: .8rem; font-weight: 700; color: var(--primary-deep); white-space: nowrap; }
@@ -524,13 +525,13 @@ p { margin: 0 0 1rem; }
 .nav-links a:hover, .nav-links a.active { background: transparent; box-shadow: inset 0 0 0 1.5px var(--primary); }
 .io-tag, .kit-icon, .form-tag, .soon-link { background: var(--surface); border: 1.5px solid var(--primary); }
 .callout, .contact { background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--primary); }
-.callout-warn { background: var(--surface); border: 1px solid #F3C98B; border-left: 4px solid #E0A23A; }
+.callout-warn { background: var(--surface); border: 1px solid var(--warn-line); border-left: 4px solid var(--warn); }
 .dc-countdown { background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--primary); }
 .level-id { background: var(--surface); border: 1.5px solid var(--c); }
 .chip { background: var(--surface) !important; border: 1.5px solid currentColor; }
 .initials { background: var(--surface); color: var(--primary-deep); border: 2px solid var(--primary); }
 .person-tba .initials { border: 2px dashed var(--line); color: var(--muted); }
-.code-demo, .t2 .code-demo { background: #111827; color: #E5E7EB; }
+.code-demo, .t2 .code-demo { background: #07090C; color: #E5E7EB; border: 1px solid var(--line); }
 
 /* ---------- Icons beside headings, steps, tags and facts ---------- */
 .section h2 > .ico { width: .8em; height: .8em; margin-right: 10px; vertical-align: -.06em; color: var(--primary); stroke-width: 2.2; }
@@ -550,10 +551,13 @@ p { margin: 0 0 1rem; }
 .phase h3 .ico, .level h3 .ico, .step h3 .ico { width: .85em; height: .85em; margin-right: 7px; vertical-align: -.08em; color: var(--c, var(--primary)); stroke-width: 2.2; }
 .sf-kicker .ico { width: 16px; height: 16px; margin-right: 6px; vertical-align: -2px; }
 .callout > .ico { width: 24px; height: 24px; flex: none; color: var(--primary); }
-.callout-warn > .ico { color: #C27C0E; }
+.callout-warn > .ico { color: var(--warn); }
 
 /* Date dots: smaller dots, thinner ring and taller rows, so two filled dots on
    neighboring rows (two milestones on the same day) never touch. */
 .dc-list li { padding: 3px 0; }
 .dc-list li::before { left: -20px; top: 7px; width: 10px; height: 10px; }
 .dc-list li.is-next::before { box-shadow: 0 0 0 3px var(--primary-soft); }
+
+/* Dark theme: gold buttons keep dark text on hover. */
+.btn-primary:hover, .nav-links .nav-cta:hover { color: var(--primary-ink); }

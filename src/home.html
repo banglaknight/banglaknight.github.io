@@ -4,16 +4,16 @@
     <div class="hero-copy">
       <p class="eyebrow"><span class="dot"></span>Shared Task 1 · BLP Workshop at NAACL 2027</p>
       <h1>Bangla<span>Knight</span></h1>
-      <p class="hero-sub">Adversarial prompt classification for Bangla</p>
-      <p class="lead">Given a Bangla prompt, predict how risky it is: <strong>Safe</strong>, <strong>Offensive</strong>, <strong>Harmful</strong>, or <strong>Severe</strong>. Each prompt is written in Bangla script, in romanized Bangla, or code-mixed with another language, and your system should give the same answer for all three.</p>
+      <p class="hero-sub">Defending LLMs against adversarial Bangla prompts</p>
+      <p class="lead">Stand guard in front of an LLM. Given a Bangla prompt, decide how much of a threat it is: <strong>Safe</strong>, <strong>Offensive</strong>, <strong>Harmful</strong>, or <strong>Severe</strong>. Each prompt is written in Bangla script, in romanized Bangla, or code-mixed with another language, and your guard should give the same answer for all three.</p>
       <ul class="facts">
         <li>{{i:calendar}}June 1–5, 2027</li>
         <li>{{i:pin}}San Francisco, California</li>
         <li>{{i:upload}}Submissions on CodaBench</li>
       </ul>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="#task">Read the task <span aria-hidden="true">↓</span></a>
-        <a class="btn btn-ghost" href="/participate/">How to participate</a>
+        <a class="btn btn-primary" href="#task">Read the mission <span aria-hidden="true">↓</span></a>
+        <a class="btn btn-ghost" href="/participate/">Join the defense</a>
       </div>
     </div>
     {{DATES_CARD}}
@@ -24,8 +24,8 @@
 
 <section class="section" id="task">
   <div class="wrap narrow">
-    <p class="kicker">The task</p>
-    <h2>{{i:target}}Label each Bangla prompt with one of four risk levels</h2>
+    <p class="kicker">The mission</p>
+    <h2>{{i:castle}}Guard the gate: give each Bangla prompt one of four risk levels</h2>
 
     <div class="io">
       <div class="io-box"><span class="io-tag">{{i:inbox}}Input</span><p>One Bangla prompt, written in Bangla script, romanized Bangla, or code-mixed text.</p></div>
@@ -33,14 +33,14 @@
       <div class="io-box"><span class="io-tag">{{i:tag}}Output</span><p>One label: 0 Safe, 1 Offensive, 2 Harmful, or 3 Severe.</p></div>
     </div>
 
-    <h3 class="sub-h">{{i:book}}Background</h3>
-    <p>Before an LLM answers a request, a safety classifier often checks whether the request is safe to answer. Most of these classifiers are trained on English. Bangla is often typed in Latin letters or mixed with English, Hindi, or Urdu, and a harmful request can get past a filter when it is spelled differently.</p>
+    <h3 class="sub-h">{{i:shield}}Why a guard is needed</h3>
+    <p>A safety classifier is often an LLM's first line of defense: it checks each request before the model answers. Most of these guards are trained on English. Bangla is often typed in Latin letters or mixed with English, Hindi, or Urdu, and an attacker can slip a harmful request past the guard just by spelling it differently. BanglaKnight asks you to build a guard that holds in all three written forms.</p>
   </div>
 </section>
 
 <section class="section section-tint" id="labels">
   <div class="wrap">
-    <h2>{{i:shield}}The four labels</h2>
+    <h2>{{i:shield}}Four threat levels</h2>
     <div class="levels">
       <article class="level level-safe">
         <span class="level-id">0</span>
@@ -50,19 +50,19 @@
       </article>
       <article class="level level-off">
         <span class="level-id">1</span>
-        <h3>{{i:message}}Offensive</h3>
+        <h3>{{i:shield-alert}}Offensive</h3>
         <p>Insulting, provocative, or discriminatory language, but no request for harmful help.</p>
         <p class="level-cat">Offensive language, hate speech, anger</p>
       </article>
       <article class="level level-harm">
         <span class="level-id">2</span>
-        <h3>{{i:alert}}Harmful</h3>
+        <h3>{{i:shield-x}}Harmful</h3>
         <p>Asks for help with something of lower or medium risk.</p>
         <p class="level-cat">Misinformation, adversarial and malicious requests</p>
       </article>
       <article class="level level-sev">
         <span class="level-id">3</span>
-        <h3>{{i:octagon}}Severe</h3>
+        <h3>{{i:swords}}Severe</h3>
         <p>Asks for help with something high-risk that could cause serious harm.</p>
         <p class="level-cat">Suicide, jailbreak attempts</p>
       </article>
@@ -74,15 +74,15 @@
 <section class="section" id="phases">
   <div class="wrap">
     <p class="kicker">Two phases, both on CodaBench</p>
-    <h2>{{i:flag}}Development, then evaluation</h2>
+    <h2>{{i:sword}}Train, then defend</h2>
     {{PHASES}}
   </div>
 </section>
 
 <section class="section section-tint">
   <div class="wrap">
-    <p class="kicker">Next steps</p>
-    <h2>{{i:route}}How to take part</h2>
+    <p class="kicker">Three steps</p>
+    <h2>{{i:helmet}}Join the defense</h2>
     <div class="steps steps-3">
       <a class="step step-link" href="/data/"><span class="step-n">1</span><h3>{{i:download}}Get the data</h3><p>Training and dev sets plus a starter kit, released Oct 20, 2026.</p><span class="go">Data →</span></a>
       <a class="step step-link" href="/participate/"><span class="step-n">2</span><h3>{{i:upload}}Submit on CodaBench</h3><p>Practice on the dev set until Jan 15, then submit test predictions by Jan 31, 2027.</p><span class="go">Participate →</span></a>
