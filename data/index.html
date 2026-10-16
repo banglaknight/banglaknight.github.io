@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Data · BanglaKnight (BLP-2027 Task 1)</title>
   <meta name="description" content="What you get, the three written forms, and the starter kit.">
-  <meta name="theme-color" content="#E0474F">
+  <meta name="theme-color" content="#2563EB">
   <link rel="icon" type="image/svg+xml" href="/assets/img/logo.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500;600;700;800&family=Hind+Siliguri:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/style.css?v=5">
 </head>
 <body class="page-data">
 
@@ -28,7 +28,7 @@
       <a href="/leaderboard/"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 21h8"/><path d="M12 16v5"/><path d="M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3v2a3 3 0 0 1-3 3"/><path d="M7 5H4v2a3 3 0 0 0 3 3"/></svg>Leaderboard</a>
       <a href="/participate/"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V4"/><path d="M5 4h13l-2.5 4.5L18 13H5"/></svg>Participate</a>
       <a href="/paper/"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6"/><path d="M9 17h6"/></svg>Paper Submission</a>
-      <a href="/organizers/">Organizers</a>
+      <a href="/organizers/"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c.6-3.4 3-5.4 6-5.4s5.4 2 6 5.4"/><circle cx="17" cy="9" r="2.4"/><path d="M16.5 14.7c2.4.2 4 1.9 4.5 4.8"/></svg>Organizers</a>
       <a class="nav-cta" href="https://blp-workshop.github.io/" target="_blank" rel="noopener">BLP 2027 ↗</a>
     </nav>
   </div>
@@ -42,9 +42,32 @@
     <p class="page-desc">What you get, the three written forms, and the starter kit.</p>
   </div>
 </section>
+<div class="ticker" role="region" aria-label="Updates and important dates">
+  <div class="wrap ticker-in">
+    <span class="ticker-label"><span class="dot" aria-hidden="true"></span>Updates</span>
+    <div class="ticker-view">
+      <div class="ticker-track">
+        <div class="tk-set">
+          <span class="tk" data-date="2026-10-20"><b>Oct 20, 2026</b>Training and development data release; CodaBench registration opens</span>
+          <span class="tk" data-date="2027-01-15"><b>Jan 15, 2027</b>Test data release / evaluation begins</span>
+          <span class="tk" data-date="2027-01-24"><b>Jan 24, 2027</b>Registration deadline</span>
+          <span class="tk" data-date="2027-01-31"><b>Jan 31, 2027</b>System submission deadline</span>
+          <span class="tk" data-date="2027-02-03"><b>Feb 3, 2027</b>Official results released</span>
+          <span class="tk" data-date="2027-02-15"><b>Feb 15, 2027</b>Shared-task paper submission deadline</span>
+          <span class="tk" data-date="2027-03-26"><b>Mar 26, 2027</b>Notification of acceptance</span>
+          <span class="tk" data-date="2027-04-16"><b>Apr 16, 2027</b>Camera-ready paper due</span>
+          <span class="tk" data-date="2027-06-01"><b>Jun 1–5, 2027</b>Workshop at NAACL 2027, San Francisco</span>
+          <span class="tk"><b>BLP 2027</b>Co-located with NAACL 2027 · June 1–5, 2027 · San Francisco, California</span>
+          <span class="tk"><b>New</b>The <a href="/participate/">Participate</a> page explains both CodaBench phases</span>
+          <span class="tk"><b>New</b>System papers: up to 4 pages. See <a href="/paper/">Paper Submission</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <section class="section">
   <div class="wrap">
-    <h2>What you get</h2>
+    <h2><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="4.5" width="17" height="15" rx="2"/><path d="M3.5 9.5h17M3.5 14.5h17M9.5 9.5v10"/></svg>What you get</h2>
     <p class="section-lead">Each example is one Bangla prompt with a label from 0 to 3. All three written forms of a prompt are in the same split, so a model never sees one form in training and another in testing.</p>
     <table class="splits">
       <thead><tr><th>Split</th><th>Phase</th><th>Released</th><th>Use it to</th></tr></thead>
@@ -60,7 +83,7 @@
 <section class="section section-tint">
   <div class="wrap forms-grid">
     <div>
-      <h2>Three written forms</h2>
+      <h2><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7V5h16v2M12 5v14M9 19h6"/></svg>Three written forms</h2>
       <p>Every prompt appears three times, once in each form, always with the same label:</p>
       <ul class="plain">
         <li><strong>Bangla script:</strong> written in Bangla letters.</li>
@@ -104,21 +127,21 @@
 
 <section class="section">
   <div class="wrap">
-    <h2>Starter kit <span class="badge">Released Oct 20, 2026</span></h2>
+    <h2><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 8 4.5v9L12 21l-8-4.5v-9z"/><path d="m4 7.5 8 4.5 8-4.5M12 12v9"/></svg>Starter kit <span class="badge">Released Oct 20, 2026</span></h2>
     <p class="section-lead">Download it with the data. It gets you from zero to a valid CodaBench submission.</p>
     <div class="kit">
       <div class="kit-item">
-        <span class="kit-icon" aria-hidden="true">DATA</span>
+        <span class="kit-icon" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg>DATA</span>
         <h3>Train and dev sets</h3>
         <p>The labeled data for building and tuning your system.</p>
       </div>
       <div class="kit-item">
-        <span class="kit-icon" aria-hidden="true">.ipynb</span>
+        <span class="kit-icon" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="m10 12-2 2 2 2M14 12l2 2-2 2"/></svg>.ipynb</span>
         <h3>Starter notebook</h3>
         <p>A Jupyter notebook (.ipynb) with a simple baseline that solves the task end to end. Start here and improve it.</p>
       </div>
       <div class="kit-item">
-        <span class="kit-icon" aria-hidden="true">.ipynb</span>
+        <span class="kit-icon" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="m9 14.5 2 2 4-4"/></svg>.ipynb</span>
         <h3>prepare_submission_file notebook</h3>
         <p>Turns your predictions into the exact file format CodaBench accepts.</p>
       </div>
@@ -146,6 +169,6 @@
   </div>
 </footer>
 
-<script src="/assets/js/app.js"></script>
+<script src="/assets/js/app.js?v=2"></script>
 </body>
 </html>

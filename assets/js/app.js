@@ -1,4 +1,4 @@
-// BanglaKnight site: mobile menu, home-page date card and countdown, Data-page example.
+// BanglaKnight site: mobile menu, home-page date card and countdown, updates bar, Data-page example.
 
 (function () {
   // Mobile menu.
@@ -52,6 +52,20 @@
       ? "<strong>Today</strong> " + what
       : "<strong>" + days + " days</strong> until " + what;
     countdown.hidden = false;
+  }
+
+  // Updates bar: hide dates that have passed, then add a second copy so the loop is seamless.
+  var tset = document.querySelector(".ticker .tk-set");
+  if (tset) {
+    tset.querySelectorAll(".tk[data-date]").forEach(function (tk) {
+      if (endOfDayAoE(tk.getAttribute("data-date")) < now) tk.remove();
+    });
+    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      var copy = tset.cloneNode(true);
+      copy.setAttribute("aria-hidden", "true");
+      copy.querySelectorAll("a").forEach(function (a) { a.setAttribute("tabindex", "-1"); });
+      tset.parentNode.appendChild(copy);
+    }
   }
 
   // Data page: the same request in three written forms.
