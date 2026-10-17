@@ -32,3 +32,7 @@ python3 -m http.server 8000
 ```
 
 Links start with `/`, so open the site through the server, not as a file.
+
+## Leaderboard (automatic)
+
+`.github/workflows/leaderboard.yml` runs every day at 00:00 Bangladesh Time (18:00 UTC), and by hand from the **Actions** tab (*Update leaderboard → Run workflow*). It runs `scripts/update_leaderboard.py`, which reads the public CodaBench leaderboards of the Development and Test phases into `data/leaderboard.json`, then `build.py`, which renders the two boards and the "Last updated" line, and commits the result. Test scores stay hidden on CodaBench until the official results, so the test board fills in only after they are revealed. The CodaBench competition and forum links are `CODABENCH_URL` and `CODABENCH_FORUM_URL` in `build.py`.

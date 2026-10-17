@@ -1,6 +1,6 @@
 <section class="section">
   <div class="wrap lb-page">
-    <p class="lb-refresh">{{i:clock}}The leaderboards refresh every day at 12:00 AM Bangladesh Time (UTC+6).</p>
+    <p class="lb-refresh">{{i:clock}}{{LB_UPDATED}}</p>
     <div class="lb-grid">
       <div class="lb-col">
         <h2>{{i:sword}}Dev Leaderboard</h2>
@@ -8,36 +8,7 @@
         <table class="lb-table lb-compact" aria-label="Dev leaderboard">
           <thead><tr><th>#</th><th>Team</th><th>Affiliation</th><th class="lb-score">Defense Score</th></tr></thead>
           <tbody>
-          <tr><td class="lb-rank">1</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">2</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">3</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">4</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">5</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">6</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">7</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">8</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">9</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">10</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">11</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">12</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">13</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">14</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">15</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">16</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">17</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">18</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">19</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">20</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">21</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">22</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">23</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">24</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">25</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">26</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">27</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">28</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">29</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">30</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
+          {{LB_DEV_ROWS}}
           </tbody>
         </table>
       </div>
@@ -47,36 +18,7 @@
         <table class="lb-table lb-compact" aria-label="Test leaderboard">
           <thead><tr><th>#</th><th>Team</th><th>Affiliation</th><th class="lb-score">Defense Score</th></tr></thead>
           <tbody>
-          <tr><td class="lb-rank">1</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">2</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">3</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">4</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">5</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">6</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">7</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">8</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">9</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">10</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">11</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">12</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">13</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">14</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">15</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">16</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">17</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">18</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">19</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">20</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">21</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">22</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">23</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">24</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">25</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">26</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">27</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">28</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">29</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
-          <tr><td class="lb-rank">30</td><td class="lb-team">&mdash;</td><td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>
+          {{LB_TEST_ROWS}}
           </tbody>
         </table>
       </div>

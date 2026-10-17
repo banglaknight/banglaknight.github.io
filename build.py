@@ -16,8 +16,12 @@ ROOT = Path(__file__).resolve().parent
 
 # The CodaBench competition and its forum. Leave them None until the competition is live:
 # {{CB:text}} and {{FORUM:text}} then render as plain text, and {{CB_STATUS}} says it opens shortly.
-CODABENCH_URL = None
-CODABENCH_FORUM_URL = None
+CODABENCH_URL = "https://www.codabench.org/competitions/18410/"
+CODABENCH_FORUM_URL = "https://www.codabench.org/forums/18098/"
+
+# Leaderboard data, written once a day by scripts/update_leaderboard.py (GitHub Action)
+LEADERBOARD_JSON = ROOT / "data" / "leaderboard.json"
+LEADERBOARD_ROWS = 30   # rows shown per board (empty rows are placeholders)
 
 # (ISO date used for the countdown, label shown, milestone, phase)
 DATES = [
@@ -285,10 +289,41 @@ FOOTER = """<footer class="footer">
 </footer>"""
 
 
+def leaderboard_parts():
+    """Rows for the dev and test boards and the 'Last updated' line, from data/leaderboard.json."""
+    import json
+    from datetime import datetime, timedelta, timezone
+    data = json.loads(LEADERBOARD_JSON.read_text(encoding="utf-8")) if LEADERBOARD_JSON.exists() else {}
+
+    def rows(entries):
+        out = []
+        for k in range(max(LEADERBOARD_ROWS, len(entries))):
+            if k < len(entries):
+                e = entries[k]
+                out.append(f'<tr><td class="lb-rank">{k + 1}</td><td class="lb-team">{escape(e["team"])}</td>'
+                           f'<td class="lb-aff">{escape(e["affiliation"])}</td><td class="lb-score">{100 * e["score"]:.2f}</td></tr>')
+            else:
+                out.append(f'<tr><td class="lb-rank">{k + 1}</td><td class="lb-team">&mdash;</td>'
+                           f'<td class="lb-aff">&mdash;</td><td class="lb-score">00.00</td></tr>')
+        return "\n          ".join(out)
+
+    if data.get("updated"):
+        t = datetime.fromisoformat(data["updated"]).astimezone(timezone(timedelta(hours=6)))
+        stamp = f"{t:%b} {t.day}, {t.year}, {t:%I:%M %p}".replace(" 0", " ")
+        updated = (f"<strong>Last updated: {stamp} Bangladesh Time (UTC+6).</strong>&nbsp;"
+                   "The leaderboards refresh every day at 12:00 AM Bangladesh Time.")
+    else:
+        updated = "The leaderboards refresh every day at 12:00 AM Bangladesh Time (UTC+6)."
+    return rows(data.get("dev", [])), rows(data.get("test", [])), updated
+
+
 def render(i):
     slug, label, title, desc, photo, ico = PAGES[i]
     body = (ROOT / "src" / f"{slug}.html").read_text(encoding="utf-8")
     body = body.replace("{{DATES_CARD}}", dates_card()).replace("{{TICKER}}", ticker()).replace("{{PHASES}}", PHASES_BLOCK)
+    if "{{LB_DEV_ROWS}}" in body:
+        dev_rows, test_rows, updated = leaderboard_parts()
+        body = body.replace("{{LB_DEV_ROWS}}", dev_rows).replace("{{LB_TEST_ROWS}}", test_rows).replace("{{LB_UPDATED}}", updated)
     full_title = "BanglaKnight · BLP-2027 Task 1: Adversarial Prompt Classification" if slug == "home" else f"{title} · BanglaKnight (BLP-2027 Task 1)"
     head_html = "" if slug == "home" else page_header(slug, title, desc, photo, ico) + "\n" + ticker()
     return icons_in(f"""<!DOCTYPE html>
