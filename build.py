@@ -8,18 +8,24 @@ Run after any edit:  python3 build.py
 Change a date:       edit DATES below, then run the script (it fills the home-page card).
 """
 
+import re
 from html import escape
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 
+# The CodaBench competition and its forum. Leave them None until the competition is live:
+# {{CB:text}} and {{FORUM:text}} then render as plain text, and {{CB_STATUS}} says it opens shortly.
+CODABENCH_URL = None
+CODABENCH_FORUM_URL = None
+
 # (ISO date used for the countdown, label shown, milestone, phase)
 DATES = [
-    ("2026-10-20", "Oct 20, 2026", "Training and development data release", "dev"),
-    ("2026-10-20", "Oct 20, 2026", "CodaBench registration opens", "dev"),
-    ("2027-01-15", "Jan 15, 2027", "Test data release / test phase begins", "eval"),
-    ("2027-01-24", "Jan 24, 2027", "Registration deadline", "eval"),
-    ("2027-01-31", "Jan 31, 2027", "System submission deadline", "eval"),
+    ("2026-10-16", "Oct 16, 2026", "Training and development data release", "dev"),
+    ("2026-10-17", "Oct 17, 2026", "CodaBench registration opens; blind dev-test set and starter kit released", "dev"),
+    ("2027-01-08", "Jan 8, 2027", "Test data release / test phase begins", "eval"),
+    ("2027-01-17", "Jan 17, 2027", "CodaBench registration deadline", "eval"),
+    ("2027-01-24", "Jan 24, 2027", "System submission deadline", "eval"),
     ("2027-02-03", "Feb 3, 2027", "Official results released", "after"),
     ("2027-02-15", "Feb 15, 2027", "Shared-task paper submission deadline", "after"),
     ("2027-03-26", "Mar 26, 2027", "Notification of acceptance", "after"),
@@ -29,13 +35,15 @@ DATES = [
 
 # Group headings in the dates card
 PHASE_NAMES = {
-    "dev": ("Development phase", "Oct 20 – Jan 15"),
-    "eval": ("Test phase", "Jan 15 – Jan 31"),
+    "dev": ("Development phase", "Oct 17 – Jan 7"),
+    "eval": ("Test phase", "Jan 8 – Jan 24"),
     "after": ("Results and papers", ""),
 }
 
 # Extra items for the rolling updates bar, after the dates: (bold label, HTML text)
-NEWS = [
+NEWS = ([("Open", '{{CB_STATUS}}')] if CODABENCH_URL else []) + [
+    ("Help", 'Ask your questions in the {{FORUM:CodaBench forum}}. The organizers answer within 24–48 hours'),
+    ("New", 'The blind dev-test set, the starter notebook and the prepare_submission_file notebook are on the <a href="/data/">Data</a> page'),
     ("BLP 2027", 'Co-located with NAACL 2027 · June 1–5, 2027 · San Francisco, California'),
     ("New", 'Train and dev data are out. Download them from the <a href="/data/">Data</a> page'),
     ("New", 'The <a href="/participate/">Participate</a> page explains both CodaBench phases'),
@@ -47,9 +55,9 @@ PHASES_BLOCK = """<div class="phases">
   <article class="phase phase-dev">
     <p class="phase-tag">Phase 1</p>
     <h3>{{i:sword}}Development phase</h3>
-    <p class="phase-when">Oct 20, 2026 – Jan 15, 2027</p>
+    <p class="phase-when">Oct 17, 2026 – Jan 7, 2027</p>
     <dl>
-      <dt>{{i:data}}Data</dt><dd>Training and dev sets, plus the starter kit</dd>
+      <dt>{{i:data}}Data</dt><dd>Training and dev sets, the blind dev-test set and the starter kit, on the Data page</dd>
       <dt>{{i:user}}You</dt><dd>Build and tune your system</dd>
       <dt>{{i:upload}}CodaBench</dt><dd>Submit predictions on a blind dev-test set to see your score and check your file format. Practice only: it does not count toward the final ranking.</dd>
     </dl>
@@ -57,11 +65,11 @@ PHASES_BLOCK = """<div class="phases">
   <article class="phase phase-eval">
     <p class="phase-tag">Phase 2 · Final</p>
     <h3>{{i:shield}}Test phase</h3>
-    <p class="phase-when">Jan 15 – Jan 31, 2027</p>
+    <p class="phase-when">Jan 8 – Jan 24, 2027</p>
     <dl>
-      <dt>{{i:data}}Data</dt><dd>A new test set, released Jan 15, without labels</dd>
+      <dt>{{i:data}}Data</dt><dd>A new test set without labels, posted on the Data page on Jan 8</dd>
       <dt>{{i:user}}You</dt><dd>Run your final system on it</dd>
-      <dt>{{i:upload}}CodaBench</dt><dd>Submit your test predictions by Jan 31. These decide the official ranking, published Feb 3.</dd>
+      <dt>{{i:upload}}CodaBench</dt><dd>Submit your test predictions by Jan 24. These decide the official ranking, published Feb 3.</dd>
     </dl>
   </article>
 </div>"""
@@ -138,8 +146,19 @@ ICON_RE = __import__("re").compile(r"\{\{i:([a-z-]+)\}\}")
 
 
 def icons_in(html):
-    """Replace {{i:name}} placeholders with inline icons."""
-    return ICON_RE.sub(lambda m: icon(m.group(1)), html)
+    """Replace {{i:name}} placeholders with inline icons, and the CodaBench placeholders with links."""
+    return codabench_links(ICON_RE.sub(lambda m: icon(m.group(1)), html))
+
+
+def codabench_links(html):
+    """{{CB:text}} / {{FORUM:text}} become links once the URLs are set, plain text before."""
+    def link(url):
+        return lambda m: f'<a href="{url}">{m.group(1)}</a>' if url else m.group(1)
+    html = re.sub(r"\{\{CB:(.*?)\}\}", link(CODABENCH_URL), html)
+    html = re.sub(r"\{\{FORUM:(.*?)\}\}", link(CODABENCH_FORUM_URL), html)
+    status = (f'Registration is open: <a href="{CODABENCH_URL}"><strong>join BanglaKnight on CodaBench</strong></a>.'
+              if CODABENCH_URL else "The CodaBench competition opens shortly; its link will be posted here.")
+    return html.replace("{{CB_STATUS}}", status)
 
 
 def icon(name, cls="ico"):

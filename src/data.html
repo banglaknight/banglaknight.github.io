@@ -1,7 +1,7 @@
 <section class="section">
   <div class="wrap">
     <h2>{{i:package}}Starter kit</h2>
-    <p class="section-lead">Download it with the data. It gets you from zero to a valid CodaBench submission.</p>
+    <p class="section-lead">Everything for the task is on this page; nothing needs to be downloaded from CodaBench. The kit gets you from zero to a valid {{CB:CodaBench}} submission. Questions go to the {{FORUM:CodaBench forum}}.</p>
     <div class="kit">
       <div class="kit-item">
         <span class="kit-icon" aria-hidden="true">{{i:data}}DATA</span>
@@ -10,17 +10,19 @@
         <p class="kit-links">{{i:download}}Train: <a href="/data/files/banglaknight_train.csv" download>CSV</a> · <a href="/data/files/banglaknight_train.jsonl" download>JSONL</a><br>{{i:download}}Dev: <a href="/data/files/banglaknight_dev.csv" download>CSV</a> · <a href="/data/files/banglaknight_dev.jsonl" download>JSONL</a></p>
       </div>
       <div class="kit-item">
-        <span class="kit-icon" aria-hidden="true">{{i:file-code}}.ipynb</span>
-        <h3>Starter notebook</h3>
-        <p>A Jupyter notebook (.ipynb) with a simple baseline that solves the task end to end. Start here and improve it.</p>
+        <span class="kit-icon" aria-hidden="true">{{i:shield}}BLIND</span>
+        <h3>Blind sets (no labels)</h3>
+        <p>Predict every row and submit on CodaBench.</p>
+        <p class="kit-links">{{i:download}}Dev-test: <a href="/data/files/banglaknight_devtest.csv" download>CSV</a> · <a href="/data/files/banglaknight_devtest.jsonl" download>JSONL</a><br>{{i:clock}}Test: posted here on Jan 8, 2027</p>
       </div>
       <div class="kit-item">
-        <span class="kit-icon" aria-hidden="true">{{i:file-check}}.ipynb</span>
-        <h3>prepare_submission_file notebook</h3>
-        <p>Turns your predictions into the exact file format CodaBench accepts.</p>
+        <span class="kit-icon" aria-hidden="true">{{i:file-code}}.ipynb</span>
+        <h3>Notebooks</h3>
+        <p>The starter notebook trains a simple baseline and reports the Safety Score on dev. The prepare_submission_file notebook checks your predictions and writes the zip CodaBench accepts.</p>
+        <p class="kit-links">{{i:download}}<a href="/data/files/BanglaKnight_starter.ipynb" download>Starter</a> · <a href="https://colab.research.google.com/github/banglaknight/banglaknight.github.io/blob/main/data/files/BanglaKnight_starter.ipynb">Open in Colab</a><br>{{i:download}}<a href="/data/files/BanglaKnight_prepare_submission_file.ipynb" download>prepare_submission_file</a> · <a href="https://colab.research.google.com/github/banglaknight/banglaknight.github.io/blob/main/data/files/BanglaKnight_prepare_submission_file.ipynb">Open in Colab</a><br>{{i:download}}<a href="/data/files/banglaknight_sample_submission.zip" download>Sample submission</a> (format example, every label 0)</p>
       </div>
     </div>
-    <p class="note-small">Each prompt has three rows, one per written form, that share a <code>prompt_id</code> and a <code>label</code>. Columns: <code>id</code>, <code>prompt_id</code>, <code>form</code>, <code>text</code>, <code>label</code>. The two notebooks will be posted here on October 20, 2026.</p>
+    <p class="note-small">Each prompt has three rows, one per written form, that share a <code>prompt_id</code> and a <code>label</code>. Columns: <code>id</code>, <code>prompt_id</code>, <code>form</code>, <code>text</code>, <code>label</code> (the blind sets have no <code>label</code>). A submission is a zip with one file, <code>predictions.csv</code>, with the columns <code>id,label</code> and one row for every row of the blind file.</p>
   </div>
 </section>
 
