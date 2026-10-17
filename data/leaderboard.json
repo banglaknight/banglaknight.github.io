@@ -1,5 +1,11 @@
 {
- "updated": "2026-10-17T22:57:25+00:00",
- "dev": [],
+ "updated": "2026-10-17T23:15:56+00:00",
+ "dev": [
+  {
+   "team": "Organizers (BanglaBERT baseline)",
+   "affiliation": "BanglaKnight organizers",
+   "score": 0.6341
+  }
+ ],
  "test": []
 }
