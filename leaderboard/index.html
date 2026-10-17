@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Leaderboard · BanglaKnight (BLP-2027 Task 1)</title>
-  <meta name="description" content="Metrics, development-phase scores, and official results.">
+  <meta name="description" content="How teams are ranked, plus the dev and test leaderboards.">
   <meta name="theme-color" content="#FFFFFF">
   <link rel="icon" type="image/svg+xml" href="/assets/img/logo.svg?v=3">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500;600;700;800&family=Hind+Siliguri:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/style.css?v=11">
+  <link rel="stylesheet" href="/assets/css/style.css?v=12">
 </head>
 <body class="page-leaderboard">
 
@@ -39,7 +39,7 @@
   <div class="wrap">
     <p class="crumbs"><a href="/">BanglaKnight</a> <span aria-hidden="true">/</span> Leaderboard</p>
     <h1><svg class="ico ico-h1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 21h8"/><path d="M12 16v5"/><path d="M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3v2a3 3 0 0 1-3 3"/><path d="M7 5H4v2a3 3 0 0 0 3 3"/></svg>Leaderboard</h1>
-    <p class="page-desc">Metrics, development-phase scores, and official results.</p>
+    <p class="page-desc">How teams are ranked, plus the dev and test leaderboards.</p>
   </div>
 </section>
 <div class="ticker" role="region" aria-label="Updates and important dates">
@@ -68,24 +68,51 @@
 </div>
 <section class="section">
   <div class="wrap narrow">
-    <h2><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 17a8 8 0 1 1 16 0"/><path d="m12 17 4-5"/></svg>Metrics</h2>
-    <div class="placeholder">
-      <p><strong>Coming soon.</strong> The evaluation metrics and how teams are ranked will be posted here.</p>
+    <div class="metric-note">
+      <p class="metric-line"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 17a8 8 0 1 1 16 0"/><path d="m12 17 4-5"/></svg><strong>Ranking score</strong> = mean macro-F1 over the Bangla, romanized and code-mixed prompts &times; (1 &minus; USR)</p>
+      <p class="metric-sub">USR (unsafe-as-safe rate) is the share of unsafe prompts (Offensive, Harmful or Severe) that a system labels Safe.</p>
     </div>
 
-    <h2><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 17.5 3 6V3h3l11.5 11.5"/><path d="m13 19 6-6"/><path d="m16 16 4 4"/><path d="m19 21 2-2"/></svg>Development phase</h2>
-    <div class="placeholder">
-      <p><strong>Oct 20, 2026 – Jan 15, 2027.</strong> Scores on the dev-test set appear on the CodaBench leaderboard as you submit. They are for practice and do not count toward the final ranking.</p>
+    <div class="lb-grid">
+    <div class="lb-col">
+      <h2><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 17.5 3 6V3h3l11.5 11.5"/><path d="m13 19 6-6"/><path d="m16 16 4 4"/><path d="m19 21 2-2"/></svg>Dev Leaderboard</h2>
+      <p class="lb-sub">Dev-test set &middot; Oct 20 &ndash; Jan 15 &middot; practice only</p>
+      <table class="lb-table" aria-label="Dev leaderboard">
+        <thead><tr><th>Rank</th><th>Team</th><th class="lb-score">Score</th></tr></thead>
+        <tbody>
+        <tr><td class="lb-rank">1</td><td class="lb-team">&mdash;</td><td class="lb-score">00.00</td></tr>
+        <tr><td class="lb-rank">2</td><td class="lb-team">&mdash;</td><td class="lb-score">00.00</td></tr>
+        <tr><td class="lb-rank">3</td><td class="lb-team">&mdash;</td><td class="lb-score">00.00</td></tr>
+        <tr><td class="lb-rank">4</td><td class="lb-team">&mdash;</td><td class="lb-score">00.00</td></tr>
+        <tr><td class="lb-rank">5</td><td class="lb-team">&mdash;</td><td class="lb-score">00.00</td></tr>
+        <tr><td class="lb-rank">6</td><td class="lb-team">&mdash;</td><td class="lb-score">00.00</td></tr>
+        <tr><td class="lb-rank">7</td><td class="lb-team">&mdash;</td><td class="lb-score">00.00</td></tr>
+        <tr><td class="lb-rank">8</td><td class="lb-team">&mdash;</td><td class="lb-score">00.00</td></tr>
+        <tr><td class="lb-rank">9</td><td class="lb-team">&mdash;</td><td class="lb-score">00.00</td></tr>
+        <tr><td class="lb-rank">10</td><td class="lb-team">&mdash;</td><td class="lb-score">00.00</td></tr>
+        </tbody>
+      </table>
     </div>
-
-    <h2><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 21h8"/><path d="M12 16v5"/><path d="M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3v2a3 3 0 0 1-3 3"/><path d="M7 5H4v2a3 3 0 0 0 3 3"/></svg>Test phase: official results</h2>
-    <div class="placeholder">
-      <p>Final submissions on the new test set are made on CodaBench from Jan 15 to Jan 31, 2027. The official ranking will be published here on <strong>February 3, 2027</strong>.</p>
+    <div class="lb-col">
+      <h2><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 21h8"/><path d="M12 16v5"/><path d="M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3v2a3 3 0 0 1-3 3"/><path d="M7 5H4v2a3 3 0 0 0 3 3"/></svg>Test Leaderboard</h2>
+      <p class="lb-sub">Test set &middot; Jan 15 &ndash; 31 &middot; official ranking Feb 3</p>
+      <table class="lb-table" aria-label="Test leaderboard">
+        <thead><tr><th>Rank</th><th>Team</th><th class="lb-score">Score</th></tr></thead>
+        <tbody>
+        <tr><td class="lb-rank">1</td><td class="lb-team">&mdash;</td><td class="lb-score">00.00</td></tr>
+        <tr><td class="lb-rank">2</td><td class="lb-team">&mdash;</td><td class="lb-score">00.00</td></tr>
+        <tr><td class="lb-rank">3</td><td class="lb-team">&mdash;</td><td class="lb-score">00.00</td></tr>
+        <tr><td class="lb-rank">4</td><td class="lb-team">&mdash;</td><td class="lb-score">00.00</td></tr>
+        <tr><td class="lb-rank">5</td><td class="lb-team">&mdash;</td><td class="lb-score">00.00</td></tr>
+        <tr><td class="lb-rank">6</td><td class="lb-team">&mdash;</td><td class="lb-score">00.00</td></tr>
+        <tr><td class="lb-rank">7</td><td class="lb-team">&mdash;</td><td class="lb-score">00.00</td></tr>
+        <tr><td class="lb-rank">8</td><td class="lb-team">&mdash;</td><td class="lb-score">00.00</td></tr>
+        <tr><td class="lb-rank">9</td><td class="lb-team">&mdash;</td><td class="lb-score">00.00</td></tr>
+        <tr><td class="lb-rank">10</td><td class="lb-team">&mdash;</td><td class="lb-score">00.00</td></tr>
+        </tbody>
+      </table>
     </div>
-    <table class="lb-table" aria-label="Official leaderboard">
-      <thead><tr><th>Rank</th><th>Team</th><th>Score</th></tr></thead>
-      <tbody><tr><td colspan="3" class="lb-empty">No results yet</td></tr></tbody>
-    </table>
+    </div>
     <p class="note-small">How to submit: see <a href="/participate/">Participate</a>.</p>
   </div>
 </section>

@@ -71,7 +71,7 @@ PHASES_BLOCK = """<div class="phases">
 PAGES = [
     ("home", "Home", "BanglaKnight", "Shared Task 1 at BLP 2027: classify Bangla prompts into four risk levels.", "sf-golden-gate.jpg", None),
     ("data", "Data", "Data", "The starter kit and the three written forms.", "sf-skyline.jpg", "data"),
-    ("leaderboard", "Leaderboard", "Leaderboard", "Metrics, development-phase scores, and official results.", "sf-painted-ladies.jpg", "trophy"),
+    ("leaderboard", "Leaderboard", "Leaderboard", "How teams are ranked, plus the dev and test leaderboards.", "sf-painted-ladies.jpg", "trophy"),
     ("participate", "Participate", "Participate", "Two phases on CodaBench: practice on the dev-test set, then submit on the test set.", "sf-golden-gate.jpg", "swords"),
     ("paper", "Paper Submission", "Paper Submission", "How to write and submit your system description paper.", "sf-painted-ladies.jpg", "paper"),
     ("organizers", "Organizers", "Organizers", "Who runs the task and how to reach us.", "sf-skyline.jpg", "people"),
@@ -284,7 +284,7 @@ def render(i):
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500;600;700;800&family=Hind+Siliguri:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/style.css?v=11">
+  <link rel="stylesheet" href="/assets/css/style.css?v=12">
 </head>
 <body class="page-{slug}">
 

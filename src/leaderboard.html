@@ -1,23 +1,50 @@
 <section class="section">
   <div class="wrap narrow">
-    <h2>{{i:gauge}}Metrics</h2>
-    <div class="placeholder">
-      <p><strong>Coming soon.</strong> The evaluation metrics and how teams are ranked will be posted here.</p>
+    <div class="metric-note">
+      <p class="metric-line">{{i:gauge}}<strong>Ranking score</strong> = mean macro-F1 over the Bangla, romanized and code-mixed prompts &times; (1 &minus; USR)</p>
+      <p class="metric-sub">USR (unsafe-as-safe rate) is the share of unsafe prompts (Offensive, Harmful or Severe) that a system labels Safe.</p>
     </div>
 
-    <h2>{{i:sword}}Development phase</h2>
-    <div class="placeholder">
-      <p><strong>Oct 20, 2026 – Jan 15, 2027.</strong> Scores on the dev-test set appear on the CodaBench leaderboard as you submit. They are for practice and do not count toward the final ranking.</p>
+    <div class="lb-grid">
+    <div class="lb-col">
+      <h2>{{i:sword}}Dev Leaderboard</h2>
+      <p class="lb-sub">Dev-test set &middot; Oct 20 &ndash; Jan 15 &middot; practice only</p>
+      <table class="lb-table" aria-label="Dev leaderboard">
+        <thead><tr><th>Rank</th><th>Team</th><th class="lb-score">Score</th></tr></thead>
+        <tbody>
+        <tr><td class="lb-rank">1</td><td class="lb-team">&mdash;</td><td class="lb-score">00.00</td></tr>
+        <tr><td class="lb-rank">2</td><td class="lb-team">&mdash;</td><td class="lb-score">00.00</td></tr>
+        <tr><td class="lb-rank">3</td><td class="lb-team">&mdash;</td><td class="lb-score">00.00</td></tr>
+        <tr><td class="lb-rank">4</td><td class="lb-team">&mdash;</td><td class="lb-score">00.00</td></tr>
+        <tr><td class="lb-rank">5</td><td class="lb-team">&mdash;</td><td class="lb-score">00.00</td></tr>
+        <tr><td class="lb-rank">6</td><td class="lb-team">&mdash;</td><td class="lb-score">00.00</td></tr>
+        <tr><td class="lb-rank">7</td><td class="lb-team">&mdash;</td><td class="lb-score">00.00</td></tr>
+        <tr><td class="lb-rank">8</td><td class="lb-team">&mdash;</td><td class="lb-score">00.00</td></tr>
+        <tr><td class="lb-rank">9</td><td class="lb-team">&mdash;</td><td class="lb-score">00.00</td></tr>
+        <tr><td class="lb-rank">10</td><td class="lb-team">&mdash;</td><td class="lb-score">00.00</td></tr>
+        </tbody>
+      </table>
     </div>
-
-    <h2>{{i:trophy}}Test phase: official results</h2>
-    <div class="placeholder">
-      <p>Final submissions on the new test set are made on CodaBench from Jan 15 to Jan 31, 2027. The official ranking will be published here on <strong>February 3, 2027</strong>.</p>
+    <div class="lb-col">
+      <h2>{{i:trophy}}Test Leaderboard</h2>
+      <p class="lb-sub">Test set &middot; Jan 15 &ndash; 31 &middot; official ranking Feb 3</p>
+      <table class="lb-table" aria-label="Test leaderboard">
+        <thead><tr><th>Rank</th><th>Team</th><th class="lb-score">Score</th></tr></thead>
+        <tbody>
+        <tr><td class="lb-rank">1</td><td class="lb-team">&mdash;</td><td class="lb-score">00.00</td></tr>
+        <tr><td class="lb-rank">2</td><td class="lb-team">&mdash;</td><td class="lb-score">00.00</td></tr>
+        <tr><td class="lb-rank">3</td><td class="lb-team">&mdash;</td><td class="lb-score">00.00</td></tr>
+        <tr><td class="lb-rank">4</td><td class="lb-team">&mdash;</td><td class="lb-score">00.00</td></tr>
+        <tr><td class="lb-rank">5</td><td class="lb-team">&mdash;</td><td class="lb-score">00.00</td></tr>
+        <tr><td class="lb-rank">6</td><td class="lb-team">&mdash;</td><td class="lb-score">00.00</td></tr>
+        <tr><td class="lb-rank">7</td><td class="lb-team">&mdash;</td><td class="lb-score">00.00</td></tr>
+        <tr><td class="lb-rank">8</td><td class="lb-team">&mdash;</td><td class="lb-score">00.00</td></tr>
+        <tr><td class="lb-rank">9</td><td class="lb-team">&mdash;</td><td class="lb-score">00.00</td></tr>
+        <tr><td class="lb-rank">10</td><td class="lb-team">&mdash;</td><td class="lb-score">00.00</td></tr>
+        </tbody>
+      </table>
     </div>
-    <table class="lb-table" aria-label="Official leaderboard">
-      <thead><tr><th>Rank</th><th>Team</th><th>Score</th></tr></thead>
-      <tbody><tr><td colspan="3" class="lb-empty">No results yet</td></tr></tbody>
-    </table>
+    </div>
     <p class="note-small">How to submit: see <a href="/participate/">Participate</a>.</p>
   </div>
 </section>
