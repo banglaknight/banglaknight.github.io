@@ -575,6 +575,12 @@ p { margin: 0 0 1rem; }
 .metric-line svg { vertical-align: -0.2em; margin-right: 6px; }
 .metric-eq { display: block math; margin: 12px auto 10px; font-family: "STIX Two Math", "Cambria Math", "Latin Modern Math", math; font-size: 1.25rem; color: var(--ink); overflow-x: auto; overflow-y: hidden; padding: 2px 0; }
 .metric-sub math { font-family: "STIX Two Math", "Cambria Math", "Latin Modern Math", math; font-size: 1.05em; }
+.metric-defs { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 4px 0 10px; }
+.metric-def { min-width: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 10px 14px; }
+.metric-def math { font-family: "STIX Two Math", "Cambria Math", "Latin Modern Math", math; font-size: 1.05rem; margin: 2px 0 6px; padding: 8px 0 6px; overflow-x: auto; overflow-y: hidden; }
+.metric-def p { margin: 0; color: var(--ink-soft); font-size: .9rem; }
+@media (max-width: 760px) { .metric-defs { grid-template-columns: 1fr; } }
+@media (max-width: 620px) { .metric-def math { font-size: .82rem; } .metric-def { padding: 10px 10px; } }
 .metric-sub { margin-top: 6px !important; color: var(--ink-soft); font-size: .95rem; }
 .lb-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; }
 .lb-grid h2 { margin: 0; font-size: 1.4rem; }
