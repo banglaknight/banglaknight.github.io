@@ -590,5 +590,12 @@ p { margin: 0 0 1rem; }
 .lb-rank { width: 1%; white-space: nowrap; color: var(--muted); }
 .lb-team { color: var(--muted); }
 .lb-table .lb-score { text-align: right; font-family: var(--mono); font-variant-numeric: tabular-nums; }
+.lb-page { max-width: 1040px; }
+.lb-refresh { display: flex; align-items: center; gap: 8px; margin: 0 0 18px; color: var(--ink-soft); font-size: .95rem; }
+.lb-compact { font-size: .88rem; }
+.lb-grid .lb-compact th, .lb-grid .lb-compact td { padding: 5px 10px; line-height: 1.35; }
+.lb-compact thead th { font-size: .85rem; white-space: nowrap; }
+.lb-aff { color: var(--muted); }
+.lb-table th.lb-score { font-family: var(--font-head); }
 @media (max-width: 760px) { .lb-grid { grid-template-columns: 1fr; gap: 32px; } .lb-sub { min-height: 0; } }
 @media (max-width: 620px) { .metric-eq { font-size: 1rem; } }

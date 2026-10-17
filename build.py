@@ -284,7 +284,7 @@ def render(i):
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500;600;700;800&family=Hind+Siliguri:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/style.css?v=14">
+  <link rel="stylesheet" href="/assets/css/style.css?v=15">
 </head>
 <body class="page-{slug}">
 
