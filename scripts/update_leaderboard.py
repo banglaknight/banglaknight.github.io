@@ -16,7 +16,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "data" / "leaderboard.json"
 API = "https://www.codabench.org/api/phases/{}/get_leaderboard/"
-PHASES = {"dev": (31034, "dev_score"), "test": (31035, "test_score")}
+PHASES = {"dev": (31037, "dev_score"), "test": (31038, "test_score")}
 
 
 def fetch(phase_id):

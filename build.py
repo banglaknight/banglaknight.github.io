@@ -16,8 +16,8 @@ ROOT = Path(__file__).resolve().parent
 
 # The CodaBench competition and its forum. Leave them None until the competition is live:
 # {{CB:text}} and {{FORUM:text}} then render as plain text, and {{CB_STATUS}} says it opens shortly.
-CODABENCH_URL = "https://www.codabench.org/competitions/18410/"
-CODABENCH_FORUM_URL = "https://www.codabench.org/forums/18098/"
+CODABENCH_URL = "https://www.codabench.org/competitions/18411/"
+CODABENCH_FORUM_URL = "https://www.codabench.org/forums/18099/"
 
 # Leaderboard data, written once a day by scripts/update_leaderboard.py (GitHub Action)
 LEADERBOARD_JSON = ROOT / "data" / "leaderboard.json"
