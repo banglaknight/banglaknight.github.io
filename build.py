@@ -43,7 +43,7 @@ PHASE_NAMES = {
 # Extra items for the rolling updates bar, after the dates: (bold label, HTML text)
 NEWS = ([("Open", '{{CB_STATUS}}')] if CODABENCH_URL else []) + [
     ("Help", 'Ask your questions in the {{FORUM:CodaBench forum}}. The organizers answer within 24–48 hours'),
-    ("New", 'The blind dev-test set, the starter notebook and the prepare_submission_file notebook are on the <a href="/data/">Data</a> page'),
+    ("New", 'The blind dev-test set and the starter notebook are on the <a href="/data/">Data</a> page'),
     ("BLP 2027", 'Co-located with NAACL 2027 · June 1–5, 2027 · San Francisco, California'),
     ("New", 'Train and dev data are out. Download them from the <a href="/data/">Data</a> page'),
     ("New", 'The <a href="/participate/">Participate</a> page explains both CodaBench phases'),
