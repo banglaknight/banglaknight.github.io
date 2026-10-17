@@ -569,7 +569,7 @@ p { margin: 0 0 1rem; }
 .note-small code { font-family: var(--mono); font-size: .85em; }
 
 /* Leaderboard page: compact metric note, dev and test boards side by side */
-.metric-note { background: var(--bg-tint); border: 1px solid var(--line); border-radius: 16px; padding: 14px 18px; margin-bottom: 32px; }
+.metric-note { background: var(--bg-tint); border: 1px solid var(--line); border-radius: 16px; padding: 14px 18px; margin: 36px 0 0; }
 .metric-note p { margin: 0; }
 .metric-line { color: var(--ink); }
 .metric-line svg { vertical-align: -0.2em; margin-right: 6px; }

@@ -1,28 +1,5 @@
 <section class="section">
   <div class="wrap lb-page">
-    <div class="metric-note">
-      <p class="metric-line">{{i:gauge}}<strong>How the score works</strong></p>
-      <math display="block" class="metric-eq" aria-label="Safety Score equals average F1 times one minus USR">
-        <mrow><mtext>Safety Score</mtext><mo>=</mo><mtext>Average F1</mtext><mo>&times;</mo><mo>(</mo><mn>1</mn><mo>&minus;</mo><mtext>USR</mtext><mo>)</mo></mrow>
-      </math>
-      <div class="metric-defs">
-        <div class="metric-def">
-          <math display="block" aria-label="Average F1 equals F1 on Bangla plus F1 on romanized plus F1 on code-mixed, divided by 3">
-            <mrow><mtext>Average F1</mtext><mo>=</mo><mfrac><mrow><msub><mtext>F1</mtext><mtext>Bangla</mtext></msub><mo>+</mo><msub><mtext>F1</mtext><mtext>Romanized</mtext></msub><mo>+</mo><msub><mtext>F1</mtext><mtext>Code-mixed</mtext></msub></mrow><mn>3</mn></mfrac></mrow>
-          </math>
-          <p>Macro-F1 on each written form, averaged. Higher is better.</p>
-        </div>
-        <div class="metric-def">
-          <math display="block" aria-label="USR equals unsafe prompts labeled Safe divided by all unsafe prompts">
-            <mrow><mtext>USR</mtext><mo>=</mo><mfrac><mtext>unsafe prompts labeled Safe</mtext><mtext>all unsafe prompts</mtext></mfrac></mrow>
-          </math>
-          <p>Unsafe-as-safe rate: how often Offensive, Harmful or Severe prompts slip through as Safe. Lower is better.</p>
-        </div>
-      </div>
-      <p class="metric-sub"><strong>Example:</strong> average F1 = 0.80 and USR = 0.05 give Safety Score = 0.80 &times; (1 &minus; 0.05) = 0.76.</p>
-      <p class="metric-sub">{{i:file-code}}The starter notebook in the <a href="/data/">starter kit</a> already computes the Safety Score, so you can check your system on dev before you submit.</p>
-    </div>
-
     <p class="lb-refresh">{{i:clock}}The leaderboards refresh every day at 12:00 AM Bangladesh Time (UTC+6).</p>
     <div class="lb-grid">
       <div class="lb-col">
@@ -103,6 +80,28 @@
           </tbody>
         </table>
       </div>
+    </div>
+    <div class="metric-note">
+      <p class="metric-line">{{i:gauge}}<strong>How the score works</strong></p>
+      <math display="block" class="metric-eq" aria-label="Safety Score equals average F1 times one minus USR">
+        <mrow><mtext>Safety Score</mtext><mo>=</mo><mtext>Average F1</mtext><mo>&times;</mo><mo>(</mo><mn>1</mn><mo>&minus;</mo><mtext>USR</mtext><mo>)</mo></mrow>
+      </math>
+      <div class="metric-defs">
+        <div class="metric-def">
+          <math display="block" aria-label="Average F1 equals F1 on Bangla plus F1 on romanized plus F1 on code-mixed, divided by 3">
+            <mrow><mtext>Average F1</mtext><mo>=</mo><mfrac><mrow><msub><mtext>F1</mtext><mtext>Bangla</mtext></msub><mo>+</mo><msub><mtext>F1</mtext><mtext>Romanized</mtext></msub><mo>+</mo><msub><mtext>F1</mtext><mtext>Code-mixed</mtext></msub></mrow><mn>3</mn></mfrac></mrow>
+          </math>
+          <p>Macro-F1 on each written form, averaged. Higher is better.</p>
+        </div>
+        <div class="metric-def">
+          <math display="block" aria-label="USR equals unsafe prompts labeled Safe divided by all unsafe prompts">
+            <mrow><mtext>USR</mtext><mo>=</mo><mfrac><mtext>unsafe prompts labeled Safe</mtext><mtext>all unsafe prompts</mtext></mfrac></mrow>
+          </math>
+          <p>Unsafe-as-safe rate: how often Offensive, Harmful or Severe prompts slip through as Safe. Lower is better.</p>
+        </div>
+      </div>
+      <p class="metric-sub"><strong>Example:</strong> average F1 = 0.80 and USR = 0.05 give Safety Score = 0.80 &times; (1 &minus; 0.05) = 0.76.</p>
+      <p class="metric-sub">{{i:file-code}}The starter notebook in the <a href="/data/">starter kit</a> already computes the Safety Score, so you can check your system on dev before you submit.</p>
     </div>
     <p class="note-small">How to submit: see <a href="/participate/">Participate</a>.</p>
   </div>
