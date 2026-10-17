@@ -573,6 +573,8 @@ p { margin: 0 0 1rem; }
 .metric-note p { margin: 0; }
 .metric-line { color: var(--ink); }
 .metric-line svg { vertical-align: -0.2em; margin-right: 6px; }
+.metric-eq { display: block math; margin: 12px auto 10px; font-family: "STIX Two Math", "Cambria Math", "Latin Modern Math", math; font-size: 1.25rem; color: var(--ink); overflow-x: auto; overflow-y: hidden; padding: 2px 0; }
+.metric-sub math { font-family: "STIX Two Math", "Cambria Math", "Latin Modern Math", math; font-size: 1.05em; }
 .metric-sub { margin-top: 6px !important; color: var(--ink-soft); font-size: .95rem; }
 .lb-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; }
 .lb-grid h2 { margin: 0; font-size: 1.4rem; }
@@ -583,3 +585,4 @@ p { margin: 0 0 1rem; }
 .lb-team { color: var(--muted); }
 .lb-table .lb-score { text-align: right; font-family: var(--mono); font-variant-numeric: tabular-nums; }
 @media (max-width: 760px) { .lb-grid { grid-template-columns: 1fr; gap: 32px; } .lb-sub { min-height: 0; } }
+@media (max-width: 620px) { .metric-eq { font-size: 1rem; } }
