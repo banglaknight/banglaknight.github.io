@@ -599,3 +599,11 @@ p { margin: 0 0 1rem; }
 .lb-table th.lb-score { font-family: var(--font-head); }
 @media (max-width: 760px) { .lb-grid { grid-template-columns: 1fr; gap: 32px; } .lb-sub { min-height: 0; } }
 @media (max-width: 620px) { .metric-eq { font-size: 1rem; } }
+
+/* Links are blue so readers can tell them apart (the navigation bar and the hero buttons keep their own style) */
+:root { --link: #1f5fbf; --link-hover: #0f3f8c; }
+a { color: var(--link); text-underline-offset: 2px; }
+a:hover { color: var(--link-hover); }
+.crumbs a, .tk a, .credits a, .person h3 a, .go, .pager a { color: var(--link); }
+.crumbs a:hover, .tk a:hover, .credits a:hover, .person h3 a:hover, .step-link:hover .go, .pager a:hover { color: var(--link-hover); }
+.hero li a { color: var(--link); font-weight: 600; }

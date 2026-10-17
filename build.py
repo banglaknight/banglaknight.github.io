@@ -26,7 +26,8 @@ LEADERBOARD_ROWS = 30   # rows shown per board (empty rows are placeholders)
 # (ISO date used for the countdown, label shown, milestone, phase)
 DATES = [
     ("2026-10-16", "Oct 16, 2026", "Training and development data release", "dev"),
-    ("2026-10-17", "Oct 17, 2026", "CodaBench registration opens; blind dev-test set and starter kit released", "dev"),
+    ("2026-10-17", "Oct 17, 2026", "CodaBench registration opens", "dev"),
+    ("2026-10-17", "Oct 17, 2026", "Blind dev-test set released", "dev"),
     ("2027-01-08", "Jan 8, 2027", "Test data release / test phase begins", "eval"),
     ("2027-01-17", "Jan 17, 2027", "CodaBench registration deadline", "eval"),
     ("2027-01-24", "Jan 24, 2027", "System submission deadline", "eval"),
@@ -338,7 +339,7 @@ def render(i):
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500;600;700;800&family=Hind+Siliguri:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/style.css?v=16">
+  <link rel="stylesheet" href="/assets/css/style.css?v=17">
 </head>
 <body class="page-{slug}">
 
