@@ -17,6 +17,7 @@ ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "data" / "leaderboard.json"
 API = "https://www.codabench.org/api/phases/{}/get_leaderboard/"
 PHASES = {"dev": (31037, "dev_score"), "test": (31038, "test_score")}
+ORGANIZERS = {"raihan_nishad", "nishat008"}         # our own CodaBench accounts: never shown on the site boards
 
 
 def fetch(phase_id):
@@ -36,6 +37,8 @@ def fetch(phase_id):
 def entries(board, key):
     out = []
     for s in board.get("submissions", []):
+        if s.get("owner") in ORGANIZERS:
+            continue
         score = next((float(x["score"]) for x in s.get("scores", []) if x.get("column_key") == key), None)
         if score is None:                           # hidden (test phase before Feb 3) or not scored
             continue
