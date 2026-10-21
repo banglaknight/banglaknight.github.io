@@ -607,3 +607,9 @@ a:hover { color: var(--link-hover); }
 .crumbs a, .tk a, .credits a, .person h3 a, .go, .pager a { color: var(--link); }
 .crumbs a:hover, .tk a:hover, .credits a:hover, .person h3 a:hover, .step-link:hover .go, .pager a:hover { color: var(--link-hover); }
 .hero li a { color: var(--link); font-weight: 600; }
+
+/* Team rules box (Participate and Leaderboard) */
+.team-rules { align-items: flex-start; }
+.team-rules > .ico { margin-top: 2px; }
+.team-rules p + p { margin-top: 8px; }
+.team-warn { color: #C8102E; font-weight: 700; }
