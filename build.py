@@ -45,6 +45,24 @@ PHASE_NAMES = {
     "after": ("Results and papers", ""),
 }
 
+# Notice bar under the menu on every page. Set NOTICE to a key of NOTICES, or None to hide it.
+NOTICE = "codabench-down"
+CODABENCH_ISSUE_URL = "https://github.com/codalab/codabench/issues/2679"
+NOTICES = {
+    "codabench-down": ("warn", "CodaBench is down",
+        "Since Oct 21, 2026 (about 14:00 UTC), codabench.org cannot be reached from most networks. "
+        "The university that hosts CodaBench has blocked web traffic to its servers while it deals with a security issue; "
+        "the CodaBench team reports that the platform itself is running. "
+        "You cannot submit or see the CodaBench leaderboard until access returns. "
+        "The development phase runs until Jan 7, 2027, so no deadline is affected. "
+        "Keep working with the files on the <a href=\"/data/\">Data</a> page. "
+        f'We will update this notice when the site is back (<a href="{CODABENCH_ISSUE_URL}" target="_blank" rel="noopener">CodaBench status report ↗</a>).'),
+    "codabench-back": ("ok", "CodaBench is back",
+        "CodaBench could not be reached from Oct 21 to {back}, 2026. It works again: you can submit and see the leaderboard. "
+        "The leaderboard on this site catches up at its next daily refresh."),
+}
+NOTICE_BACK = ""   # date CodaBench came back, e.g. "Oct 23"
+
 # Extra items for the rolling updates bar, after the dates: (bold label, HTML text)
 NEWS = ([("Open", '{{CB_STATUS}}')] if CODABENCH_URL else []) + [
     ("Help", 'Ask your questions in the {{FORUM:CodaBench forum}}. The organizers answer within 24–48 hours'),
@@ -228,6 +246,19 @@ def ticker():
 </div>"""
 
 
+def notice_bar():
+    """Site-wide notice under the menu (NOTICE above), or nothing."""
+    if not NOTICE:
+        return ""
+    kind, head, text = NOTICES[NOTICE]
+    text = text.replace("{back}", NOTICE_BACK)
+    return f"""<div class="notice notice-{kind}" role="status">
+  <div class="wrap notice-in">
+    <p><strong>{escape(head)}.</strong> {text}</p>
+  </div>
+</div>"""
+
+
 def nav(active):
     current = ' class="active" aria-current="page"'
     links = "\n".join(
@@ -339,11 +370,12 @@ def render(i):
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500;600;700;800&family=Hind+Siliguri:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/style.css?v=18">
+  <link rel="stylesheet" href="/assets/css/style.css?v=19">
 </head>
 <body class="page-{slug}">
 
 {nav(slug)}
+{notice_bar()}
 
 <main>
 {head_html}
