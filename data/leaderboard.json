@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T18:36:32+00:00",
+ "updated": "2026-10-26T22:33:44+00:00",
  "dev": [
   {
    "team": "X",
@@ -7,14 +7,19 @@
    "score": 0.8039
   },
   {
+   "team": "CUET_AL_Masaar",
+   "affiliation": "CUET",
+   "score": 0.7814
+  },
+  {
    "team": "Outliers",
    "affiliation": "Outliers",
    "score": 0.7785
   },
   {
-   "team": "CUET_AL_Masaar",
-   "affiliation": "Chittagong University of Engineering and Technology (CUET)",
-   "score": 0.758
+   "team": "Team Unknown",
+   "affiliation": "IIUC",
+   "score": 0.7529
   },
   {
    "team": "LDV Trier",
