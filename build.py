@@ -46,7 +46,7 @@ PHASE_NAMES = {
 }
 
 # Notice bar under the menu on every page. Set NOTICE to a key of NOTICES, or None to hide it.
-NOTICE = "codabench-down"
+NOTICE = "codabench-back"
 CODABENCH_ISSUE_URL = "https://github.com/codalab/codabench/issues/2679"
 NOTICES = {
     "codabench-down": ("warn", "CodaBench is down",
@@ -61,7 +61,7 @@ NOTICES = {
         "CodaBench could not be reached from Oct 21 to {back}, 2026. It works again: you can submit and see the leaderboard. "
         "The leaderboard on this site catches up at its next daily refresh."),
 }
-NOTICE_BACK = ""   # date CodaBench came back, e.g. "Oct 23"
+NOTICE_BACK = "Oct 26"   # date CodaBench came back, e.g. "Oct 23"
 
 # Extra items for the rolling updates bar, after the dates: (bold label, HTML text)
 NEWS = ([("Open", '{{CB_STATUS}}')] if CODABENCH_URL else []) + [
