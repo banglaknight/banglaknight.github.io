@@ -1,15 +1,20 @@
 {
- "updated": "2026-10-20T21:29:08+00:00",
+ "updated": "2026-10-26T10:14:21+00:00",
  "dev": [
+  {
+   "team": "CUET_AL_Masaar",
+   "affiliation": "Chittagong University of Engineering and Technology (CUET)",
+   "score": 0.758
+  },
   {
    "team": "LDV Trier",
    "affiliation": "Universität Trier",
-   "score": 0.7257
+   "score": 0.75
   },
   {
    "team": "Green Minds",
    "affiliation": "Green University of Bangladesh",
-   "score": 0.721
+   "score": 0.726
   },
   {
    "team": "ARIANUJ",
