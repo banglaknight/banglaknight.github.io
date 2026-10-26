@@ -1,6 +1,16 @@
 {
- "updated": "2026-10-26T10:14:21+00:00",
+ "updated": "2026-10-26T18:36:32+00:00",
  "dev": [
+  {
+   "team": "X",
+   "affiliation": "BUET",
+   "score": 0.8039
+  },
+  {
+   "team": "Outliers",
+   "affiliation": "Outliers",
+   "score": 0.7785
+  },
   {
    "team": "CUET_AL_Masaar",
    "affiliation": "Chittagong University of Engineering and Technology (CUET)",
@@ -9,17 +19,27 @@
   {
    "team": "LDV Trier",
    "affiliation": "Universität Trier",
-   "score": 0.75
+   "score": 0.7505
+  },
+  {
+   "team": "The Context Windows",
+   "affiliation": "Rajiv Gandhi University of Knowledge Technologies, Nuzvid",
+   "score": 0.7464
   },
   {
    "team": "Green Minds",
    "affiliation": "Green University of Bangladesh",
-   "score": 0.726
+   "score": 0.7352
   },
   {
    "team": "ARIANUJ",
    "affiliation": "SHINHAN UNIVERSITY",
    "score": 0.6956
+  },
+  {
+   "team": "IReL_IIT(BHU)",
+   "affiliation": "IIT(BHU), Varanasi, India",
+   "score": 0.6918
   },
   {
    "team": "Shahjalal",
