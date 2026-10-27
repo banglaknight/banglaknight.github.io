@@ -46,7 +46,7 @@ PHASE_NAMES = {
 }
 
 # Notice bar under the menu on every page. Set NOTICE to a key of NOTICES, or None to hide it.
-NOTICE = "codabench-back"
+NOTICE = None
 CODABENCH_ISSUE_URL = "https://github.com/codalab/codabench/issues/2679"
 NOTICES = {
     "codabench-down": ("warn", "CodaBench is down",
@@ -304,6 +304,22 @@ def pager(i):
     return f'<nav class="pager wrap" aria-label="Page navigation">{prev_html}{next_html}</nav>'
 
 
+# Card after the page links on every page, pointing to another open shared task
+PROMO = """<aside class="promo wrap" aria-label="Another shared task">
+  <div class="promo-card">
+    <div class="promo-text">
+      <p class="promo-kicker">{{i:code}}Join another shared task</p>
+      <h2>LangCode 2027 · Task 1: Multilingual Code Generation</h2>
+      <p>Write a program in Python, C, Lua or another language from a problem described in one of 50 natural languages. Systems are ranked by Pass@1 on hidden tests, and two starter notebooks run on a free Colab GPU. It follows the same calendar as BanglaKnight: test phase Jan 8–24, 2027, papers due Feb 15.</p>
+    </div>
+    <div class="promo-links">
+      <a class="btn btn-primary" href="https://langcode2027.github.io/task1/" target="_blank" rel="noopener">Task website ↗</a>
+      <a class="btn btn-ghost" href="https://www.codabench.org/competitions/18470/" target="_blank" rel="noopener">CodaBench ↗</a>
+    </div>
+  </div>
+</aside>"""
+
+
 FOOTER = """<footer class="footer">
   <div class="wrap">
     <div class="footer-inner">
@@ -370,7 +386,7 @@ def render(i):
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500;600;700;800&family=Hind+Siliguri:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/style.css?v=19">
+  <link rel="stylesheet" href="/assets/css/style.css?v=20">
 </head>
 <body class="page-{slug}">
 
@@ -381,6 +397,7 @@ def render(i):
 {head_html}
 {body}
 {pager(i)}
+{PROMO}
 </main>
 
 {FOOTER}

@@ -426,7 +426,7 @@ p { margin: 0 0 1rem; }
 .howto .when { font-size: .88rem; font-weight: 600; color: var(--primary-deep); }
 
 /* Previous / next links at the bottom of each page */
-.pager { display: flex; justify-content: space-between; gap: 16px; padding-top: 8px; padding-bottom: 56px; }
+.pager { display: flex; justify-content: space-between; gap: 16px; padding-top: 8px; padding-bottom: 24px; }
 .pager a {
   display: flex; flex-direction: column; text-decoration: none; color: var(--ink); font-family: var(--font-head); font-weight: 700; font-size: 1.15rem;
   background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 12px 18px; min-width: 180px;
@@ -436,6 +436,20 @@ p { margin: 0 0 1rem; }
 .pager .pg-next { text-align: right; margin-left: auto; }
 .pager .pg-next::after { content: " →"; }
 .pager .pg-prev::before { content: "← "; }
+
+/* Card for another open shared task, after the previous / next links */
+.promo { padding-top: 8px; padding-bottom: 56px; }
+.page-home .promo { padding-top: 40px; }
+.promo-card {
+  display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 16px 28px; align-items: center;
+  background: var(--bg-tint); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px 26px;
+}
+.promo-kicker { display: flex; align-items: center; gap: 6px; margin: 0; font-size: .8rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.promo h2 { font-size: 1.35rem; margin: 4px 0 6px; text-wrap: balance; }
+.promo-text p:last-child { margin: 0; color: var(--ink-soft); max-width: 62ch; }
+.promo-links { display: flex; flex-wrap: wrap; gap: 10px; }
+.promo-links .btn { padding: 10px 18px; }
+@media (max-width: 760px) { .promo-card { grid-template-columns: 1fr; padding: 18px 20px; } }
 
 /* Icons beside tab names and page titles */
 .ico { width: 17px; height: 17px; flex: none; }
