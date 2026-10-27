@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-27T18:36:14+00:00",
+ "updated": "2026-10-27T22:03:52+00:00",
  "dev": [
   {
    "team": "CUET_AL_Masaar",
@@ -12,6 +12,11 @@
    "score": 0.8157
   },
   {
+   "team": "Team Unknown",
+   "affiliation": "IIUC",
+   "score": 0.7957
+  },
+  {
    "team": "Outliers",
    "affiliation": "Outliers",
    "score": 0.7785
@@ -22,14 +27,14 @@
    "score": 0.7577
   },
   {
-   "team": "Team Unknown",
-   "affiliation": "IIUC",
-   "score": 0.7554
-  },
-  {
    "team": "The Context Windows",
    "affiliation": "Rajiv Gandhi University of Knowledge Technologies, Nuzvid",
    "score": 0.7464
+  },
+  {
+   "team": "Green Minds",
+   "affiliation": "Green University of Bangladesh",
+   "score": 0.7356
   },
   {
    "team": "ARIANUJ",
@@ -45,11 +50,6 @@
    "team": "Nguyen Huu Vinh",
    "affiliation": "University of Information Technology - VNUHCM",
    "score": 0.6883
-  },
-  {
-   "team": "Green Minds",
-   "affiliation": "Green University of Bangladesh",
-   "score": 0.6855
   },
   {
    "team": "aspirants",
