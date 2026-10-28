@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-27T22:03:52+00:00",
+ "updated": "2026-10-28T18:37:03+00:00",
  "dev": [
   {
    "team": "CUET_AL_Masaar",
@@ -17,14 +17,14 @@
    "score": 0.7957
   },
   {
+   "team": "LDV Trier",
+   "affiliation": "Universität Trier",
+   "score": 0.7822
+  },
+  {
    "team": "Outliers",
    "affiliation": "Outliers",
    "score": 0.7785
-  },
-  {
-   "team": "LDV Trier",
-   "affiliation": "Universität Trier",
-   "score": 0.7577
   },
   {
    "team": "The Context Windows",
@@ -37,29 +37,34 @@
    "score": 0.7356
   },
   {
+   "team": "Nguyen Huu Vinh",
+   "affiliation": "University of Information Technology - VNUHCM",
+   "score": 0.735
+  },
+  {
    "team": "ARIANUJ",
    "affiliation": "SHINHAN UNIVERSITY",
    "score": 0.6956
   },
   {
-   "team": "IReL_IIT(BHU)",
-   "affiliation": "IIT(BHU), Varanasi, India",
-   "score": 0.6918
-  },
-  {
-   "team": "Nguyen Huu Vinh",
-   "affiliation": "University of Information Technology - VNUHCM",
-   "score": 0.6883
+   "team": "Code_X",
+   "affiliation": "University of Dhaka",
+   "score": 0.6627
   },
   {
    "team": "aspirants",
    "affiliation": "CUET",
-   "score": 0.655
+   "score": 0.6537
   },
   {
    "team": "Shahjalal",
    "affiliation": "Green University of Bangladesh",
    "score": 0.6342
+  },
+  {
+   "team": "IReL_IIT(BHU)",
+   "affiliation": "Indian Institute of Technology ( BHU ), Varanasi, India",
+   "score": 0.6279
   }
  ],
  "test": []
