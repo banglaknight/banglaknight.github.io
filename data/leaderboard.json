@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29T18:37:08+00:00",
+ "updated": "2026-10-29T22:39:48+00:00",
  "dev": [
   {
    "team": "CUET_AL_Masaar",
@@ -9,17 +9,17 @@
   {
    "team": "X",
    "affiliation": "BUET",
-   "score": 0.8231
+   "score": 0.8264
+  },
+  {
+   "team": "Team Unknown",
+   "affiliation": "IIUC",
+   "score": 0.8038
   },
   {
    "team": "LDV Trier",
    "affiliation": "Universität Trier",
    "score": 0.7984
-  },
-  {
-   "team": "Team Unknown",
-   "affiliation": "IIUC",
-   "score": 0.7957
   },
   {
    "team": "The Context Windows",
