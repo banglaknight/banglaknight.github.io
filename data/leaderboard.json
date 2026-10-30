@@ -1,15 +1,20 @@
 {
- "updated": "2026-10-29T22:39:48+00:00",
+ "updated": "2026-10-30T18:37:03+00:00",
  "dev": [
   {
    "team": "CUET_AL_Masaar",
    "affiliation": "CUET",
-   "score": 0.8382
+   "score": 0.8377
   },
   {
    "team": "X",
    "affiliation": "BUET",
-   "score": 0.8264
+   "score": 0.8306
+  },
+  {
+   "team": "LDV Trier",
+   "affiliation": "Unversität Trier",
+   "score": 0.8159
   },
   {
    "team": "Team Unknown",
@@ -17,14 +22,9 @@
    "score": 0.8038
   },
   {
-   "team": "LDV Trier",
-   "affiliation": "Universität Trier",
-   "score": 0.7984
-  },
-  {
    "team": "The Context Windows",
    "affiliation": "Rajiv Gandhi University of Knowledge Technologies, Nuzvid",
-   "score": 0.7875
+   "score": 0.7982
   },
   {
    "team": "Outliers",
@@ -32,19 +32,24 @@
    "score": 0.7785
   },
   {
+   "team": "Green Minds",
+   "affiliation": "Green University of Bangladesh",
+   "score": 0.7465
+  },
+  {
    "team": "Nguyen Huu Vinh",
    "affiliation": "University of Information Technology - VNUHCM",
    "score": 0.735
   },
   {
-   "team": "Green Minds",
-   "affiliation": "Green University of Bangladesh",
-   "score": 0.7342
+   "team": "N00B",
+   "affiliation": "RUET",
+   "score": 0.7335
   },
   {
    "team": "IReL_IIT(BHU)",
    "affiliation": "IIT(BHU), Varanasi, India",
-   "score": 0.7064
+   "score": 0.7119
   },
   {
    "team": "Code_X",
@@ -55,6 +60,11 @@
    "team": "ARIANUJ",
    "affiliation": "SHINHAN UNIVERSITY",
    "score": 0.6956
+  },
+  {
+   "team": "Phat Phan",
+   "affiliation": "VNUHCM - University of Information Technology (UIT)",
+   "score": 0.6793
   },
   {
    "team": "CITD@UIT",
