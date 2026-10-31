@@ -1,10 +1,10 @@
 {
- "updated": "2026-10-31T18:37:00+00:00",
+ "updated": "2026-10-31T21:20:51+00:00",
  "dev": [
   {
    "team": "CUET_AL_Masaar",
    "affiliation": "CUET",
-   "score": 0.8448
+   "score": 0.8443
   },
   {
    "team": "X",
@@ -60,6 +60,11 @@
    "team": "IReL_IIT(BHU)",
    "affiliation": "IIT(BHU), Varanasi, India",
    "score": 0.7119
+  },
+  {
+   "team": "AlphaBorno",
+   "affiliation": "UoS, Bangladesh Finance PLC., UT Dallas",
+   "score": 0.7061
   },
   {
    "team": "Code_X",
