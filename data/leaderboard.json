@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-31T21:20:51+00:00",
+ "updated": "2026-11-01T19:36:58+00:00",
  "dev": [
   {
    "team": "CUET_AL_Masaar",
@@ -24,7 +24,7 @@
   {
    "team": "The Context Windows",
    "affiliation": "Rajiv Gandhi University of Knowledge Technologies, Nuzvid",
-   "score": 0.7965
+   "score": 0.8002
   },
   {
    "team": "Outliers",
@@ -34,7 +34,22 @@
   {
    "team": "ShobdoProhori",
    "affiliation": "Brac University",
-   "score": 0.7468
+   "score": 0.7768
+  },
+  {
+   "team": "AlphaBorno",
+   "affiliation": "UoS, Bangladesh Finance PLC., UT Dallas",
+   "score": 0.7748
+  },
+  {
+   "team": "N00B",
+   "affiliation": "RUET",
+   "score": 0.7634
+  },
+  {
+   "team": "Phat Phan",
+   "affiliation": "VNUHCM - University of Information Technology (UIT)",
+   "score": 0.7582
   },
   {
    "team": "Green Minds",
@@ -42,9 +57,9 @@
    "score": 0.7465
   },
   {
-   "team": "Phat Phan",
-   "affiliation": "VNUHCM - University of Information Technology (UIT)",
-   "score": 0.7429
+   "team": "Prometheus",
+   "affiliation": "Rajshahi University Of Engineering & Technology",
+   "score": 0.7422
   },
   {
    "team": "Nguyen Huu Vinh",
@@ -52,19 +67,9 @@
    "score": 0.735
   },
   {
-   "team": "N00B",
-   "affiliation": "RUET",
-   "score": 0.7335
-  },
-  {
    "team": "IReL_IIT(BHU)",
    "affiliation": "IIT(BHU), Varanasi, India",
    "score": 0.7119
-  },
-  {
-   "team": "AlphaBorno",
-   "affiliation": "UoS, Bangladesh Finance PLC., UT Dallas",
-   "score": 0.7061
   },
   {
    "team": "Code_X",
