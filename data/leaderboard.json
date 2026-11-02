@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T21:55:57+00:00",
+ "updated": "2026-11-02T19:37:10+00:00",
  "dev": [
   {
    "team": "CUET_AL_Masaar",
@@ -27,9 +27,19 @@
    "score": 0.8002
   },
   {
+   "team": "N00B",
+   "affiliation": "RUET",
+   "score": 0.7879
+  },
+  {
    "team": "Outliers",
    "affiliation": "Outliers",
    "score": 0.7785
+  },
+  {
+   "team": "Prometheus",
+   "affiliation": "Rajshahi University Of Engineering & Technology",
+   "score": 0.778
   },
   {
    "team": "ShobdoProhori",
@@ -42,11 +52,6 @@
    "score": 0.7748
   },
   {
-   "team": "N00B",
-   "affiliation": "RUET",
-   "score": 0.7634
-  },
-  {
    "team": "Phat Phan",
    "affiliation": "VNUHCM - University of Information Technology (UIT)",
    "score": 0.7582
@@ -54,12 +59,7 @@
   {
    "team": "Green Minds",
    "affiliation": "Green University of Bangladesh",
-   "score": 0.7465
-  },
-  {
-   "team": "Prometheus",
-   "affiliation": "Rajshahi University Of Engineering & Technology",
-   "score": 0.7422
+   "score": 0.7454
   },
   {
    "team": "Nguyen Huu Vinh",
@@ -67,14 +67,19 @@
    "score": 0.735
   },
   {
-   "team": "IReL_IIT(BHU)",
-   "affiliation": "IIT(BHU), Varanasi, India",
-   "score": 0.7133
-  },
-  {
    "team": "Code_X",
    "affiliation": "University of Dhaka",
    "score": 0.7031
+  },
+  {
+   "team": "IReL_IIT(BHU)",
+   "affiliation": "IIT(BHU), Varanasi, India",
+   "score": 0.7
+  },
+  {
+   "team": "UIT@TD",
+   "affiliation": "VNUHCM - University of Information Technology (UIT)",
+   "score": 0.6971
   },
   {
    "team": "ARIANUJ",
@@ -95,6 +100,11 @@
    "team": "Shahjalal",
    "affiliation": "Green University of Bangladesh",
    "score": 0.6342
+  },
+  {
+   "team": "SAS",
+   "affiliation": "BRAC University",
+   "score": 0.4721
   }
  ],
  "test": []
