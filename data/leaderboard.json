@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T00:51:40+00:00",
+ "updated": "2026-11-03T19:37:15+00:00",
  "dev": [
   {
    "team": "CUET_AL_Masaar",
@@ -29,7 +29,7 @@
   {
    "team": "N00B",
    "affiliation": "RUET",
-   "score": 0.7879
+   "score": 0.7911
   },
   {
    "team": "Outliers",
@@ -49,17 +49,17 @@
   {
    "team": "AlphaBorno",
    "affiliation": "UoS, Bangladesh Finance PLC., UT Dallas",
-   "score": 0.7748
+   "score": 0.7718
+  },
+  {
+   "team": "Green Minds",
+   "affiliation": "Green University of Bangladesh",
+   "score": 0.7612
   },
   {
    "team": "Phat Phan",
    "affiliation": "VNUHCM - University of Information Technology (UIT)",
    "score": 0.7582
-  },
-  {
-   "team": "Green Minds",
-   "affiliation": "Green University of Bangladesh",
-   "score": 0.7454
   },
   {
    "team": "Nguyen Huu Vinh",
@@ -75,11 +75,6 @@
    "team": "IReL_IIT(BHU)",
    "affiliation": "IIT(BHU), Varanasi, India",
    "score": 0.7
-  },
-  {
-   "team": "UIT@TD",
-   "affiliation": "VNUHCM - University of Information Technology (UIT)",
-   "score": 0.6971
   },
   {
    "team": "ARIANUJ",
@@ -100,6 +95,16 @@
    "team": "Shahjalal",
    "affiliation": "Green University of Bangladesh",
    "score": 0.6342
+  },
+  {
+   "team": "UIT@TD",
+   "affiliation": "VNUHCM - University of Information Technology (UIT)",
+   "score": 0.623
+  },
+  {
+   "team": "Abu Bakkar",
+   "affiliation": "Abu Bakkar",
+   "score": 0.534
   },
   {
    "team": "SAS",
