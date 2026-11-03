@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T19:37:15+00:00",
+ "updated": "2026-11-03T23:08:42+00:00",
  "dev": [
   {
    "team": "CUET_AL_Masaar",
@@ -27,6 +27,11 @@
    "score": 0.8002
   },
   {
+   "team": "AlphaBorno",
+   "affiliation": "UoS, Bangladesh Finance PLC., UT Dallas",
+   "score": 0.7918
+  },
+  {
    "team": "N00B",
    "affiliation": "RUET",
    "score": 0.7911
@@ -45,11 +50,6 @@
    "team": "ShobdoProhori",
    "affiliation": "Brac University",
    "score": 0.7768
-  },
-  {
-   "team": "AlphaBorno",
-   "affiliation": "UoS, Bangladesh Finance PLC., UT Dallas",
-   "score": 0.7718
   },
   {
    "team": "Green Minds",
