@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T23:08:42+00:00",
+ "updated": "2026-11-04T19:36:15+00:00",
  "dev": [
   {
    "team": "CUET_AL_Masaar",
@@ -17,19 +17,24 @@
    "score": 0.8243
   },
   {
+   "team": "AlphaBorno",
+   "affiliation": "UoS, Bangladesh Finance PLC., UT Dallas",
+   "score": 0.8133
+  },
+  {
    "team": "Team Unknown",
    "affiliation": "IIUC",
    "score": 0.8038
   },
   {
+   "team": "Prometheus",
+   "affiliation": "Rajshahi University Of Engineering & Technology",
+   "score": 0.8022
+  },
+  {
    "team": "The Context Windows",
    "affiliation": "Rajiv Gandhi University of Knowledge Technologies, Nuzvid",
    "score": 0.8002
-  },
-  {
-   "team": "AlphaBorno",
-   "affiliation": "UoS, Bangladesh Finance PLC., UT Dallas",
-   "score": 0.7918
   },
   {
    "team": "N00B",
@@ -42,11 +47,6 @@
    "score": 0.7785
   },
   {
-   "team": "Prometheus",
-   "affiliation": "Rajshahi University Of Engineering & Technology",
-   "score": 0.778
-  },
-  {
    "team": "ShobdoProhori",
    "affiliation": "Brac University",
    "score": 0.7768
@@ -54,12 +54,17 @@
   {
    "team": "Green Minds",
    "affiliation": "Green University of Bangladesh",
-   "score": 0.7612
+   "score": 0.7682
   },
   {
    "team": "Phat Phan",
    "affiliation": "VNUHCM - University of Information Technology (UIT)",
    "score": 0.7582
+  },
+  {
+   "team": "Maxwell's Den",
+   "affiliation": "BRAC University",
+   "score": 0.7502
   },
   {
    "team": "Nguyen Huu Vinh",
@@ -72,14 +77,14 @@
    "score": 0.7031
   },
   {
-   "team": "IReL_IIT(BHU)",
-   "affiliation": "IIT(BHU), Varanasi, India",
-   "score": 0.7
-  },
-  {
    "team": "ARIANUJ",
    "affiliation": "SHINHAN UNIVERSITY",
    "score": 0.6956
+  },
+  {
+   "team": "IReL_IIT(BHU)",
+   "affiliation": "IIT(BHU), Varanasi, India",
+   "score": 0.6798
   },
   {
    "team": "CITD@UIT",
@@ -90,6 +95,11 @@
    "team": "aspirants",
    "affiliation": "CUET",
    "score": 0.6537
+  },
+  {
+   "team": "mam13",
+   "affiliation": "United International University",
+   "score": 0.6477
   },
   {
    "team": "Shahjalal",
@@ -103,8 +113,8 @@
   },
   {
    "team": "Abu Bakkar",
-   "affiliation": "Abu Bakkar",
-   "score": 0.534
+   "affiliation": "BOET",
+   "score": 0.6069
   },
   {
    "team": "SAS",
