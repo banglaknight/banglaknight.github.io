@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T19:36:15+00:00",
+ "updated": "2026-11-04T23:30:03+00:00",
  "dev": [
   {
    "team": "CUET_AL_Masaar",
@@ -72,6 +72,16 @@
    "score": 0.735
   },
   {
+   "team": "Team_UAlbany",
+   "affiliation": "State University of New York at Albany",
+   "score": 0.7321
+  },
+  {
+   "team": "UIT@TD",
+   "affiliation": "VNUHCM - University of Information Technology (UIT)",
+   "score": 0.7172
+  },
+  {
    "team": "Code_X",
    "affiliation": "University of Dhaka",
    "score": 0.7031
@@ -105,11 +115,6 @@
    "team": "Shahjalal",
    "affiliation": "Green University of Bangladesh",
    "score": 0.6342
-  },
-  {
-   "team": "UIT@TD",
-   "affiliation": "VNUHCM - University of Information Technology (UIT)",
-   "score": 0.623
   },
   {
    "team": "Abu Bakkar",
