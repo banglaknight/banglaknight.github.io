@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T23:30:03+00:00",
+ "updated": "2026-11-05T19:36:14+00:00",
  "dev": [
   {
    "team": "CUET_AL_Masaar",
@@ -19,7 +19,7 @@
   {
    "team": "AlphaBorno",
    "affiliation": "UoS, Bangladesh Finance PLC., UT Dallas",
-   "score": 0.8133
+   "score": 0.8122
   },
   {
    "team": "Team Unknown",
@@ -34,7 +34,7 @@
   {
    "team": "The Context Windows",
    "affiliation": "Rajiv Gandhi University of Knowledge Technologies, Nuzvid",
-   "score": 0.8002
+   "score": 0.8021
   },
   {
    "team": "N00B",
@@ -42,29 +42,34 @@
    "score": 0.7911
   },
   {
+   "team": "Maxwell's Den",
+   "affiliation": "BRAC University",
+   "score": 0.791
+  },
+  {
+   "team": "Green Minds",
+   "affiliation": "Green University of Bangladesh",
+   "score": 0.7798
+  },
+  {
    "team": "Outliers",
    "affiliation": "Outliers",
    "score": 0.7785
   },
   {
-   "team": "ShobdoProhori",
-   "affiliation": "Brac University",
-   "score": 0.7768
+   "team": "KingKong",
+   "affiliation": "Green University of Bangladesh",
+   "score": 0.7653
   },
   {
-   "team": "Green Minds",
-   "affiliation": "Green University of Bangladesh",
-   "score": 0.7682
+   "team": "ShobdoProhori",
+   "affiliation": "Brac University",
+   "score": 0.7631
   },
   {
    "team": "Phat Phan",
    "affiliation": "VNUHCM - University of Information Technology (UIT)",
    "score": 0.7582
-  },
-  {
-   "team": "Maxwell's Den",
-   "affiliation": "BRAC University",
-   "score": 0.7502
   },
   {
    "team": "Nguyen Huu Vinh",
@@ -77,9 +82,9 @@
    "score": 0.7321
   },
   {
-   "team": "UIT@TD",
-   "affiliation": "VNUHCM - University of Information Technology (UIT)",
-   "score": 0.7172
+   "team": "mam13",
+   "affiliation": "United International University",
+   "score": 0.7228
   },
   {
    "team": "Code_X",
@@ -102,19 +107,24 @@
    "score": 0.6692
   },
   {
+   "team": "UIT@TD",
+   "affiliation": "VNUHCM - University of Information Technology (UIT)",
+   "score": 0.6646
+  },
+  {
    "team": "aspirants",
    "affiliation": "CUET",
    "score": 0.6537
   },
   {
-   "team": "mam13",
-   "affiliation": "United International University",
-   "score": 0.6477
-  },
-  {
    "team": "Shahjalal",
    "affiliation": "Green University of Bangladesh",
    "score": 0.6342
+  },
+  {
+   "team": "Oryza",
+   "affiliation": "CUET",
+   "score": 0.6157
   },
   {
    "team": "Abu Bakkar",
