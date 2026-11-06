@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05T19:48:13+00:00",
+ "updated": "2026-11-06T19:36:41+00:00",
  "dev": [
   {
    "team": "CUET_AL_Masaar",
@@ -47,6 +47,11 @@
    "score": 0.791
   },
   {
+   "team": "ShobdoProhori",
+   "affiliation": "Brac University",
+   "score": 0.7908
+  },
+  {
    "team": "Green Minds",
    "affiliation": "Green University of Bangladesh",
    "score": 0.7798
@@ -59,12 +64,7 @@
   {
    "team": "KingKong",
    "affiliation": "Green University of Bangladesh",
-   "score": 0.7653
-  },
-  {
-   "team": "ShobdoProhori",
-   "affiliation": "Brac University",
-   "score": 0.7631
+   "score": 0.7655
   },
   {
    "team": "Phat Phan",
@@ -103,18 +103,18 @@
   },
   {
    "team": "CITD@UIT",
-   "affiliation": "University of Information Technology",
-   "score": 0.6692
+   "affiliation": "University of Information Technology - VNUHCM",
+   "score": 0.6709
   },
   {
    "team": "UIT@TD",
    "affiliation": "VNUHCM - University of Information Technology (UIT)",
-   "score": 0.6646
+   "score": 0.6671
   },
   {
    "team": "aspirants",
    "affiliation": "CUET",
-   "score": 0.6537
+   "score": 0.6417
   },
   {
    "team": "Shahjalal",
