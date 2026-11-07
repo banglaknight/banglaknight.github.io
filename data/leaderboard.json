@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T22:57:25+00:00",
+ "updated": "2026-11-07T19:36:29+00:00",
  "dev": [
   {
    "team": "CUET_AL_Masaar",
@@ -27,6 +27,11 @@
    "score": 0.8038
   },
   {
+   "team": "N00B",
+   "affiliation": "RUET",
+   "score": 0.8037
+  },
+  {
    "team": "Prometheus",
    "affiliation": "Rajshahi University Of Engineering & Technology",
    "score": 0.8022
@@ -37,9 +42,9 @@
    "score": 0.8021
   },
   {
-   "team": "N00B",
-   "affiliation": "RUET",
-   "score": 0.7911
+   "team": "ShobdoProhori",
+   "affiliation": "Brac University",
+   "score": 0.8009
   },
   {
    "team": "Maxwell's Den",
@@ -47,9 +52,9 @@
    "score": 0.791
   },
   {
-   "team": "ShobdoProhori",
-   "affiliation": "Brac University",
-   "score": 0.7908
+   "team": "UIT@TD",
+   "affiliation": "VNUHCM - University of Information Technology (UIT)",
+   "score": 0.7846
   },
   {
    "team": "Green Minds",
@@ -69,7 +74,7 @@
   {
    "team": "Phat Phan",
    "affiliation": "VNUHCM - University of Information Technology (UIT)",
-   "score": 0.7582
+   "score": 0.7612
   },
   {
    "team": "Nguyen Huu Vinh",
@@ -82,14 +87,24 @@
    "score": 0.7321
   },
   {
+   "team": "Code_X",
+   "affiliation": "University of Dhaka",
+   "score": 0.7279
+  },
+  {
+   "team": "sonthephuong",
+   "affiliation": "University of Information Technology - VNUHCM",
+   "score": 0.7261
+  },
+  {
    "team": "mam13",
    "affiliation": "United International University",
    "score": 0.7228
   },
   {
-   "team": "Code_X",
+   "team": "ASK",
    "affiliation": "University of Dhaka",
-   "score": 0.7031
+   "score": 0.7059
   },
   {
    "team": "ARIANUJ",
@@ -100,16 +115,6 @@
    "team": "IReL_IIT(BHU)",
    "affiliation": "IIT(BHU), Varanasi, India",
    "score": 0.6798
-  },
-  {
-   "team": "CITD@UIT",
-   "affiliation": "University of Information Technology - VNUHCM",
-   "score": 0.6709
-  },
-  {
-   "team": "UIT@TD",
-   "affiliation": "VNUHCM - University of Information Technology (UIT)",
-   "score": 0.6671
   },
   {
    "team": "aspirants",
