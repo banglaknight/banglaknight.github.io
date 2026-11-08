@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T21:41:32+00:00",
+ "updated": "2026-11-08T19:36:29+00:00",
  "dev": [
   {
    "team": "CUET_AL_Masaar",
@@ -27,6 +27,11 @@
    "score": 0.8038
   },
   {
+   "team": "ShobdoProhori",
+   "affiliation": "Brac University",
+   "score": 0.8037
+  },
+  {
    "team": "N00B",
    "affiliation": "RUET",
    "score": 0.8037
@@ -42,11 +47,6 @@
    "score": 0.8021
   },
   {
-   "team": "ShobdoProhori",
-   "affiliation": "Brac University",
-   "score": 0.8009
-  },
-  {
    "team": "Maxwell's Den",
    "affiliation": "BRAC University",
    "score": 0.7919
@@ -54,7 +54,7 @@
   {
    "team": "UIT@TD",
    "affiliation": "VNUHCM - University of Information Technology (UIT)",
-   "score": 0.7846
+   "score": 0.7887
   },
   {
    "team": "Green Minds",
@@ -67,14 +67,24 @@
    "score": 0.7785
   },
   {
+   "team": "Phat Phan",
+   "affiliation": "VNUHCM - University of Information Technology (UIT)",
+   "score": 0.7723
+  },
+  {
    "team": "KingKong",
    "affiliation": "Green University of Bangladesh",
    "score": 0.7655
   },
   {
-   "team": "Phat Phan",
-   "affiliation": "VNUHCM - University of Information Technology (UIT)",
-   "score": 0.7612
+   "team": "TokenHunter",
+   "affiliation": "No Affiliation",
+   "score": 0.751
+  },
+  {
+   "team": "mam13",
+   "affiliation": "United International University",
+   "score": 0.7412
   },
   {
    "team": "Nguyen Huu Vinh",
@@ -97,14 +107,24 @@
    "score": 0.7261
   },
   {
-   "team": "mam13",
-   "affiliation": "United International University",
-   "score": 0.7228
-  },
-  {
    "team": "ASK",
    "affiliation": "University of Dhaka",
    "score": 0.7059
+  },
+  {
+   "team": "OPTIMISTIC",
+   "affiliation": "SUST",
+   "score": 0.7055
+  },
+  {
+   "team": "BadBuzz",
+   "affiliation": "BUBT",
+   "score": 0.7005
+  },
+  {
+   "team": "Oryza",
+   "affiliation": "CUET",
+   "score": 0.6961
   },
   {
    "team": "ARIANUJ",
@@ -125,11 +145,6 @@
    "team": "Shahjalal",
    "affiliation": "Green University of Bangladesh",
    "score": 0.6342
-  },
-  {
-   "team": "Oryza",
-   "affiliation": "CUET",
-   "score": 0.6157
   },
   {
    "team": "Abu Bakkar",
