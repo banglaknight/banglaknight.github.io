@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T19:36:29+00:00",
+ "updated": "2026-11-08T21:55:02+00:00",
  "dev": [
   {
    "team": "CUET_AL_Masaar",
@@ -97,6 +97,11 @@
    "score": 0.7321
   },
   {
+   "team": "OPTIMISTIC",
+   "affiliation": "SUST",
+   "score": 0.7282
+  },
+  {
    "team": "Code_X",
    "affiliation": "University of Dhaka",
    "score": 0.7279
@@ -112,14 +117,9 @@
    "score": 0.7059
   },
   {
-   "team": "OPTIMISTIC",
-   "affiliation": "SUST",
-   "score": 0.7055
-  },
-  {
    "team": "BadBuzz",
    "affiliation": "BUBT",
-   "score": 0.7005
+   "score": 0.6982
   },
   {
    "team": "Oryza",
