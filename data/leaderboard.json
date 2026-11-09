@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T21:55:02+00:00",
+ "updated": "2026-11-09T19:36:33+00:00",
  "dev": [
   {
    "team": "CUET_AL_Masaar",
@@ -27,14 +27,14 @@
    "score": 0.8038
   },
   {
-   "team": "ShobdoProhori",
-   "affiliation": "Brac University",
-   "score": 0.8037
-  },
-  {
    "team": "N00B",
    "affiliation": "RUET",
    "score": 0.8037
+  },
+  {
+   "team": "ShobdoProhori",
+   "affiliation": "Brac University",
+   "score": 0.8029
   },
   {
    "team": "Prometheus",
@@ -47,14 +47,14 @@
    "score": 0.8021
   },
   {
+   "team": "UIT@TD",
+   "affiliation": "VNUHCM - University of Information Technology (UIT)",
+   "score": 0.798
+  },
+  {
    "team": "Maxwell's Den",
    "affiliation": "BRAC University",
    "score": 0.7919
-  },
-  {
-   "team": "UIT@TD",
-   "affiliation": "VNUHCM - University of Information Technology (UIT)",
-   "score": 0.7887
   },
   {
    "team": "Green Minds",
@@ -77,6 +77,11 @@
    "score": 0.7655
   },
   {
+   "team": "OPTIMISTIC",
+   "affiliation": "SUST",
+   "score": 0.7523
+  },
+  {
    "team": "TokenHunter",
    "affiliation": "No Affiliation",
    "score": 0.751
@@ -97,11 +102,6 @@
    "score": 0.7321
   },
   {
-   "team": "OPTIMISTIC",
-   "affiliation": "SUST",
-   "score": 0.7282
-  },
-  {
    "team": "Code_X",
    "affiliation": "University of Dhaka",
    "score": 0.7279
@@ -110,6 +110,11 @@
    "team": "sonthephuong",
    "affiliation": "University of Information Technology - VNUHCM",
    "score": 0.7261
+  },
+  {
+   "team": "KMinds",
+   "affiliation": "Khulna University of Engineering & Technlogy",
+   "score": 0.7069
   },
   {
    "team": "ASK",
@@ -135,6 +140,11 @@
    "team": "IReL_IIT(BHU)",
    "affiliation": "IIT(BHU), Varanasi, India",
    "score": 0.6798
+  },
+  {
+   "team": "Bornomala",
+   "affiliation": "American International University - Bangladesh",
+   "score": 0.6771
   },
   {
    "team": "aspirants",
