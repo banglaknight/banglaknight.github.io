@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T19:36:18+00:00",
+ "updated": "2026-11-10T23:06:10+00:00",
  "dev": [
   {
    "team": "CUET_AL_Masaar",
@@ -92,11 +92,6 @@
    "score": 0.751
   },
   {
-   "team": "Wings of Freedom",
-   "affiliation": "University of Alberta",
-   "score": 0.7508
-  },
-  {
    "team": "MoonKnight",
    "affiliation": "Islamic University of Technology",
    "score": 0.7497
@@ -105,6 +100,11 @@
    "team": "mam13",
    "affiliation": "United International University",
    "score": 0.7412
+  },
+  {
+   "team": "Wings of Freedom",
+   "affiliation": "University of Alberta",
+   "score": 0.7388
   },
   {
    "team": "Nguyen Huu Vinh",
@@ -117,6 +117,11 @@
    "score": 0.7321
   },
   {
+   "team": "Torwächter",
+   "affiliation": "Julian maximilian universität würzburg / Soofi",
+   "score": 0.7296
+  },
+  {
    "team": "Code_X",
    "affiliation": "University of Dhaka",
    "score": 0.7279
@@ -127,14 +132,14 @@
    "score": 0.7261
   },
   {
-   "team": "Torwächter",
-   "affiliation": "Julian maximilian universität würzburg / Soofi",
-   "score": 0.7069
-  },
-  {
    "team": "ASK",
    "affiliation": "University of Dhaka",
    "score": 0.7059
+  },
+  {
+   "team": "ranadhirghosh73",
+   "affiliation": "FIS Global",
+   "score": 0.7052
   },
   {
    "team": "Bornomala",
