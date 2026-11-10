@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T01:24:51+00:00",
+ "updated": "2026-11-10T19:36:18+00:00",
  "dev": [
   {
    "team": "CUET_AL_Masaar",
@@ -19,7 +19,12 @@
   {
    "team": "AlphaBorno",
    "affiliation": "UoS, Bangladesh Finance PLC., UT Dallas",
-   "score": 0.8122
+   "score": 0.8212
+  },
+  {
+   "team": "UIT@TD",
+   "affiliation": "VNUHCM - University of Information Technology (UIT)",
+   "score": 0.804
   },
   {
    "team": "Team Unknown",
@@ -45,11 +50,6 @@
    "team": "The Context Windows",
    "affiliation": "Rajiv Gandhi University of Knowledge Technologies, Nuzvid",
    "score": 0.8021
-  },
-  {
-   "team": "UIT@TD",
-   "affiliation": "VNUHCM - University of Information Technology (UIT)",
-   "score": 0.798
   },
   {
    "team": "Maxwell's Den",
@@ -82,9 +82,24 @@
    "score": 0.7523
   },
   {
+   "team": "KMinds",
+   "affiliation": "Khulna University of Engineering & Technology",
+   "score": 0.7512
+  },
+  {
    "team": "TokenHunter",
    "affiliation": "No Affiliation",
    "score": 0.751
+  },
+  {
+   "team": "Wings of Freedom",
+   "affiliation": "University of Alberta",
+   "score": 0.7508
+  },
+  {
+   "team": "MoonKnight",
+   "affiliation": "Islamic University of Technology",
+   "score": 0.7497
   },
   {
    "team": "mam13",
@@ -112,9 +127,19 @@
    "score": 0.7261
   },
   {
+   "team": "Torwächter",
+   "affiliation": "Julian maximilian universität würzburg / Soofi",
+   "score": 0.7069
+  },
+  {
    "team": "ASK",
    "affiliation": "University of Dhaka",
    "score": 0.7059
+  },
+  {
+   "team": "Bornomala",
+   "affiliation": "American International University - Bangladesh",
+   "score": 0.6992
   },
   {
    "team": "BadBuzz",
@@ -135,16 +160,6 @@
    "team": "IReL_IIT(BHU)",
    "affiliation": "IIT(BHU), Varanasi, India",
    "score": 0.6798
-  },
-  {
-   "team": "KMinds",
-   "affiliation": "Khulna University of Engineering & Technlogy",
-   "score": 0.6782
-  },
-  {
-   "team": "Bornomala",
-   "affiliation": "American International University - Bangladesh",
-   "score": 0.6771
   },
   {
    "team": "aspirants",
