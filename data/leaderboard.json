@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T00:27:00+00:00",
+ "updated": "2026-11-12T19:36:36+00:00",
  "dev": [
   {
    "team": "CUET_AL_Masaar",
@@ -42,11 +42,6 @@
    "score": 0.8037
   },
   {
-   "team": "ShobdoProhori",
-   "affiliation": "Brac University",
-   "score": 0.8029
-  },
-  {
    "team": "The Context Windows",
    "affiliation": "Rajiv Gandhi University of Knowledge Technologies, Nuzvid",
    "score": 0.8021
@@ -55,6 +50,11 @@
    "team": "Maxwell's Den",
    "affiliation": "BRAC University",
    "score": 0.7919
+  },
+  {
+   "team": "Wings of Freedom",
+   "affiliation": "University of Alberta",
+   "score": 0.7854
   },
   {
    "team": "Green Minds",
@@ -67,14 +67,14 @@
    "score": 0.7785
   },
   {
-   "team": "Wings of Freedom",
-   "affiliation": "University of Alberta",
-   "score": 0.7756
-  },
-  {
    "team": "Phat Phan",
    "affiliation": "VNUHCM - University of Information Technology (UIT)",
    "score": 0.7721
+  },
+  {
+   "team": "ShobdoProhori",
+   "affiliation": "Brac University",
+   "score": 0.7671
   },
   {
    "team": "KingKong",
@@ -82,9 +82,19 @@
    "score": 0.7655
   },
   {
+   "team": "Bornomala",
+   "affiliation": "American International University - Bangladesh",
+   "score": 0.7646
+  },
+  {
    "team": "Torwächter",
    "affiliation": "Julian maximilian universität würzburg / Soofi",
    "score": 0.7543
+  },
+  {
+   "team": "OPTIMISTIC",
+   "affiliation": "SUST",
+   "score": 0.7531
   },
   {
    "team": "KMinds",
@@ -107,9 +117,14 @@
    "score": 0.7412
   },
   {
-   "team": "OPTIMISTIC",
-   "affiliation": "SUST",
-   "score": 0.7409
+   "team": "SAS",
+   "affiliation": "BRAC University",
+   "score": 0.739
+  },
+  {
+   "team": "quantum_quest",
+   "affiliation": "University Of Asia Pacific",
+   "score": 0.737
   },
   {
    "team": "Nguyen Huu Vinh",
@@ -137,14 +152,9 @@
    "score": 0.7234
   },
   {
-   "team": "Bornomala",
-   "affiliation": "American International University - Bangladesh",
-   "score": 0.7205
-  },
-  {
-   "team": "SAS",
-   "affiliation": "BRAC University",
-   "score": 0.7131
+   "team": "Deepon Halder",
+   "affiliation": "IIEST Shibpur",
+   "score": 0.7117
   },
   {
    "team": "ASK",
@@ -194,7 +204,7 @@
   {
    "team": "ssshanto",
    "affiliation": "No Affiliation",
-   "score": 0.0
+   "score": 0.5859
   }
  ],
  "test": []
