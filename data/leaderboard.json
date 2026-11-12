@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11T19:36:31+00:00",
+ "updated": "2026-11-12T00:27:00+00:00",
  "dev": [
   {
    "team": "CUET_AL_Masaar",
@@ -22,6 +22,11 @@
    "score": 0.8212
   },
   {
+   "team": "Prometheus",
+   "affiliation": "Rajshahi University Of Engineering & Technology",
+   "score": 0.8045
+  },
+  {
    "team": "UIT@TD",
    "affiliation": "VNUHCM - University of Information Technology (UIT)",
    "score": 0.804
@@ -40,11 +45,6 @@
    "team": "ShobdoProhori",
    "affiliation": "Brac University",
    "score": 0.8029
-  },
-  {
-   "team": "Prometheus",
-   "affiliation": "Rajshahi University Of Engineering & Technology",
-   "score": 0.8022
   },
   {
    "team": "The Context Windows",
