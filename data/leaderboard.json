@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T19:37:05+00:00",
+ "updated": "2026-11-14T22:14:38+00:00",
  "dev": [
   {
    "team": "CUET_AL_Masaar",
@@ -107,6 +107,11 @@
    "score": 0.7716
   },
   {
+   "team": "AK",
+   "affiliation": "QMUL",
+   "score": 0.7674
+  },
+  {
    "team": "OPTIMISTIC",
    "affiliation": "SUST",
    "score": 0.7627
@@ -202,6 +207,11 @@
    "score": 0.7052
   },
   {
+   "team": "ssshanto",
+   "affiliation": "No Affiliation",
+   "score": 0.7051
+  },
+  {
    "team": "BadBuzz",
    "affiliation": "BUBT",
    "score": 0.6982
@@ -235,11 +245,6 @@
    "team": "Abu Bakkar",
    "affiliation": "BOET",
    "score": 0.6069
-  },
-  {
-   "team": "ssshanto",
-   "affiliation": "No Affiliation",
-   "score": 0.5859
   }
  ],
  "test": []
