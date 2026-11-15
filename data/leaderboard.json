@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T19:37:09+00:00",
+ "updated": "2026-11-15T22:42:08+00:00",
  "dev": [
   {
    "team": "CUET_AL_Masaar",
@@ -37,6 +37,11 @@
    "score": 0.8167
   },
   {
+   "team": "Wings of Freedom",
+   "affiliation": "University of Alberta, BUET",
+   "score": 0.8159
+  },
+  {
    "team": "KingKong",
    "affiliation": "Green University of Bangladesh",
    "score": 0.8119
@@ -45,11 +50,6 @@
    "team": "Prometheus",
    "affiliation": "Rajshahi University Of Engineering & Technology",
    "score": 0.8111
-  },
-  {
-   "team": "Wings of Freedom",
-   "affiliation": "University of Alberta",
-   "score": 0.8097
   },
   {
    "team": "PentaML",
@@ -122,6 +122,11 @@
    "score": 0.7627
   },
   {
+   "team": "Batman",
+   "affiliation": "Gotham City",
+   "score": 0.7569
+  },
+  {
    "team": "Torwächter",
    "affiliation": "Julian maximilian universität würzburg / Soofi",
    "score": 0.7543
@@ -142,9 +147,9 @@
    "score": 0.7412
   },
   {
-   "team": "Batman",
-   "affiliation": "Gotham City",
-   "score": 0.7397
+   "team": "SAS",
+   "affiliation": "BRAC University",
+   "score": 0.739
   },
   {
    "team": "quantum_quest",
@@ -177,11 +182,6 @@
    "score": 0.7261
   },
   {
-   "team": "SAS",
-   "affiliation": "BRAC University",
-   "score": 0.7235
-  },
-  {
    "team": "ArcReactor",
    "affiliation": "Independent researcher",
    "score": 0.7234
@@ -195,6 +195,11 @@
    "team": "Team_Noob",
    "affiliation": "N/A",
    "score": 0.7198
+  },
+  {
+   "team": "zero",
+   "affiliation": "BUET",
+   "score": 0.7186
   },
   {
    "team": "Deepon Halder",
@@ -220,11 +225,6 @@
    "team": "ssshanto",
    "affiliation": "No Affiliation",
    "score": 0.7051
-  },
-  {
-   "team": "zero",
-   "affiliation": "BUET",
-   "score": 0.7025
   },
   {
    "team": "BadBuzz",
