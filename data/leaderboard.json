@@ -1,15 +1,10 @@
 {
- "updated": "2026-11-17T01:49:18+00:00",
+ "updated": "2026-11-17T19:36:24+00:00",
  "dev": [
   {
    "team": "AK",
    "affiliation": "QMUL",
    "score": 0.8764
-  },
-  {
-   "team": "CUET_AL_Masaar",
-   "affiliation": "CUET",
-   "score": 0.8465
   },
   {
    "team": "BRACU_CL",
@@ -32,6 +27,11 @@
    "score": 0.8212
   },
   {
+   "team": "KingKong",
+   "affiliation": "Green University of Bangladesh",
+   "score": 0.8208
+  },
+  {
    "team": "Wings of Freedom",
    "affiliation": "University of Alberta, BUET",
    "score": 0.8175
@@ -50,11 +50,6 @@
    "team": "Prometheus",
    "affiliation": "Rajshahi University Of Engineering & Technology",
    "score": 0.8131
-  },
-  {
-   "team": "KingKong",
-   "affiliation": "Green University of Bangladesh",
-   "score": 0.8119
   },
   {
    "team": "PentaML",
@@ -92,6 +87,11 @@
    "score": 0.7896
   },
   {
+   "team": "SAA",
+   "affiliation": "BRAC University",
+   "score": 0.7864
+  },
+  {
    "team": "Bornomala",
    "affiliation": "American International University - Bangladesh",
    "score": 0.7826
@@ -100,6 +100,11 @@
    "team": "Green Minds",
    "affiliation": "Green University of Bangladesh",
    "score": 0.7798
+  },
+  {
+   "team": "BornoShield",
+   "affiliation": "North South University",
+   "score": 0.7785
   },
   {
    "team": "Outliers",
@@ -117,14 +122,14 @@
    "score": 0.7749
   },
   {
+   "team": "Batman",
+   "affiliation": "Gotham City",
+   "score": 0.7711
+  },
+  {
    "team": "Abd_Allah",
    "affiliation": "Miilionways",
    "score": 0.7705
-  },
-  {
-   "team": "Batman",
-   "affiliation": "Gotham City",
-   "score": 0.7694
   },
   {
    "team": "OPTIMISTIC",
@@ -132,19 +137,9 @@
    "score": 0.7627
   },
   {
-   "team": "SAA",
-   "affiliation": "BRAC University",
-   "score": 0.7591
-  },
-  {
    "team": "Torwächter",
    "affiliation": "Julian maximilian universität würzburg / Soofi",
    "score": 0.7543
-  },
-  {
-   "team": "KMinds",
-   "affiliation": "Khulna University of Engineering & Technology",
-   "score": 0.7512
   },
   {
    "team": "TokenHunter",
@@ -152,9 +147,9 @@
    "score": 0.751
   },
   {
-   "team": "BornoShield",
-   "affiliation": "North South University",
-   "score": 0.7454
+   "team": "KMinds",
+   "affiliation": "Khulna University Engineering & Technology",
+   "score": 0.7476
   },
   {
    "team": "mam13",
@@ -197,11 +192,6 @@
    "score": 0.7261
   },
   {
-   "team": "sonthephuong",
-   "affiliation": "University of Information Technology - VNUHCM",
-   "score": 0.7261
-  },
-  {
    "team": "ArcReactor",
    "affiliation": "Independent researcher",
    "score": 0.7234
@@ -210,11 +200,6 @@
    "team": "zero",
    "affiliation": "BUET",
    "score": 0.722
-  },
-  {
-   "team": "Tagore",
-   "affiliation": "MTU",
-   "score": 0.7209
   },
   {
    "team": "Team_Noob",
@@ -250,6 +235,21 @@
    "team": "ssshanto",
    "affiliation": "No Affiliation",
    "score": 0.7051
+  },
+  {
+   "team": "BadBuzz",
+   "affiliation": "BUBT",
+   "score": 0.6982
+  },
+  {
+   "team": "Oryza",
+   "affiliation": "CUET",
+   "score": 0.6961
+  },
+  {
+   "team": "ISHRAQ_Fan_Club",
+   "affiliation": "Islamic University of Technology",
+   "score": 0.6961
   }
  ],
  "test": []
