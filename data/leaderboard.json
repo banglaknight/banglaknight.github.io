@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17T19:36:24+00:00",
+ "updated": "2026-11-18T00:52:25+00:00",
  "dev": [
   {
    "team": "AK",
@@ -77,6 +77,11 @@
    "score": 0.8021
   },
   {
+   "team": "Abd_Allah",
+   "affiliation": "Miilionways",
+   "score": 0.8
+  },
+  {
    "team": "Maxwell's Den",
    "affiliation": "BRAC University",
    "score": 0.7919
@@ -127,11 +132,6 @@
    "score": 0.7711
   },
   {
-   "team": "Abd_Allah",
-   "affiliation": "Miilionways",
-   "score": 0.7705
-  },
-  {
    "team": "OPTIMISTIC",
    "affiliation": "SUST",
    "score": 0.7627
@@ -177,6 +177,11 @@
    "score": 0.7321
   },
   {
+   "team": "ISHRAQ_Fan_Club",
+   "affiliation": "Islamic University of Technology",
+   "score": 0.728
+  },
+  {
    "team": "Code_X",
    "affiliation": "University of Dhaka",
    "score": 0.7279
@@ -200,6 +205,16 @@
    "team": "zero",
    "affiliation": "BUET",
    "score": 0.722
+  },
+  {
+   "team": "Court of the Crimson King",
+   "affiliation": "CUET",
+   "score": 0.7217
+  },
+  {
+   "team": "Uncertainty",
+   "affiliation": "University of Scholars",
+   "score": 0.7212
   },
   {
    "team": "Team_Noob",
@@ -235,21 +250,6 @@
    "team": "ssshanto",
    "affiliation": "No Affiliation",
    "score": 0.7051
-  },
-  {
-   "team": "BadBuzz",
-   "affiliation": "BUBT",
-   "score": 0.6982
-  },
-  {
-   "team": "Oryza",
-   "affiliation": "CUET",
-   "score": 0.6961
-  },
-  {
-   "team": "ISHRAQ_Fan_Club",
-   "affiliation": "Islamic University of Technology",
-   "score": 0.6961
   }
  ],
  "test": []
