@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T18:35:54+00:00",
+ "updated": "2026-11-22T19:37:47+00:00",
  "dev": [
   {
    "team": "AK",
@@ -172,14 +172,14 @@
    "score": 0.7568
   },
   {
+   "team": "Court of the Crimson King",
+   "affiliation": "CUET",
+   "score": 0.7557
+  },
+  {
    "team": "Torwächter",
    "affiliation": "Julian maximilian universität würzburg / Soofi",
    "score": 0.7543
-  },
-  {
-   "team": "Court of the Crimson King",
-   "affiliation": "CUET",
-   "score": 0.754
   },
   {
    "team": "TokenHunter",
