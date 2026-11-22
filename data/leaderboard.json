@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T17:59:54+00:00",
+ "updated": "2026-11-22T18:35:54+00:00",
  "dev": [
   {
    "team": "AK",
@@ -102,6 +102,11 @@
    "score": 0.7919
   },
   {
+   "team": "Batman",
+   "affiliation": "Gotham City",
+   "score": 0.7905
+  },
+  {
    "team": "BRACU_CL",
    "affiliation": "BRAC University",
    "score": 0.7896
@@ -130,11 +135,6 @@
    "team": "Outliers",
    "affiliation": "Outliers",
    "score": 0.7785
-  },
-  {
-   "team": "Batman",
-   "affiliation": "Gotham City",
-   "score": 0.7758
   },
   {
    "team": "MoonKnight",
