@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T17:40:05+00:00",
+ "updated": "2026-11-22T17:59:54+00:00",
  "dev": [
   {
    "team": "AK",
@@ -177,11 +177,6 @@
    "score": 0.7543
   },
   {
-   "team": "Team_Noob",
-   "affiliation": "N/A",
-   "score": 0.754
-  },
-  {
    "team": "Court of the Crimson King",
    "affiliation": "CUET",
    "score": 0.754
@@ -250,6 +245,156 @@
    "team": "RMRL",
    "affiliation": "Islamic University of Technology",
    "score": 0.7273
+  },
+  {
+   "team": "TryTillDeath",
+   "affiliation": "N/A",
+   "score": 0.7261
+  },
+  {
+   "team": "RUET R-405",
+   "affiliation": "RUET",
+   "score": 0.7247
+  },
+  {
+   "team": "ArcReactor",
+   "affiliation": "Independent researcher",
+   "score": 0.7234
+  },
+  {
+   "team": "Green Minds",
+   "affiliation": "Green University of Bangladesh",
+   "score": 0.7226
+  },
+  {
+   "team": "zero",
+   "affiliation": "BUET",
+   "score": 0.722
+  },
+  {
+   "team": "Deepon Halder",
+   "affiliation": "IIEST Shibpur",
+   "score": 0.7174
+  },
+  {
+   "team": "CUET-NLP_Primera",
+   "affiliation": "CUET",
+   "score": 0.7171
+  },
+  {
+   "team": "BanglaNext",
+   "affiliation": "Green University of Bangladesh",
+   "score": 0.7152
+  },
+  {
+   "team": "Team_ss",
+   "affiliation": "KUET",
+   "score": 0.7149
+  },
+  {
+   "team": "CITD@UIT",
+   "affiliation": "University of Information Technology - VNUHCM",
+   "score": 0.7139
+  },
+  {
+   "team": "Team_Noob",
+   "affiliation": "N/A",
+   "score": 0.7069
+  },
+  {
+   "team": "ASK",
+   "affiliation": "University of Dhaka",
+   "score": 0.7059
+  },
+  {
+   "team": "ranadhirghosh73",
+   "affiliation": "FIS Global",
+   "score": 0.7052
+  },
+  {
+   "team": "ssshanto",
+   "affiliation": "No Affiliation",
+   "score": 0.7051
+  },
+  {
+   "team": "KMinds",
+   "affiliation": "Khulna University of Engineering & Technology",
+   "score": 0.7001
+  },
+  {
+   "team": "BadBuzz",
+   "affiliation": "BUBT",
+   "score": 0.6982
+  },
+  {
+   "team": "Oryza",
+   "affiliation": "CUET",
+   "score": 0.6961
+  },
+  {
+   "team": "ARIANUJ",
+   "affiliation": "SHINHAN UNIVERSITY",
+   "score": 0.6956
+  },
+  {
+   "team": "Solo",
+   "affiliation": "MU",
+   "score": 0.6917
+  },
+  {
+   "team": "IReL_IIT(BHU)",
+   "affiliation": "IIT(BHU), Varanasi, India",
+   "score": 0.6798
+  },
+  {
+   "team": "TACKLE LAB",
+   "affiliation": "UNB",
+   "score": 0.6719
+  },
+  {
+   "team": "team67",
+   "affiliation": "Brac University",
+   "score": 0.6662
+  },
+  {
+   "team": "lonely_fighter",
+   "affiliation": "lonely_fighter",
+   "score": 0.6599
+  },
+  {
+   "team": "FirstTime মামা",
+   "affiliation": "Chittagong University of Engineering & Technology",
+   "score": 0.646
+  },
+  {
+   "team": "aspirants",
+   "affiliation": "CUET",
+   "score": 0.6417
+  },
+  {
+   "team": "Team QuantumFlux",
+   "affiliation": "Chittagong University of Engineering and Technology",
+   "score": 0.6397
+  },
+  {
+   "team": "Marsam",
+   "affiliation": "IUS",
+   "score": 0.6375
+  },
+  {
+   "team": "Shahjalal",
+   "affiliation": "Green University of Bangladesh",
+   "score": 0.6342
+  },
+  {
+   "team": "emni",
+   "affiliation": "emni",
+   "score": 0.6342
+  },
+  {
+   "team": "Abu Bakkar",
+   "affiliation": "BOET",
+   "score": 0.6069
   }
  ],
  "test": []
