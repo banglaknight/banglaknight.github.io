@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T19:37:47+00:00",
+ "updated": "2026-11-23T18:36:02+00:00",
  "dev": [
   {
    "team": "AK",
@@ -22,6 +22,11 @@
    "score": 0.8332
   },
   {
+   "team": "PentaML",
+   "affiliation": "Penta Global Ltd",
+   "score": 0.8332
+  },
+  {
    "team": "X",
    "affiliation": "BUET",
    "score": 0.8306
@@ -37,11 +42,6 @@
    "score": 0.8243
   },
   {
-   "team": "PentaML",
-   "affiliation": "Penta Global Ltd",
-   "score": 0.8235
-  },
-  {
    "team": "AlphaBorno",
    "affiliation": "UoS, Bangladesh Finance PLC., UT Dallas",
    "score": 0.8212
@@ -52,14 +52,14 @@
    "score": 0.8198
   },
   {
-   "team": "ShobdoProhori",
-   "affiliation": "Brac University",
-   "score": 0.8184
-  },
-  {
    "team": "N00B",
    "affiliation": "RUET",
    "score": 0.8167
+  },
+  {
+   "team": "PromptSentinel",
+   "affiliation": "Brac University",
+   "score": 0.8166
   },
   {
    "team": "Prometheus",
@@ -70,6 +70,11 @@
    "team": "SAA",
    "affiliation": "BRAC University",
    "score": 0.8051
+  },
+  {
+   "team": "Batman",
+   "affiliation": "Gotham City",
+   "score": 0.8044
   },
   {
    "team": "UIT@TD",
@@ -102,24 +107,19 @@
    "score": 0.7919
   },
   {
-   "team": "Batman",
-   "affiliation": "Gotham City",
-   "score": 0.7905
-  },
-  {
    "team": "BRACU_CL",
    "affiliation": "BRAC University",
    "score": 0.7896
   },
   {
+   "team": "Learners",
+   "affiliation": "KUET",
+   "score": 0.7876
+  },
+  {
    "team": "Bornomala",
    "affiliation": "American International University - Bangladesh",
    "score": 0.7846
-  },
-  {
-   "team": "Learners",
-   "affiliation": "KUET",
-   "score": 0.7842
   },
   {
    "team": "ISHRAQ_Fan_Club",
@@ -147,14 +147,14 @@
    "score": 0.7749
   },
   {
-   "team": "RaRa_IUBAT",
-   "affiliation": "International University of Business Agriculture and Technology (IUBAT)",
-   "score": 0.7736
-  },
-  {
    "team": "Tagore",
    "affiliation": "MTU",
    "score": 0.7716
+  },
+  {
+   "team": "RaRa_IUBAT",
+   "affiliation": "International University of Business Agriculture and Technology (IUBAT)",
+   "score": 0.7715
   },
   {
    "team": "OPTIMISTIC",
@@ -165,6 +165,16 @@
    "team": "InvariantNLP",
    "affiliation": "University of Asia Pacific",
    "score": 0.7604
+  },
+  {
+   "team": "KMinds",
+   "affiliation": "Khulna University of Engineering & Technology",
+   "score": 0.7574
+  },
+  {
+   "team": "Team_Noob",
+   "affiliation": "N/A",
+   "score": 0.757
   },
   {
    "team": "InvariantNLP",
@@ -197,11 +207,6 @@
    "score": 0.7483
   },
   {
-   "team": "KnightFusion_BD",
-   "affiliation": "IUBAT",
-   "score": 0.7416
-  },
-  {
    "team": "mam13",
    "affiliation": "United International University",
    "score": 0.7412
@@ -210,6 +215,11 @@
    "team": "BEncoders",
    "affiliation": "Center for Computational and Data Sciences",
    "score": 0.7409
+  },
+  {
+   "team": "KnightFusion_BD",
+   "affiliation": "IUBAT",
+   "score": 0.7405
   },
   {
    "team": "SAS",
@@ -235,6 +245,11 @@
    "team": "Team_UAlbany",
    "affiliation": "State University of New York at Albany",
    "score": 0.7321
+  },
+  {
+   "team": "Marsam",
+   "affiliation": "IUS",
+   "score": 0.7292
   },
   {
    "team": "Code_X",
@@ -297,11 +312,6 @@
    "score": 0.7139
   },
   {
-   "team": "Team_Noob",
-   "affiliation": "N/A",
-   "score": 0.7069
-  },
-  {
    "team": "ASK",
    "affiliation": "University of Dhaka",
    "score": 0.7059
@@ -317,11 +327,6 @@
    "score": 0.7051
   },
   {
-   "team": "KMinds",
-   "affiliation": "Khulna University of Engineering & Technology",
-   "score": 0.7001
-  },
-  {
    "team": "BadBuzz",
    "affiliation": "BUBT",
    "score": 0.6982
@@ -335,6 +340,11 @@
    "team": "ARIANUJ",
    "affiliation": "SHINHAN UNIVERSITY",
    "score": 0.6956
+  },
+  {
+   "team": "Nirapod_LLM",
+   "affiliation": "Brac University",
+   "score": 0.6933
   },
   {
    "team": "Solo",
@@ -377,11 +387,6 @@
    "score": 0.6397
   },
   {
-   "team": "Marsam",
-   "affiliation": "IUS",
-   "score": 0.6375
-  },
-  {
    "team": "Shahjalal",
    "affiliation": "Green University of Bangladesh",
    "score": 0.6342
@@ -390,6 +395,11 @@
    "team": "emni",
    "affiliation": "emni",
    "score": 0.6342
+  },
+  {
+   "team": "ZiYor",
+   "affiliation": "ZiYor",
+   "score": 0.6255
   },
   {
    "team": "Abu Bakkar",
