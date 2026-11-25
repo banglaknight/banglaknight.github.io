@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T18:36:10+00:00",
+ "updated": "2026-11-25T18:36:11+00:00",
  "dev": [
   {
    "team": "AK",
@@ -14,7 +14,7 @@
   {
    "team": "PentaML",
    "affiliation": "Penta Global Ltd",
-   "score": 0.8445
+   "score": 0.8503
   },
   {
    "team": "Wings of Freedom",
@@ -22,19 +22,9 @@
    "score": 0.8402
   },
   {
-   "team": "BRACU_CL",
-   "affiliation": "BRAC University",
-   "score": 0.8332
-  },
-  {
    "team": "X",
    "affiliation": "BUET",
    "score": 0.8306
-  },
-  {
-   "team": "KingKong",
-   "affiliation": "Green University of Bangladesh",
-   "score": 0.8268
   },
   {
    "team": "LDV Trier",
@@ -72,6 +62,11 @@
    "score": 0.8051
   },
   {
+   "team": "Learners",
+   "affiliation": "KUET",
+   "score": 0.8047
+  },
+  {
    "team": "Batman",
    "affiliation": "Gotham City",
    "score": 0.8044
@@ -80,6 +75,11 @@
    "team": "UIT@TD",
    "affiliation": "VNUHCM - University of Information Technology (UIT)",
    "score": 0.804
+  },
+  {
+   "team": "ISHRAQ_Fan_Club",
+   "affiliation": "Islamic University of Technology",
+   "score": 0.8039
   },
   {
    "team": "Team Unknown",
@@ -92,14 +92,24 @@
    "score": 0.8037
   },
   {
+   "team": "KingKong",
+   "affiliation": "Green University of Bangladesh",
+   "score": 0.8036
+  },
+  {
    "team": "The Context Windows",
    "affiliation": "Rajiv Gandhi University of Knowledge Technologies, Nuzvid",
    "score": 0.8021
   },
   {
-   "team": "Learners",
-   "affiliation": "KUET",
-   "score": 0.796
+   "team": "ChikunGunya",
+   "affiliation": "North South University",
+   "score": 0.7967
+  },
+  {
+   "team": "BRACU_CL",
+   "affiliation": "BRAC University",
+   "score": 0.7959
   },
   {
    "team": "SAS",
@@ -107,24 +117,14 @@
    "score": 0.7953
   },
   {
-   "team": "Team_ss",
-   "affiliation": "KUET",
-   "score": 0.7938
-  },
-  {
    "team": "Maxwell's Den",
    "affiliation": "BRAC University",
    "score": 0.7919
   },
   {
-   "team": "BRACU_CL",
-   "affiliation": "BRAC University",
-   "score": 0.7896
-  },
-  {
-   "team": "ISHRAQ_Fan_Club",
-   "affiliation": "Islamic University of Technology",
-   "score": 0.7873
+   "team": "Court of the Crimson King",
+   "affiliation": "CUET",
+   "score": 0.7878
   },
   {
    "team": "RaRa_IUBAT",
@@ -137,14 +137,9 @@
    "score": 0.7846
   },
   {
-   "team": "Nura Pagla",
-   "affiliation": "NUET",
-   "score": 0.7844
-  },
-  {
-   "team": "ChikunGuniya",
-   "affiliation": "North South University",
-   "score": 0.7838
+   "team": "Team_ss",
+   "affiliation": "KUET",
+   "score": 0.7846
   },
   {
    "team": "BornoShield",
@@ -164,7 +159,12 @@
   {
    "team": "KMinds",
    "affiliation": "KUET",
-   "score": 0.7755
+   "score": 0.7731
+  },
+  {
+   "team": "InvariantNLP",
+   "affiliation": "University of Asia Pacific",
+   "score": 0.7728
   },
   {
    "team": "Tagore",
@@ -172,9 +172,19 @@
    "score": 0.7716
   },
   {
+   "team": "Nura Pagla",
+   "affiliation": "NUET",
+   "score": 0.7707
+  },
+  {
    "team": "Phat Phan",
    "affiliation": "VNUHCM - University of Information Technology (UIT)",
    "score": 0.7686
+  },
+  {
+   "team": "Baymex",
+   "affiliation": "university of Scholars",
+   "score": 0.766
   },
   {
    "team": "OPTIMISTIC",
@@ -184,12 +194,12 @@
   {
    "team": "Dexter",
    "affiliation": "University of Scholars",
-   "score": 0.7623
+   "score": 0.7626
   },
   {
-   "team": "InvariantNLP",
-   "affiliation": "University of Asia Pacific",
-   "score": 0.7604
+   "team": "Uncertainty",
+   "affiliation": "University of Scholars",
+   "score": 0.7617
   },
   {
    "team": "Team_Noob",
@@ -197,14 +207,9 @@
    "score": 0.757
   },
   {
-   "team": "InvariantNLP",
-   "affiliation": "University of Asia Pacific",
-   "score": 0.7568
-  },
-  {
-   "team": "Court of the Crimson King",
-   "affiliation": "CUET",
-   "score": 0.7557
+   "team": "DiscoBoys",
+   "affiliation": "MIT",
+   "score": 0.7567
   },
   {
    "team": "Torwächter",
@@ -220,11 +225,6 @@
    "team": "Bracu_odyssey",
    "affiliation": "BRAC University",
    "score": 0.7489
-  },
-  {
-   "team": "Uncertainty",
-   "affiliation": "University of Scholars",
-   "score": 0.7483
   },
   {
    "team": "Oryza",
@@ -272,9 +272,19 @@
    "score": 0.735
   },
   {
+   "team": "ZiYor",
+   "affiliation": "ZiYor",
+   "score": 0.7344
+  },
+  {
    "team": "Team_UAlbany",
    "affiliation": "State University of New York at Albany",
    "score": 0.7321
+  },
+  {
+   "team": "Nirapod_LLM",
+   "affiliation": "BRAC University",
+   "score": 0.7285
   },
   {
    "team": "Code_X",
@@ -292,11 +302,6 @@
    "score": 0.7261
   },
   {
-   "team": "RUET R-405",
-   "affiliation": "RUET",
-   "score": 0.7247
-  },
-  {
    "team": "Green Minds",
    "affiliation": "Green University of Bangladesh",
    "score": 0.7241
@@ -310,11 +315,6 @@
    "team": "zero",
    "affiliation": "BUET",
    "score": 0.722
-  },
-  {
-   "team": "Nirapod_LLM",
-   "affiliation": "BRAC University",
-   "score": 0.7202
   },
   {
    "team": "Deepon Halder",
@@ -337,11 +337,6 @@
    "score": 0.7139
   },
   {
-   "team": "ZiYor",
-   "affiliation": "ZiYor",
-   "score": 0.7084
-  },
-  {
    "team": "ASK",
    "affiliation": "University of Dhaka",
    "score": 0.7059
@@ -357,6 +352,11 @@
    "score": 0.7051
   },
   {
+   "team": "Tu Nguyen",
+   "affiliation": "VNUHCM - University of Information Technology (UIT)",
+   "score": 0.7033
+  },
+  {
    "team": "BadBuzz",
    "affiliation": "BUBT",
    "score": 0.6982
@@ -365,6 +365,11 @@
    "team": "ARIANUJ",
    "affiliation": "SHINHAN UNIVERSITY",
    "score": 0.6956
+  },
+  {
+   "team": "RUET R-405",
+   "affiliation": "RUET",
+   "score": 0.6955
   },
   {
    "team": "Solo",
@@ -380,11 +385,6 @@
    "team": "TACKLE LAB",
    "affiliation": "UNB",
    "score": 0.6719
-  },
-  {
-   "team": "Tu Nguyen",
-   "affiliation": "VNUHCM - University of Information Technology (UIT)",
-   "score": 0.6708
   },
   {
    "team": "team67",
@@ -425,11 +425,6 @@
    "team": "Abu Bakkar",
    "affiliation": "BOET",
    "score": 0.6069
-  },
-  {
-   "team": "DiscoBoys",
-   "affiliation": "MIT",
-   "score": 0.4169
   }
  ],
  "test": []
