@@ -4,7 +4,8 @@ Reads the public leaderboard API of the Development and Test phases, keeps each 
 (team name and affiliation from the submission form, Defense Score), sorts by score and writes
 data/leaderboard.json with the time of the update. build.py turns that file into the two boards.
 Test scores stay hidden on CodaBench until Feb 3, 2027, so the test board stays empty until then.
-Since Nov 2026 CodaBench's bot check (Anubis) answers scripts with an HTML page. When that happens the
+Since Nov 2026 CodaBench's bot check (Anubis) answers scripts with an HTML page, and since Nov 24 with a
+302 that sets a cookie and has no Location header. When either happens the
 script leaves the file unchanged, prints a warning and exits without an error, so the Action stays green.
 The board is then refreshed from the organizer's own Chrome by a daily scheduled task, which reads the same
 API in the browser and runs:  python3 scripts/update_leaderboard.py --from-browser FILE
@@ -17,6 +18,7 @@ import json
 import os
 import sys
 import time
+import urllib.error
 import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
@@ -46,6 +48,13 @@ def fetch(phase_id):
             return json.loads(body)
         except BotCheck:                            # retrying does not help: the check stays up
             raise
+        except urllib.error.HTTPError as e:         # since Nov 24 the check answers with a bare 302
+            if 300 <= e.code < 400 or "anubis" in (e.headers.get("Set-Cookie") or "").lower():
+                raise BotCheck(f"phase {phase_id}: CodaBench answered HTTP {e.code} (bot check)") from None
+            if attempt == 3:
+                raise
+            print(f"phase {phase_id}: {e}; retrying", file=sys.stderr)
+            time.sleep(30 * (attempt + 1))
         except Exception as e:                      # network hiccup or CodaBench busy: wait and retry
             if attempt == 3:
                 raise
